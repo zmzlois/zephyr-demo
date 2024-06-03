@@ -13,16 +13,6 @@ const useCart = () => {
   };
 
   const findItemInCart = (productId: string) => {
-    if (productId === '1234') {
-      return {
-        id: '1234',
-        name: 'Test Product',
-        price: 100,
-        imageUrl: 'https://via.placeholder.com/150',
-        description: 'This is a test product',
-      };
-    }
-
     return cart.products.find((product) => product.id === productId);
   };
 
