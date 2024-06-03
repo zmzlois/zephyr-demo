@@ -40,7 +40,6 @@ const useCart = () => {
     cart,
     addToCart,
     removeFromCart,
-    findItemInCart,
   };
 };
 
