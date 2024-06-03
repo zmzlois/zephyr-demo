@@ -10,4 +10,4 @@ projects:
     language: 'typescript'
     pathFilters:
       - 'src/**/*.(ts|tsx)'
-      - 'src/**/*.(js|jsx)
+      - 'src/**/*.(js|jsx)'
