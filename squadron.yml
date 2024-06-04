@@ -3,11 +3,11 @@ projects:
     path: 'apps/mfe-monorepo'
     language: 'typescript'
     pathFilters:
-      - 'src/**/*.(ts|tsx)'
-      - 'src/**/*.(js|jsx)'
+      - /src/**/*\.(ts|tsx)/
+      - /src/**/*\.(js|jsx)/
   - name: 'remote'
     path: 'apps/hero'
     language: 'typescript'
     pathFilters:
-      - 'src/**/*.(ts|tsx)'
-      - 'src/**/*.(js|jsx)'
+      - /src/**/*\.(ts|tsx)/
+      - /src/**/*\.(js|jsx)/
