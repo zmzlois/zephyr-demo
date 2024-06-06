@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       {
         path: '/products',
         element: (
-          <Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
             <Products />
           </Suspense>
         ),
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       {
         path: '/cart',
         element: (
-          <Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
             <Cart />
           </Suspense>
         ),
@@ -41,11 +41,7 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
