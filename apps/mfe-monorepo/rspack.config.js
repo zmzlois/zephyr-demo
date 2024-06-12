@@ -15,5 +15,14 @@ module.exports = composePlugins(withNx(), withReact(), (config, context) => {
     port: 4200,
   };
 
+  const cssRule = config.module.rules.find(
+    (r) => r.test.toString() === '/\\.css$/'
+  );
+
+  // Change the css rule to auto so not every css file is a module.
+  if (cssRule) {
+    cssRule.type = 'css/auto';
+  }
+
   return config;
 });
