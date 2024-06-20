@@ -24,5 +24,10 @@ module.exports = composePlugins(withNx(), withReact(), (config, context) => {
     cssRule.type = 'css/auto';
   }
 
+  config.infrastructureLogging = {
+    colors: true,
+    level: 'verbose',
+  };
+
   return config;
 });
