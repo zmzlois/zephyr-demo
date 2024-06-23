@@ -5,6 +5,8 @@ projects:
     pathFilters:
       - '**/src/**/*.{ts,tsx}'
       - '**/src/**/*.{js,jsx}'
+    experiments:
+      anthropic: true
   - name: 'remote'
     path: 'apps/hero'
     language: 'typescript'
