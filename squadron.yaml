@@ -2,7 +2,7 @@ projects:
   - name: 'mfe-host'
     path: 'apps/mfe-monorepo'
     mode: 'full'
-    styleGuide: 'We are using Google's JavaScript style guide'
+    styleGuide: "We are using Google's JavaScript style guide"
     pathFilters:
       - 'src/**/*.{ts,tsx}'
       - 'src/**/*.{js,jsx}'
@@ -11,7 +11,7 @@ projects:
   - name: 'remote'
     path: 'apps/hero'
     mode: 'full'
-    styleGuide: 'We are using Google's JavaScript style guide'
+    styleGuide: "We are using Google's JavaScript style guide"
     pathFilters:
       - 'src/**/*.{ts,tsx}'
       - 'src/**/*.{js,jsx}'
