@@ -4,8 +4,8 @@ projects:
     mode: 'full'
     styleGuide: "We are using Google's JavaScript style guide"
     pathFilters:
-      - 'src/**/*.{ts,tsx}'
-      - 'src/**/*.{js,jsx}'
+      - '**/src/**/*.{ts,tsx}'
+      - '**/src/**/*.{js,jsx}'
     experiments:
       anthropic: true
   - name: 'remote'
@@ -13,7 +13,7 @@ projects:
     mode: 'full'
     styleGuide: "We are using Google's JavaScript style guide"
     pathFilters:
-      - 'src/**/*.{ts,tsx}'
-      - 'src/**/*.{js,jsx}'
+      - '**/src/**/*.{ts,tsx}'
+      - '**/src/**/*.{js,jsx}'
     experiments:
       anthropic: true
