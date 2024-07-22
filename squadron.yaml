@@ -6,8 +6,6 @@ projects:
     pathFilters:
       - '**/src/**/*.{ts,tsx}'
       - '**/src/**/*.{js,jsx}'
-    experiments:
-      anthropic: true
   - name: 'remote'
     path: 'apps/hero'
     mode: 'full'
@@ -15,5 +13,5 @@ projects:
     pathFilters:
       - '**/src/**/*.{ts,tsx}'
       - '**/src/**/*.{js,jsx}'
-    experiments:
-      anthropic: true
+experiments:
+  anthropic: true
