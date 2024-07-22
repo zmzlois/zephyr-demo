@@ -6,7 +6,9 @@ import { useTheme, Theme } from '../../Theme/ThemeProvider';
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
 
-  const changeTheme = (themeName: Theme) => toggleTheme();
+  const changeTheme = (themeName: Theme) => {
+    toggleTheme();
+  };
 
   const InactiveThemeIcon = () => {
     const onClick = () =>
