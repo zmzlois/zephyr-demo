@@ -1,7 +1,6 @@
-import { type Product } from '../../../types/Products';
-import useCart from '../../Cart/hooks/useCart';
-import styles from './ProductCard.module.css';
-import { PropsWithChildren } from 'react';
+import { type Product } from "../../../types/Products";
+import styles from "./ProductCard.module.css";
+import type { PropsWithChildren } from "react";
 
 export type ProductCardProps = {
   product: Product;
