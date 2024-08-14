@@ -1,6 +1,6 @@
 import { type Product } from "../../../types/Products";
 import styles from "./ProductCard.module.css";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 
 export type ProductCardProps = {
 	product: Product;
