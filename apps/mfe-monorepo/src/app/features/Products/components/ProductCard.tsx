@@ -6,6 +6,10 @@ export type ProductCardProps = {
 	product: Product;
 } & PropsWithChildren;
 
+const TestComp = () => {
+  return (<div>123</div>)
+}
+
 const ProductCard = ({ product, children }: ProductCardProps) => {
 	const formatAsCurrency = (price: number) => {
 		return new Intl.NumberFormat(navigator.language, {
