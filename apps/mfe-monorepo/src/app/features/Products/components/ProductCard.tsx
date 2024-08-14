@@ -11,6 +11,9 @@ export enum Currency {
   USD = 'USD',
   EUR = 'EUR',
 }
+const TestComp = () => {
+  return (<div>123</div>)
+}
 
 const formatAsCurrency = (price: number) => {
   return new Intl.NumberFormat(navigator.language, {
