@@ -1,7 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import { Home } from './features/Home';
 import { lazy, Suspense } from 'react';
-import { Navbar } from './features/Navbar';
+import Navbar from './features/Navbar/components/Navbar';
 import { ThemeProvider } from './features/Theme/ThemeProvider';
 
 const Products = lazy(() => import('./features/Products/components/Products'));
