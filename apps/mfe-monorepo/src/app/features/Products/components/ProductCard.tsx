@@ -21,8 +21,6 @@ const formatAsCurrency = (price: number) => {
 const ProductCard = ({ product, children }: ProductCardProps) => {
   const { addToCart } = useCart();
 
-  console.log('Test 123');
-
   return (
     <div className={styles['product-card']}>
       <h3>{product.title}</h3>
