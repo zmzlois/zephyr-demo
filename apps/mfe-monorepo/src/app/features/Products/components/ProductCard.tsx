@@ -12,7 +12,6 @@ export enum Currency {
 }
 
 const formatAsCurrency = (price: number) => {
-  console.log(price);
   return new Intl.NumberFormat(navigator.language, {
     style: 'currency',
     currency: navigator.language === 'en-US' ? Currency.USD : Currency.EUR,
