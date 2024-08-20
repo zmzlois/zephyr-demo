@@ -12,10 +12,8 @@ const router = createBrowserRouter([
     path: '/',
     element: (
       <ThemeProvider>
-        <>
           <Navbar />
           <Outlet />
-        </>
       </ThemeProvider>
     ),
     children: [
