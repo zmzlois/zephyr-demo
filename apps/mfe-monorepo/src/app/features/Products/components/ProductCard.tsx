@@ -6,15 +6,9 @@ export type ProductCardProps = {
   product: Product;
 } & PropsWithChildren;
 
-export enum Currency {
-  USD = 'USD',
-  EUR = 'EUR',
-}
-
 const formatAsCurrency = (price: number) => {
   return new Intl.NumberFormat(navigator.language, {
     style: 'currency',
-    currency: navigator.language === 'en-US' ? Currency.USD : Currency.EUR,
   }).format(price);
 };
 
