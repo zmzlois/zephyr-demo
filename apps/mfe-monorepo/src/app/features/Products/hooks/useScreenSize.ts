@@ -8,7 +8,7 @@ const useScreenSize = ({ htmlElement }: { htmlElement: HTMLElement }) => {
 			const [entry] = entries;
 
 			const onSmallScreenSize =
-				entry.contentRect.width < 768 ? true : false;
+				entry.contentRect.width < 1024
 
 			setSmallScreen(onSmallScreenSize);
 		});
