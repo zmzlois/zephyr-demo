@@ -7,13 +7,13 @@ const useCart = () => {
 
   const addToCart = (product: Product) => {
     setCart((cart) => {
+      if (!cart.products) {
+        cart.products = [];
+      }
+
       cart.products.push(product);
       return { ...cart };
     });
-  };
-
-  const findItemInCart = (productId: string) => {
-    return cart.products.find((product) => product.id === productId);
   };
 
   const removeFromCart = (productId: string) => {
