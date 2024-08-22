@@ -7,10 +7,6 @@ const useCart = () => {
 
   const addToCart = (product: Product) => {
     setCart((cart) => {
-      if (!cart.products) {
-        cart.products = [];
-      }
-
       cart.products.push(product);
       return { ...cart };
     });
