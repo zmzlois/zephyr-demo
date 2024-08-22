@@ -13,5 +13,3 @@ projects:
     pathFilters:
       - '**/src/**/*.{ts,tsx}'
       - '**/src/**/*.{js,jsx}'
-experiments:
-  anthropic: true
