@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <section className={styles['home']}>
-      <Suspense fallback={<div>Loading...</div>}>{!isSmallScreen && <ProductHero label={'123'} />}</Suspense>
+      <Suspense fallback={<div>Loading</div>}>{!isSmallScreen && <ProductHero label={'123'} />}</Suspense>
       <ProductsOnSale />
     </section>
   );
