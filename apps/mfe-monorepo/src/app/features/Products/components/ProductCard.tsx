@@ -27,7 +27,7 @@ const ProductCard = ({ product, children }: ProductCardProps) => {
         <p className={styles['product-card__details__price']}>
           {formatAsCurrency(product.price)}
         </p>
-        <button type="button" onClick={() => addToCart(product)}>
+        <button type="button" onClick={() => addToCart(product)} aria-label="Add to cart">
           Add to Cart
         </button>
         {children}
