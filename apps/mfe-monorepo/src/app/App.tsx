@@ -6,24 +6,23 @@ import { ThemeProvider } from './features/Theme/ThemeProvider';
 
 const Products = lazy(() => import('./features/Products/components/Products'));
 const Cart = lazy(() => import('./features/Cart/components/Cart'));
+const Favorites = lazy(
+  () => import('./features/Products/components/Favorites')
+);
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: (
       <ThemeProvider>
-          <Navbar />
-          <Outlet />
+        <Navbar />
+        <Outlet />
       </ThemeProvider>
     ),
     children: [
       {
         index: true,
-        element: (
-          <>
-            <Home />
-          </>
-        ),
+        element: <Home />,
       },
       {
         path: '/products',
@@ -38,6 +37,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<div>Loading...</div>}>
             <Cart />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/favorites',
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Favorites />
           </Suspense>
         ),
       },

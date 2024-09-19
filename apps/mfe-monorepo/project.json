@@ -35,7 +35,8 @@
     "serve": {
       "executor": "@nx/rspack:dev-server",
       "options": {
-        "buildTarget": "mfe-monorepo:build:development"
+        "buildTarget": "mfe-monorepo:build:development",
+        "port": 4200
       },
       "configurations": {
         "development": {},

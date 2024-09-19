@@ -10,19 +10,39 @@ module.exports = composePlugins(withNx(), withReact(), (config, context) => {
 
   config.plugins.push(new ModuleFederationPlugin({ ...mfConfig }));
   config.output.publicPath = '/';
+  config.module.rules = [
+    ...config.module.rules.filter(
+      (r) => r.type !== 'css/module' && r.type !== 'css'
+    ),
+  ];
+
   config.devServer = {
     ...config.devServer,
-    port: 4200,
+    historyApiFallback: true,
   };
 
-  const cssRule = config.module.rules.find(
-    (r) => r.test.toString() === '/\\.css$/'
-  );
-
-  // Change the css rule to auto so not every css file is a module.
-  if (cssRule) {
-    cssRule.type = 'css/auto';
-  }
+  config.module.rules.push({
+    test: /\.css$/,
+    type: 'css',
+    use: [
+      {
+        loader: 'postcss-loader',
+        options: {
+          postcssOptions: {
+            plugins: {
+              tailwindcss: {
+                config: path.join(
+                  context.context.root,
+                  'apps/mfe-monorepo/tailwind.config.js'
+                ),
+              },
+              autoprefixer: {},
+            },
+          },
+        },
+      },
+    ],
+  });
 
   config.infrastructureLogging = {
     colors: true,

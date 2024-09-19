@@ -1,5 +1,4 @@
 import { ProductsOnSale } from '../../Products';
-import styles from './Home.module.css';
 import useScreenSize from '../../Products/hooks/useScreenSize';
 import { Suspense, lazy } from 'react';
 
@@ -12,8 +11,10 @@ const Home = () => {
   });
 
   return (
-    <section className={styles['home']}>
-      <Suspense fallback={<div>Loading</div>}>{!isSmallScreen && <ProductHero label={'123'} />}</Suspense>
+    <section>
+      <Suspense fallback={<div>Loading 123</div>}>
+        {!isSmallScreen && <ProductHero label={'123'} />}
+      </Suspense>
       <ProductsOnSale />
     </section>
   );
