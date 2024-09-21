@@ -5,13 +5,8 @@ import { useTheme, Theme } from '../../Theme/ThemeProvider';
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
 
-  const changeTheme = (themeName: Theme) => {
-    toggleTheme();
-  };
-
   const InactiveThemeIcon = () => {
-    const onClick = () =>
-      theme === 'dark' ? changeTheme('light') : changeTheme('dark');
+    const onClick = () => toggleTheme();
 
     return theme === 'dark' ? (
       <SunIcon

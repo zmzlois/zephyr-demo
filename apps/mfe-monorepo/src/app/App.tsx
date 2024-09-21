@@ -14,10 +14,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: (
-      <ThemeProvider>
+      <>
         <Navbar />
         <Outlet />
-      </ThemeProvider>
+      </>
     ),
     children: [
       {
@@ -53,7 +53,11 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  );
 };
 
 export default App;

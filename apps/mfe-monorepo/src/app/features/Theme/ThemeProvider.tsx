@@ -9,7 +9,7 @@ import React, {
 export type Theme = 'light' | 'dark';
 
 const getColorScheme = () =>
-  window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
 const ThemeContext = createContext<{
   theme: Theme;
@@ -25,8 +25,16 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
 
   useEffect(() => {
     const body = document.querySelector('body') as HTMLBodyElement;
-    body.classList.remove(theme === 'dark' ? 'light-mode' : 'dark-mode');
-    body.classList.add(theme === 'dark' ? 'dark-mode' : 'light-mode');
+    body.classList.remove(theme === 'dark' ? 'light' : 'dark');
+    body.classList.add(theme === 'dark' ? 'dark' : 'light');
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (e: MediaQueryListEvent) => {
+      setTheme(e.matches ? 'dark' : 'light');
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
   }, [theme]);
 
   const toggleTheme = () => {
