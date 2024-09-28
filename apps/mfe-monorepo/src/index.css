@@ -5,6 +5,4 @@
 body {
   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
   margin: unset;
-  background-color: var(--color-background);
-  color: var(--color-text);
 }

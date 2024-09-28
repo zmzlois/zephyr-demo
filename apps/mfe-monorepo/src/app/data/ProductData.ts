@@ -18,10 +18,11 @@ const generateProducts = (count: number): Product[] => {
     const product: Product = {
       id: i.toString(),
       title: `${color} ${size} Shirt`,
-      size: sizes[Math.floor(Math.random() * sizes.length)],
+      size,
       color,
       price: Math.floor(Math.random() * 1000) + 1,
       imgUrl: `./assets/${color}Shirt.png`,
+      quantity: 1,
     };
 
     products.push(product);

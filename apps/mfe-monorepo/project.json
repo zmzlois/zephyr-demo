@@ -45,6 +45,20 @@
         }
       }
     },
+    "serve-mfe": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "nx serve mfe-monorepo"
+          },
+          {
+            "command": "nx serve hero"
+          }
+        ],
+        "parallel": true
+      }
+    },
     "lint": {
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"]

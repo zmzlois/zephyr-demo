@@ -4,17 +4,11 @@ import type { PropsWithChildren } from 'react';
 import useCart from '../../Cart/hooks/useCart';
 import useFavorites from '../hooks/useFavorites';
 import { FaHeart, FaShoppingCart } from 'react-icons/fa';
+import { formatAsCurrency } from '../../../utils/formatCurrency';
 
 export type ProductCardProps = {
   product: Product;
 } & PropsWithChildren;
-
-const formatAsCurrency = (price: number, currency = 'USD') => {
-  return new Intl.NumberFormat(navigator.language, {
-    style: 'currency',
-    currency,
-  }).format(price);
-};
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, children }) => {
   const { addToCart } = useCart();

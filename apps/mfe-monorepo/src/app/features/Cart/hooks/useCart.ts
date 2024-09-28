@@ -7,7 +7,12 @@ const useCart = () => {
 
   const addToCart = (product: Product) => {
     setCart((cart) => {
-      cart.products.push(product);
+      const existingProduct = cart.products.find((p) => p.id === product.id);
+      if (existingProduct) {
+        existingProduct.quantity += 1;
+      } else {
+        cart.products.push({ ...product, quantity: 1 });
+      }
       return { ...cart };
     });
   };
@@ -17,7 +22,16 @@ const useCart = () => {
       cart.products = cart.products.filter(
         (product) => product.id !== productId
       );
+      return { ...cart };
+    });
+  };
 
+  const updateQuantity = (productId: string, newQuantity: number) => {
+    setCart((cart) => {
+      const product = cart.products.find((p) => p.id === productId);
+      if (product) {
+        product.quantity = Math.max(1, newQuantity);
+      }
       return { ...cart };
     });
   };
@@ -26,6 +40,7 @@ const useCart = () => {
     cart,
     addToCart,
     removeFromCart,
+    updateQuantity,
   };
 };
 
