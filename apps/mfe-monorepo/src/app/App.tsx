@@ -14,10 +14,12 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: (
-      <>
+      <div className="flex flex-col min-h-screen">
         <Navbar />
-        <Outlet />
-      </>
+        <div className="flex-grow">
+          <Outlet />
+        </div>
+      </div>
     ),
     children: [
       {
@@ -27,7 +29,7 @@ const router = createBrowserRouter([
       {
         path: '/products',
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div>Loading</div>}>
             <Products />
           </Suspense>
         ),
@@ -35,7 +37,7 @@ const router = createBrowserRouter([
       {
         path: '/cart',
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div>Loading</div>}>
             <Cart />
           </Suspense>
         ),
@@ -43,7 +45,7 @@ const router = createBrowserRouter([
       {
         path: '/favorites',
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div>Loading</div>}>
             <Favorites />
           </Suspense>
         ),

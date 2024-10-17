@@ -1,6 +1,5 @@
 import { atom } from 'jotai';
 import { type Cart } from '../../../types/Cart';
-import { test } from 'src/app/data/ProductData';
 
 const cartAtom = atom<Cart>({
   products: [],
@@ -23,5 +22,5 @@ export class TestClass {
 const TestModule = {
   testMethod() {
     console.log('testMethod');
-  }
-}
+  },
+};

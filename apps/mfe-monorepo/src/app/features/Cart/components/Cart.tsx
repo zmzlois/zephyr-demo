@@ -3,6 +3,7 @@ import useCart from '../hooks/useCart';
 import EmptyCart from './EmptyCart';
 import { ShoppingCartIcon, XCircleIcon } from '@heroicons/react/24/outline';
 
+// Format as currency
 const formatAsCurrency = (price: number, currency = 'USD') => {
   return new Intl.NumberFormat(navigator.language, {
     style: 'currency',
@@ -28,15 +29,15 @@ const Cart = () => {
           <h1 className="text-2xl font-bold">Cart</h1>
           <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="flex flex-wrap justify-center gap-4">
           {cart.products.map((product) => (
-            <div key={product.id} className="flex flex-col">
-              <ProductCard product={product}>
+            <div key={product.id} className="flex">
+              <ProductCard product={product} isCartPage={true} width="300px">
                 <button
                   type="button"
                   onClick={() => removeFromCart(product.id)}
-                  className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-colors dark:bg-red-600 dark:hover:bg-red-700 mt-auto flex items-center justify-center"
-                  aria-label={`Remove ${product.name} from cart`}
+                  className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-colors dark:bg-red-600 dark:hover:bg-red-700 mt-auto flex items-center justify-center w-full max-w-[200px] mx-auto"
+                  aria-label="Remove item from cart"
                 >
                   <XCircleIcon className="h-5 w-5 mr-2" aria-hidden="true" />
                   Remove

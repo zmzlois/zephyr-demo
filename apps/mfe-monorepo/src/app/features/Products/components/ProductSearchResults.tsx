@@ -18,20 +18,24 @@ const ProductSearchResults = () => {
   );
 
   return (
-    <section className="bg-background text-text p-4">
+    <section className="bg-background text-text">
       <h3 className="text-xl font-semibold mb-4">Search Results:</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {filteredProducts.map((product) => (
-          <ProductCard key={product.id} product={product}>
-            <button
-              type="button"
-              className="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition-colors"
-              onClick={() => addToCart(product)}
-            >
-              Add to Cart
-            </button>
-          </ProductCard>
-        ))}
+      <div className="scroll-container h-[calc(100vh-200px)] overflow-y-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+          {filteredProducts.map((product) => (
+            <div key={product.id} className="flex">
+              <ProductCard product={product} width="100%">
+                <button
+                  type="button"
+                  className="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition-colors"
+                  onClick={() => addToCart(product)}
+                >
+                  Add to Cart
+                </button>
+              </ProductCard>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

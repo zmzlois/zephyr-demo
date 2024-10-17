@@ -17,6 +17,9 @@ importers:
       '@swc/helpers':
         specifier: 0.5.13
         version: 0.5.13
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
       crossoriginworker:
         specifier: 1.1.0
         version: 1.1.0
@@ -3479,6 +3482,9 @@ packages:
 
   cjs-module-lexer@1.2.3:
     resolution: {integrity: sha512-0TNiGstbQmCFwt4akjjBg5pLRTSyj/PkWQ1ZoO2zntmg9yLqSRxwEa4iCfQLGjqhiqBfOJa7W/E8wfGrTDmlZQ==}
+
+  classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
 
   cli-cursor@3.1.0:
     resolution: {integrity: sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==}
@@ -12489,6 +12495,8 @@ snapshots:
   ci-info@3.8.0: {}
 
   cjs-module-lexer@1.2.3: {}
+
+  classnames@2.5.1: {}
 
   cli-cursor@3.1.0:
     dependencies:
