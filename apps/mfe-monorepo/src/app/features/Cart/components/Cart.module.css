@@ -1,8 +1,0 @@
-.cart {
-    padding: 1rem;
-
-    .cart__summary {
-        justify-content: flex-end;
-        display: flex;
-    }
-}

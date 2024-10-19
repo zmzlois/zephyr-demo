@@ -31,7 +31,8 @@
     "serve": {
       "executor": "@nx/rspack:dev-server",
       "options": {
-        "buildTarget": "hero:build:development"
+        "buildTarget": "hero:build:development",
+        "port": 3001
       },
       "configurations": {
         "development": {},

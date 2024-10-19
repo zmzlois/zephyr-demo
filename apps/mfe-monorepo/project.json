@@ -35,13 +35,28 @@
     "serve": {
       "executor": "@nx/rspack:dev-server",
       "options": {
-        "buildTarget": "mfe-monorepo:build:development"
+        "buildTarget": "mfe-monorepo:build:development",
+        "port": 4200
       },
       "configurations": {
         "development": {},
         "production": {
           "buildTarget": "mfe-monorepo:build:production"
         }
+      }
+    },
+    "serve-mfe": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "nx serve mfe-monorepo"
+          },
+          {
+            "command": "nx serve hero"
+          }
+        ],
+        "parallel": true
       }
     },
     "lint": {

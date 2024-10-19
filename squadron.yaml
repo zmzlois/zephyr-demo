@@ -1,13 +1,17 @@
 projects:
   - name: 'mfe-host'
     path: 'apps/mfe-monorepo'
-    language: 'typescript'
+    mode: 'full'
+    styleGuide: "We are using Google's JavaScript style guide"
     pathFilters:
       - '**/src/**/*.{ts,tsx}'
       - '**/src/**/*.{js,jsx}'
   - name: 'remote'
     path: 'apps/hero'
-    language: 'typescript'
+    mode: 'full'
+    styleGuide: "We are using Google's JavaScript style guide"
     pathFilters:
       - '**/src/**/*.{ts,tsx}'
       - '**/src/**/*.{js,jsx}'
+experiments:
+  anthropic: true

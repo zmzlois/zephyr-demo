@@ -1,7 +1,7 @@
 import { ProductsOnSale } from '../../Products';
-import styles from './Home.module.css';
 import useScreenSize from '../../Products/hooks/useScreenSize';
 import { Suspense, lazy } from 'react';
+import { Products } from '../../Products';
 
 const ProductHero = lazy(() => import('hero/ProductHero'));
 const bodyElement = document.querySelector('body')!;
@@ -12,9 +12,19 @@ const Home = () => {
   });
 
   return (
-    <section className={styles['home']}>
-      <Suspense>{!isSmallScreen && <ProductHero label={'!23'} />}</Suspense>
-      <ProductsOnSale />
+    <section className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen">
+      <Suspense fallback={<div className="text-center">Loading...</div>}>
+        {!isSmallScreen && <ProductHero />}
+      </Suspense>
+      <div className="container mx-auto mt-8">
+        {' '}
+        <h2 className="text-3xl font-bold mb-6">Products on Sale</h2>
+        <ProductsOnSale />
+      </div>
+      <div className="container mx-auto mt-8">
+        {' '}
+        <Products />
+      </div>
     </section>
   );
 };

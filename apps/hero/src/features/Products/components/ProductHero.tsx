@@ -1,21 +1,16 @@
-import { useEffect, useState } from 'react';
-import styles from './ProductHero.module.css';
+import React from 'react';
 
 declare global {
   const __webpack_public_path__: string;
 }
 
-const ProductHero = ({ label }: { label?: string }) => {
+const ProductHero: React.FC<{ label?: string }> = ({ label }) => {
   return (
-    <section className={styles['product-hero']} id="product-hero">
-      <div className={styles['product-hero__wrapper']}>
-        <div className={styles['product-hero__wrapper__text__container']}>
+    <section className="h-[768px] relative" id="product-hero">
+      <div className="absolute h-[768px] w-full">
+        <div className="absolute top-1/3 left-0 ml-8 text-2xl text-white p-2 rounded border border-black/20 bg-black/50">
           <p>The only shirt you'll ever need.</p>
-          <p
-            className={
-              styles['product-hero__wrapper__text__container__caption']
-            }
-          >
+          <p className="text-lg">
             Unless, you know, it isn't.
             {label ?? ''}
           </p>
@@ -23,12 +18,12 @@ const ProductHero = ({ label }: { label?: string }) => {
         <img
           src="./assets/NatureHero.png"
           alt="Nature"
-          className={styles['product-hero__wrapper__image']}
+          className="h-full w-full object-cover"
         />
         <img
           src="./assets/WhiteShirt.png"
           alt="White T-shirt"
-          className={styles['product-hero__wrapper__image__shirt']}
+          className="w-[400px] h-auto absolute right-0 top-1/4 mr-8 transform -translate-y-1/4"
         />
       </div>
     </section>

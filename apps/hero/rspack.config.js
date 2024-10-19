@@ -10,10 +10,35 @@ module.exports = composePlugins(withNx(), withReact(), (config, context) => {
 
   config.plugins.push(new ModuleFederationPlugin({ ...mfConfig }));
   config.output.publicPath = 'auto';
-  config.devServer = {
-    ...config.devServer,
-    port: 3001,
-  };
+
+  config.module.rules = [
+    ...config.module.rules.filter(
+      (r) => r.type !== 'css/module' && r.type !== 'css'
+    ),
+  ];
+
+  config.module.rules.push({
+    test: /\.css$/,
+    type: 'css',
+    use: [
+      {
+        loader: 'postcss-loader',
+        options: {
+          postcssOptions: {
+            plugins: {
+              tailwindcss: {
+                config: path.join(
+                  context.context.root,
+                  'apps/hero/tailwind.config.js'
+                ),
+              },
+              autoprefixer: {},
+            },
+          },
+        },
+      },
+    ],
+  });
 
   return config;
 });

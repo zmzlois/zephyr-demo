@@ -1,64 +1,59 @@
-import { useLayoutEffect, useState } from "React";
-import styles from "./Navbar.module.css";
-import { SunIcon, MoonIcon } from "@heroicons/react/20/solid";
-import { Link } from "react-router-dom";
-
-type Theme = "light" | "dark";
-
-const getColorScheme = () =>
-	window.matchMedia("(prefers-color-scheme: light)").matches
-		? "light"
-		: "dark";
-
-const isThemeDark = (theme: Theme) => (theme === "dark" ? true : false);
+import { SunIcon, MoonIcon } from '@heroicons/react/20/solid';
+import { Link } from 'react-router-dom';
+import { useTheme } from '../../Theme/ThemeProvider';
 
 const Navbar = () => {
-	useLayoutEffect(() => {
-		const currentTheme = getColorScheme();
-		changeTheme(currentTheme);
-	}, []);
+  const { theme, toggleTheme } = useTheme();
 
-	const [theme, setTheme] = useState<Theme>(getColorScheme());
+  const InactiveThemeIcon = () => {
+    const onClick = () => toggleTheme();
 
-	const changeTheme = (themeName: Theme) => {
-		const isNewThemeDark = isThemeDark(themeName) ? true : false;
-		const body = document.querySelector("body") as HTMLBodyElement;
+    return theme === 'dark' ? (
+      <SunIcon
+        className="h-8 w-8 cursor-pointer text-yellow-400 hover:text-yellow-300"
+        onClick={onClick}
+      />
+    ) : (
+      <MoonIcon
+        className="h-8 w-8 cursor-pointer text-gray-600 hover:text-gray-700"
+        onClick={onClick}
+      />
+    );
+  };
 
-		body.classList.remove(isNewThemeDark ? "light-mode" : "dark-mode");
-		body.classList.add(isNewThemeDark ? "dark-mode" : "light-mode");
-
-		setTheme(themeName);
-	};
-
-	const InactiveThemeIcon = () => {
-		const onClick = () =>
-			isThemeDark(theme) ? changeTheme("light") : changeTheme("dark");
-
-		return isThemeDark(theme) ? (
-			<SunIcon
-				className={styles["nav-bar_theme-icon"]}
-				onClick={onClick}
-			/>
-		) : (
-			<MoonIcon
-				className={styles["nav-bar_theme-icon"]}
-				onClick={onClick}
-			/>
-		);
-	};
-
-	return (
-		<div className={styles["nav-bar"]}>
-			<div className={styles["nav-bar_title"]}>
-				<Link to="/">Elite T-Shirts</Link>
-			</div>
-			<div className={styles["nav-bar_links"]}>
-				<Link to="/products">Products</Link>
-				<Link to="/cart">Cart</Link>
-			</div>
-			<div className={styles["nav-bar_theme"]}>{InactiveThemeIcon()}</div>
-		</div>
-	);
+  return (
+    <nav className="flex justify-between items-center h-20 px-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 shadow-md">
+      <div className="text-2xl font-bold border-r border-gray-300 dark:border-gray-600 pr-4">
+        <Link
+          to="/"
+          className="hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
+        >
+          Elite T-Shirts
+        </Link>
+      </div>
+      <div className="flex-1 flex gap-4 ml-4 text-xl">
+        <Link
+          to="/products"
+          className="hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
+        >
+          Products
+        </Link>
+        <Link
+          to="/cart"
+          className="hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
+        >
+          Cart
+        </Link>
+        <Link
+          to="/favorites"
+          className="hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
+        >
+          Favorites
+        </Link>
+      </div>
+      <div className="ml-4">{InactiveThemeIcon()}</div>
+    </nav>
+  );
 };
 
 export default Navbar;

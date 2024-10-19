@@ -1,6 +1,15 @@
 import { ProductCard } from '../../Products';
-import styles from './Cart.module.css';
 import useCart from '../hooks/useCart';
+import EmptyCart from './EmptyCart';
+import { ShoppingCartIcon, XCircleIcon } from '@heroicons/react/24/outline';
+
+// Format as currency
+const formatAsCurrency = (price: number, currency = 'USD') => {
+  return new Intl.NumberFormat(navigator.language, {
+    style: 'currency',
+    currency,
+  }).format(price);
+};
 
 const Cart = () => {
   const { cart, removeFromCart } = useCart();
@@ -10,31 +19,42 @@ const Cart = () => {
   }, 0);
 
   if (!cart.products.length) {
-    return <h3>Sorry your cart is currently empty.</h3>;
+    return <EmptyCart />;
   }
 
   return (
-    <div className={styles['cart']}>
+    <div className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen p-4">
       <section>
-        <h1>Cart</h1>
-        <ul>
+        <div className="flex items-center justify-between mb-4">
+          <h1 className="text-2xl font-bold">Cart</h1>
+          <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
+        </div>
+        <div className="flex flex-wrap justify-center gap-4">
           {cart.products.map((product) => (
-            <ProductCard key={product.id} product={product}>
-              <button type="button" onClick={() => removeFromCart(product.id)}>
-                Remove from Cart
-              </button>
-            </ProductCard>
+            <div key={product.id} className="flex">
+              <ProductCard product={product} isCartPage={true} width="300px">
+                <button
+                  type="button"
+                  onClick={() => removeFromCart(product.id)}
+                  className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-colors dark:bg-red-600 dark:hover:bg-red-700 mt-auto flex items-center justify-center w-full max-w-[200px] mx-auto"
+                  aria-label="Remove item from cart"
+                >
+                  <XCircleIcon className="h-5 w-5 mr-2" aria-hidden="true" />
+                  Remove
+                </button>
+              </ProductCard>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
       {cart.products.length > 0 && (
-        <section className={styles['cart__summary']}>
-          <div>
-            <h2>Summary</h2>
+        <section className="mt-8 flex justify-end">
+          <div className="bg-white dark:bg-gray-800 p-4 rounded shadow">
+            <h2 className="text-xl font-semibold mb-2">Summary</h2>
             <ul>
-              <li>
-                <span style={{ paddingRight: '1rem' }}>Total...</span>
-                <span>${total}</span>
+              <li className="flex justify-between">
+                <span className="pr-4">Total:</span>
+                <span>{formatAsCurrency(total)}</span>
               </li>
             </ul>
           </div>

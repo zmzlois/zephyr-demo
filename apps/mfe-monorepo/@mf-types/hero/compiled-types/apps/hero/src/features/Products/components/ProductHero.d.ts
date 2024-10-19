@@ -1,7 +1,8 @@
+import React from 'react';
 declare global {
     const __webpack_public_path__: string;
 }
-declare const ProductHero: ({ label }: {
+declare const ProductHero: React.FC<{
     label?: string;
-}) => import("react/jsx-runtime").JSX.Element;
+}>;
 export default ProductHero;
