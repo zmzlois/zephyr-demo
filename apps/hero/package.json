@@ -1,0 +1,14 @@
+{
+  "name": "hero",
+  "version": "1.0.0",
+  "main": "module-federation.config.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.47.1",
+    "@types/node": "^22.5.5"
+  }
+}

@@ -29,7 +29,7 @@ module.exports = composePlugins(withNx(), withReact(), (config, context) => {
               tailwindcss: {
                 config: path.join(
                   context.context.root,
-                  'apps/mfe-monorepo/tailwind.config.js'
+                  'apps/hero/tailwind.config.js'
                 ),
               },
               autoprefixer: {},
