@@ -1,53 +1,47 @@
 const { composePlugins, withNx, withReact } = require('@nx/rspack');
-const {
-  ModuleFederationPlugin,
-} = require('@module-federation/enhanced/rspack');
+const { withModuleFederation } = require('@nx/rspack/module-federation');
+const path = require('node:path');
 const mfConfig = require('./module-federation.config');
-const path = require('path');
 
-module.exports = composePlugins(withNx(), withReact(), (config, context) => {
-  config.context = path.join(context.context.root, 'apps/mfe-monorepo');
+module.exports = composePlugins(
+  withNx(),
+  withReact(),
+  withModuleFederation(mfConfig),
+  (config, context) => {
+    config.module.rules = [
+      ...config.module.rules.filter(
+        (r) => r.type !== 'css/module' && r.type !== 'css'
+      ),
+    ];
 
-  config.plugins.push(new ModuleFederationPlugin({ ...mfConfig }));
-  config.output.publicPath = '/';
-  config.module.rules = [
-    ...config.module.rules.filter(
-      (r) => r.type !== 'css/module' && r.type !== 'css'
-    ),
-  ];
+    config.devServer = {
+      ...config.devServer,
+      historyApiFallback: true,
+    };
 
-  config.devServer = {
-    ...config.devServer,
-    historyApiFallback: true,
-  };
-
-  config.module.rules.push({
-    test: /\.css$/,
-    type: 'css',
-    use: [
-      {
-        loader: 'postcss-loader',
-        options: {
-          postcssOptions: {
-            plugins: {
-              tailwindcss: {
-                config: path.join(
-                  context.context.root,
-                  'apps/mfe-monorepo/tailwind.config.js'
-                ),
+    config.module.rules.push({
+      test: /\.css$/,
+      type: 'css',
+      use: [
+        {
+          loader: 'postcss-loader',
+          options: {
+            postcssOptions: {
+              plugins: {
+                tailwindcss: {
+                  config: path.join(
+                    context.context.root,
+                    'apps/mfe-monorepo/tailwind.config.js'
+                  ),
+                },
+                autoprefixer: {},
               },
-              autoprefixer: {},
             },
           },
         },
-      },
-    ],
-  });
+      ],
+    });
 
-  config.infrastructureLogging = {
-    colors: true,
-    level: 'verbose',
-  };
-
-  return config;
-});
+    return config;
+  }
+);

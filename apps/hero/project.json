@@ -41,15 +41,18 @@
         }
       }
     },
-    "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"]
-    },
     "test": {
-      "executor": "@nx/jest:jest",
+      "executor": "@nx/vite:test",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {}
+    },
+    "biome-lint": {
+      "executor": "@gitopslovers/nx-biome:biome-lint",
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "jestConfig": "apps/hero/jest.config.ts"
+        "lintFilePatterns": ["apps/hero/**/*.ts"],
+        "write": false,
+        "unsafe": false
       }
     }
   }

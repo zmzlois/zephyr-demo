@@ -5,7 +5,5 @@
  **/
 module.exports = {
   name: 'mfe-monorepo',
-  remotes: {
-    hero: 'hero@http://localhost:3001/remoteEntry.js',
-  },
+  remotes: ['hero'],
 };

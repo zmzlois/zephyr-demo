@@ -1,30 +1,35 @@
-import { useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useState } from 'react';
 
 const SMALL_SCREEN_SIZE = 1024;
 
-const useScreenSize = ({ htmlElement }: { htmlElement: HTMLElement }) => {
-	const [isSmallScreen, setSmallScreen] = useState<Boolean>(false);
+const useScreenSize = ({
+  htmlElement,
+}: {
+  htmlElement: HTMLBodyElement | null;
+}) => {
+  const [isSmallScreen, setSmallScreen] = useState<boolean>(false);
 
-	useLayoutEffect(() => {
-		const resizeObserver = new ResizeObserver((entries) => {
-			const [entry] = entries;
+  useLayoutEffect(() => {
+    if (!htmlElement) return;
 
-			const onSmallScreenSize =
-				entry.contentRect.width < SMALL_SCREEN_SIZE
+    const resizeObserver = new ResizeObserver((entries) => {
+      const [entry] = entries;
 
-			setSmallScreen(onSmallScreenSize);
-		});
+      const onSmallScreenSize = entry.contentRect.width < SMALL_SCREEN_SIZE;
 
-		resizeObserver.observe(htmlElement);
+      setSmallScreen(onSmallScreenSize);
+    });
 
-		return () => {
-			resizeObserver.disconnect();
-		};
-	}, []);
+    resizeObserver.observe(htmlElement);
 
-	return {
-		isSmallScreen,
-	};
+    return () => {
+      resizeObserver.disconnect();
+    };
+  }, [htmlElement]);
+
+  return {
+    isSmallScreen,
+  };
 };
 
 export default useScreenSize;

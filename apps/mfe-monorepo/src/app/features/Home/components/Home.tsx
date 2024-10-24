@@ -4,7 +4,7 @@ import { Suspense, lazy } from 'react';
 import { Products } from '../../Products';
 
 const ProductHero = lazy(() => import('hero/ProductHero'));
-const bodyElement = document.querySelector('body')!;
+const bodyElement = document.querySelector('body');
 
 const Home = () => {
   const { isSmallScreen } = useScreenSize({

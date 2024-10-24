@@ -33,10 +33,10 @@
       }
     },
     "serve": {
-      "executor": "@nx/rspack:dev-server",
+      "executor": "@nx/rspack:module-federation-dev-server",
       "options": {
         "buildTarget": "mfe-monorepo:build:development",
-        "port": 4200
+        "devRemotes": ["hero"]
       },
       "configurations": {
         "development": {},
@@ -45,29 +45,19 @@
         }
       }
     },
-    "serve-mfe": {
-      "executor": "nx:run-commands",
+    "test": {
+      "executor": "@nx/vite:test",
       "options": {
-        "commands": [
-          {
-            "command": "nx serve mfe-monorepo"
-          },
-          {
-            "command": "nx serve hero"
-          }
-        ],
-        "parallel": true
+        "config": "apps/mfe-monorepo/vitest.config.ts"
       }
     },
-    "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"]
-    },
-    "test": {
-      "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+    "biome-lint": {
+      "executor": "@gitopslovers/nx-biome:biome-lint",
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "jestConfig": "apps/mfe-monorepo/jest.config.ts"
+        "lintFilePatterns": ["apps/mfe-monorepo/**/*.ts"],
+        "write": false,
+        "unsafe": false
       }
     }
   }
