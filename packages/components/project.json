@@ -1,0 +1,36 @@
+{
+  "name": "components",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/components/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": [
+          "rslib build -c packages/components/rslib.config.ts",
+          "copyfiles package.json packages/components",
+          "copyfiles README.md packages/components"
+        ],
+        "parallel": false
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "../../coverage/packages/components"
+      }
+    },
+    "biome-lint": {
+      "executor": "@gitopslovers/nx-biome:biome-lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/components/**/*.ts"],
+        "write": false,
+        "unsafe": false
+      }
+    }
+  }
+}

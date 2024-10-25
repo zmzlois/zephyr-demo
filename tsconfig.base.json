@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mfe-monorepo/components": ["packages/components/src/index.ts"],
       "@mfe-monorepo/shared": ["packages/shared/src/index.ts"]
     }
   },

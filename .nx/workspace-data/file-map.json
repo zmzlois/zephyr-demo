@@ -2,6 +2,9 @@
   "version": "6.0",
   "nxVersion": "20.0.5",
   "pathMappings": {
+    "@mfe-monorepo/components": [
+      "packages/components/src/index.ts"
+    ],
     "@mfe-monorepo/shared": [
       "packages/shared/src/index.ts"
     ]
@@ -10,59 +13,186 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
+        "file": "test/packages/components/src/index.d.ts",
+        "hash": "11485189907647936074"
       },
       {
-        "file": ".gitignore",
-        "hash": "16537953300762052392"
+        "file": "test/packages/components/src/lib/components.d.ts",
+        "hash": "11918796435767761111"
       },
       {
         "file": ".prettierignore",
         "hash": "14688272390704683536"
       },
       {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "6807003856908271136"
-      },
-      {
-        "file": "README.md",
-        "hash": "22080156993399129"
+        "file": "pnpm-workspace.yaml",
+        "hash": "2373171212127886927"
       },
       {
         "file": "migrations.json",
         "hash": "4583345520328765039"
       },
       {
-        "file": "nx.json",
-        "hash": "2824810944507479113"
-      },
-      {
-        "file": "package.json",
-        "hash": "2358305715077766288"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "3105406373989882872"
+        "file": "tsconfig.base.json",
+        "hash": "2274069112188938049"
       },
       {
         "file": "squadron.yaml",
         "hash": "2853208085046838748"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "15993734794939386811"
-      },
-      {
         "file": "vitest.workspace.ts",
         "hash": "7870362608836821141"
+      },
+      {
+        "file": "README.md",
+        "hash": "22080156993399129"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "6807003856908271136"
+      },
+      {
+        "file": "nx.json",
+        "hash": "380292114643065604"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "14937597283693087466"
+      },
+      {
+        "file": "package.json",
+        "hash": "8471150580439354596"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "16537953300762052392"
       }
     ],
     "projectFileMap": {
+      "hero-e2e": [
+        {
+          "file": "apps/hero-e2e/.eslintrc.json",
+          "hash": "3221422119017680556"
+        },
+        {
+          "file": "apps/hero-e2e/playwright.config.ts",
+          "hash": "10605555973305149757",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/hero-e2e/project.json",
+          "hash": "17333216508240601698"
+        },
+        {
+          "file": "apps/hero-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        }
+      ],
+      "components": [
+        {
+          "file": "packages/components/README.md",
+          "hash": "16505226353474541838"
+        },
+        {
+          "file": "packages/components/biome.json",
+          "hash": "6339479278249203123"
+        },
+        {
+          "file": "packages/components/package.json",
+          "hash": "10819943921134938280",
+          "deps": [
+            "npm:tslib@2.7.0",
+            "npm:@module-federation/rsbuild-plugin"
+          ]
+        },
+        {
+          "file": "packages/components/project.json",
+          "hash": "11869113555101863308"
+        },
+        {
+          "file": "packages/components/rslib.config.ts",
+          "hash": "12987595156998244474",
+          "deps": [
+            "npm:@rslib/core",
+            "npm:@module-federation/rsbuild-plugin",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/components/src/index.ts",
+          "hash": "11485189907647936074"
+        },
+        {
+          "file": "packages/components/src/lib/components.spec.ts",
+          "hash": "13536071869730882095"
+        },
+        {
+          "file": "packages/components/src/lib/components.ts",
+          "hash": "5120804579699362417"
+        },
+        {
+          "file": "packages/components/tsconfig.json",
+          "hash": "758527547175481385"
+        },
+        {
+          "file": "packages/components/tsconfig.lib.json",
+          "hash": "11305441556238329213"
+        },
+        {
+          "file": "packages/components/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "packages/components/vite.config.ts",
+          "hash": "4615376426399997497",
+          "deps": [
+            "npm:vite",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "mfe-monorepo-e2e": [
+        {
+          "file": "apps/mfe-monorepo-e2e/.eslintrc.json",
+          "hash": "632147010597293032"
+        },
+        {
+          "file": "apps/mfe-monorepo-e2e/playwright.config.ts",
+          "hash": "5528347686883934175",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/mfe-monorepo-e2e/project.json",
+          "hash": "15887443697710310564"
+        },
+        {
+          "file": "apps/mfe-monorepo-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        }
+      ],
       "mfe-monorepo": [
         {
           "file": "apps/mfe-monorepo/.gitignore",
@@ -84,8 +214,8 @@
           "file": "apps/mfe-monorepo/package.json",
           "hash": "8543094310048334129",
           "deps": [
-            "npm:@playwright/test",
-            "npm:@types/node"
+            "npm:@playwright/test@1.48.1",
+            "npm:@types/node@22.8.0"
           ]
         },
         {
@@ -355,58 +485,6 @@
           ]
         }
       ],
-      "hero-e2e": [
-        {
-          "file": "apps/hero-e2e/.eslintrc.json",
-          "hash": "3221422119017680556"
-        },
-        {
-          "file": "apps/hero-e2e/playwright.config.ts",
-          "hash": "10605555973305149757",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/hero-e2e/project.json",
-          "hash": "17333216508240601698"
-        },
-        {
-          "file": "apps/hero-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        }
-      ],
-      "mfe-monorepo-e2e": [
-        {
-          "file": "apps/mfe-monorepo-e2e/.eslintrc.json",
-          "hash": "632147010597293032"
-        },
-        {
-          "file": "apps/mfe-monorepo-e2e/playwright.config.ts",
-          "hash": "5528347686883934175",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/mfe-monorepo-e2e/project.json",
-          "hash": "15887443697710310564"
-        },
-        {
-          "file": "apps/mfe-monorepo-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        }
-      ],
       "hero": [
         {
           "file": "apps/hero/biome.json",
@@ -420,8 +498,8 @@
           "file": "apps/hero/package.json",
           "hash": "9449887899731389101",
           "deps": [
-            "npm:@playwright/test",
-            "npm:@types/node"
+            "npm:@playwright/test@1.48.1",
+            "npm:@types/node@22.8.0"
           ]
         },
         {
