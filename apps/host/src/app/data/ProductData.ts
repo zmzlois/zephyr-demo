@@ -3,11 +3,6 @@ import { ProductColor, ProductSize, type Product } from '@acme/components';
 const sizes = Object.values(ProductSize);
 const colors = Object.values(ProductColor);
 
-export function test() {
-  const stuff = colors[Math.floor(Math.random() * colors.length)];
-  return stuff;
-}
-
 const generateProducts = (count: number): Product[] => {
   const products: Product[] = [];
 

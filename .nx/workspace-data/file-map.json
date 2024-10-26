@@ -13,60 +13,60 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "5384738702344872312"
-      },
-      {
-        "file": "README.md",
-        "hash": "22080156993399129"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "16537953300762052392"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": "nx.json",
-        "hash": "380292114643065604"
-      },
-      {
-        "file": "package.json",
-        "hash": "14296948698592957720"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": "squadron.yaml",
-        "hash": "2853208085046838748"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "6807003856908271136"
-      },
-      {
-        "file": "vitest.workspace.ts",
-        "hash": "7870362608836821141"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "2373171212127886927"
+        "file": "tsconfig.base.json",
+        "hash": "6275288852464237919"
       },
       {
         "file": "migrations.json",
         "hash": "4583345520328765039"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "6275288852464237919"
+        "file": "squadron.yaml",
+        "hash": "2853208085046838748"
+      },
+      {
+        "file": "README.md",
+        "hash": "22080156993399129"
+      },
+      {
+        "file": "package.json",
+        "hash": "14296948698592957720"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "nx.json",
+        "hash": "380292114643065604"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "5384738702344872312"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "7870362608836821141"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "16537953300762052392"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "6807003856908271136"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2373171212127886927"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
       }
     ],
     "projectFileMap": {
@@ -114,8 +114,12 @@
           ]
         },
         {
+          "file": "packages/components/src/components/ProductCarousel.tsx",
+          "hash": "12532521976513986107"
+        },
+        {
           "file": "packages/components/src/index.ts",
-          "hash": "5017194432939420590"
+          "hash": "1559716844194548500"
         },
         {
           "file": "packages/components/src/types/Products/index.ts",
@@ -266,7 +270,7 @@
         },
         {
           "file": "apps/host/src/app/data/ProductData.ts",
-          "hash": "5769390370667714850",
+          "hash": "17262856743089064451",
           "deps": [
             "components"
           ]
@@ -327,13 +331,6 @@
           ]
         },
         {
-          "file": "apps/host/src/app/features/Products/components/Carousel.tsx",
-          "hash": "15661782380237732122",
-          "deps": [
-            "components"
-          ]
-        },
-        {
           "file": "apps/host/src/app/features/Products/components/Favorites.tsx",
           "hash": "15419709547024425181",
           "deps": [
@@ -364,7 +361,10 @@
         },
         {
           "file": "apps/host/src/app/features/Products/components/ProductsOnSale.tsx",
-          "hash": "3374750639315299663"
+          "hash": "1372207719794474589",
+          "deps": [
+            "components"
+          ]
         },
         {
           "file": "apps/host/src/app/features/Products/components/cartButtonAnimation.css",
@@ -388,7 +388,7 @@
         },
         {
           "file": "apps/host/src/app/features/Products/index.ts",
-          "hash": "180292482344342311"
+          "hash": "16500691362831418453"
         },
         {
           "file": "apps/host/src/app/features/Products/store/index.ts",

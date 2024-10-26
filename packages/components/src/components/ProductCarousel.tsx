@@ -1,10 +1,14 @@
-import { ProductSaleData } from '../../../data/ProductData';
-import { ProductCard } from '@acme/components';
+import type { Product } from '../types/Products';
+import { ProductCard } from './ProductCard';
 
-const ProductCarousel = () => {
+export type ProductCarouselProps = {
+  products: Product[];
+};
+
+export const ProductCarousel = ({ products }: ProductCarouselProps) => {
   return (
     <ul className="flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory space-x-4 px-4">
-      {ProductSaleData.map((product) => (
+      {products.map((product) => (
         <li key={product.id} className="flex-shrink-0 h-auto snap-start">
           <ProductCard product={product} />
         </li>
