@@ -13,52 +13,32 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "tsconfig.base.json",
-        "hash": "6275288852464237919"
-      },
-      {
         "file": "migrations.json",
         "hash": "4583345520328765039"
       },
       {
-        "file": "squadron.yaml",
-        "hash": "2853208085046838748"
-      },
-      {
-        "file": "README.md",
-        "hash": "22080156993399129"
-      },
-      {
-        "file": "package.json",
-        "hash": "14296948698592957720"
+        "file": ".vscode/extensions.json",
+        "hash": "6807003856908271136"
       },
       {
         "file": ".prettierrc",
         "hash": "16267754514737964994"
       },
       {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
+        "file": "squadron.yaml",
+        "hash": "2853208085046838748"
       },
       {
-        "file": "nx.json",
-        "hash": "380292114643065604"
+        "file": "package.json",
+        "hash": "14296948698592957720"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "5384738702344872312"
+        "file": "README.md",
+        "hash": "22080156993399129"
       },
       {
         "file": "vitest.workspace.ts",
         "hash": "7870362608836821141"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "16537953300762052392"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "6807003856908271136"
       },
       {
         "file": "pnpm-workspace.yaml",
@@ -67,6 +47,26 @@
       {
         "file": ".prettierignore",
         "hash": "14688272390704683536"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "5384738702344872312"
+      },
+      {
+        "file": "nx.json",
+        "hash": "380292114643065604"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "6275288852464237919"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "16537953300762052392"
       }
     ],
     "projectFileMap": {
@@ -107,7 +107,7 @@
         },
         {
           "file": "packages/components/src/components/ProductCard.tsx",
-          "hash": "4464993763370381146",
+          "hash": "7241525970430515704",
           "deps": [
             "npm:react",
             "utils"
@@ -115,7 +115,7 @@
         },
         {
           "file": "packages/components/src/components/ProductCarousel.tsx",
-          "hash": "12532521976513986107"
+          "hash": "1955381939854486841"
         },
         {
           "file": "packages/components/src/index.ts",

@@ -15,7 +15,7 @@ export const ProductCard: FC<ProductCardProps> = ({
   return (
     <div
       className={
-        'flex flex-col justify-between p-6 h-[450px] rounded-xl text-gray-800 shadow-lg hover:shadow-2xl transition-all duration-300 bg-white transform hover:-translate-y-1'
+        'flex flex-col justify-between p-6 h-[450px] rounded-xl text-gray-800 shadow-lg hover:ring-2 hover:ring-gray-500 hover:bg-gray-200 dark:hover:ring-gray-200 dark:hover:bg-gray-50 transition-all duration-300 ease-in-out bg-white'
       }
       style={{ width }}
     >

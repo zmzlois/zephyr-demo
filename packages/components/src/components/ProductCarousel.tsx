@@ -7,7 +7,7 @@ export type ProductCarouselProps = {
 
 export const ProductCarousel = ({ products }: ProductCarouselProps) => {
   return (
-    <ul className="flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory space-x-4 px-4">
+    <ul className="flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory space-x-4 p-4">
       {products.map((product) => (
         <li key={product.id} className="flex-shrink-0 h-auto snap-start">
           <ProductCard product={product} />
