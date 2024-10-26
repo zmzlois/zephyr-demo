@@ -27,7 +27,7 @@ const generateProducts = (count: number): Product[] => {
 };
 
 const ProductData = generateProducts(100);
-const ProductSaleData = ProductData.slice(0, 10);
+const ProductSaleData = ProductData.slice(0, 20);
 
 export default ProductData;
 export { ProductSaleData };

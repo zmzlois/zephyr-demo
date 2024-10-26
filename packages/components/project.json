@@ -11,6 +11,14 @@
         "commands": ["rslib build -c packages/components/rslib.config.ts"]
       }
     },
+    "watch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "rslib build -c packages/components/rslib.config.ts --watch"
+        ]
+      }
+    },
     "test": {
       "executor": "@nx/vite:test",
       "outputs": ["{options.reportsDirectory}"],

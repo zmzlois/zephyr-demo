@@ -15,9 +15,8 @@ export const ProductCard: FC<ProductCardProps> = ({
   return (
     <div
       className={
-        'flex flex-col justify-between p-6 h-[450px] rounded-xl text-gray-800 shadow-lg hover:ring-2 hover:ring-gray-500 hover:bg-gray-200 dark:hover:ring-gray-200 dark:hover:bg-gray-50 transition-all duration-300 ease-in-out bg-white'
+        'flex flex-col justify-between p-6 h-auto min-h-[350px] w-full max-w-sm rounded-xl text-gray-800 shadow-lg hover:ring-2 hover:ring-gray-500 hover:bg-gray-200 dark:hover:ring-gray-200 dark:hover:bg-gray-50 transition-all duration-300 ease-in-out bg-white md:max-w-md lg:max-w-lg'
       }
-      style={{ width }}
     >
       <div className="flex justify-between items-start">
         <h3 className="text-xl font-semibold truncate text-gray-800">
@@ -27,7 +26,7 @@ export const ProductCard: FC<ProductCardProps> = ({
       <img
         src={product.imgUrl}
         alt={product.title}
-        className="w-full h-56 object-contain my-4"
+        className="w-full h-44 md:h-52 lg:h-60 object-contain my-4"
       />
       <div className="flex flex-col gap-3 mt-auto">
         <p className="text-2xl font-bold text-gray-700 text-center">

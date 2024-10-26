@@ -33,6 +33,16 @@
             ],
             "cache": true
           },
+          "watch": {
+            "executor": "nx:run-commands",
+            "options": {
+              "commands": [
+                "rslib build -c packages/components/rslib.config.ts --watch"
+              ]
+            },
+            "configurations": {},
+            "parallelism": true
+          },
           "test": {
             "executor": "@nx/vite:test",
             "outputs": [
@@ -364,6 +374,9 @@
               "{options.outputPath}"
             ],
             "defaultConfiguration": "production",
+            "dependsOn": [
+              "^build"
+            ],
             "options": {
               "target": "web",
               "outputPath": "dist/apps/host",
@@ -386,14 +399,23 @@
               }
             },
             "parallelism": true,
-            "dependsOn": [
-              "^build"
-            ],
             "inputs": [
               "production",
               "^production"
             ],
             "cache": true
+          },
+          "serve-all": {
+            "executor": "nx:run-commands",
+            "options": {
+              "commands": [
+                "nx run components:watch",
+                "nx serve host"
+              ],
+              "parallel": true
+            },
+            "configurations": {},
+            "parallelism": true
           },
           "serve": {
             "executor": "@nx/rspack:module-federation-dev-server",
@@ -443,7 +465,9 @@
         },
         "$schema": "../node_modules/nx/schemas/project-schema.json",
         "implicitDependencies": [
-          "hero"
+          "hero",
+          "components",
+          "utils"
         ]
       }
     }
@@ -4544,13 +4568,22 @@
         "hash": "sha512-aGg7iToJjdklmxlUlJh/PaPNa4PmqHfyRMLunbL3eaMO0gp656+q1zOKkpJ/CVe9CryJv6tAN1HDoR8cNGzkag=="
       }
     },
-    "npm:@rsbuild/core": {
+    "npm:@rsbuild/core@1.0.17": {
       "type": "npm",
-      "name": "npm:@rsbuild/core",
+      "name": "npm:@rsbuild/core@1.0.17",
       "data": {
         "version": "1.0.17",
         "packageName": "@rsbuild/core",
         "hash": "sha512-XbRrFsX5YiYrArD2f27a+WGhRWvoYgogaTMX/kiL7xcZOFuV+PbPBdU0e2o00NROGLRyVn7cTfkIkyMSr1B9Vg=="
+      }
+    },
+    "npm:@rsbuild/core@1.0.18": {
+      "type": "npm",
+      "name": "npm:@rsbuild/core@1.0.18",
+      "data": {
+        "version": "1.0.18",
+        "packageName": "@rsbuild/core",
+        "hash": "sha512-NRdcGCAuBpzAIIdv+gVZxpgd9Cu9JSbaOC13nTbWRKXrHPpr+1iwYFBbM01KtX0Fe2TBLgmSaJfdDJAfEeZ3Dg=="
       }
     },
     "npm:@rsbuild/plugin-react": {
@@ -7854,15 +7887,6 @@
         "version": "11.0.0",
         "packageName": "copy-webpack-plugin",
         "hash": "sha512-fX2MWpamkW0hZxMEg0+mYnA40LTosOSa5TqZ9GYIBzyJa9C3QUaMPSE2xAi/buNr8u89SfD9wHSQVBzrRa/SOQ=="
-      }
-    },
-    "npm:copyfiles": {
-      "type": "npm",
-      "name": "npm:copyfiles",
-      "data": {
-        "version": "2.4.1",
-        "packageName": "copyfiles",
-        "hash": "sha512-fereAvAvxDrQDOXybk3Qu3dPbOoKoysFMWtkY3mv5BsL8//OSZVL5DCLYqgRfY5cWirgRzlC+WSrxp6Bo3eNZg=="
       }
     },
     "npm:core-js-compat@3.32.2": {
@@ -11357,15 +11381,6 @@
         "hash": "sha512-UcVfVfaK4Sc4m7X3dUSoHoozQGBEFeDC+zVo06t98xe8CzHSZZBekNXH+tu0NalHolcJ/QAGqS46Hef7QXBIMw=="
       }
     },
-    "npm:isarray@0.0.1": {
-      "type": "npm",
-      "name": "npm:isarray@0.0.1",
-      "data": {
-        "version": "0.0.1",
-        "packageName": "isarray",
-        "hash": "sha512-D2S+3GLxWH+uhrNEcoh/fnmYeP8E8/zHl644d/jdA0g2uyXvy3sb0qxotE+ne0LtccHknQzWwZEzhak7oJ0COQ=="
-      }
-    },
     "npm:isarray@1.0.0": {
       "type": "npm",
       "name": "npm:isarray@1.0.0",
@@ -12725,22 +12740,13 @@
         "hash": "sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw=="
       }
     },
-    "npm:mkdirp@0.5.6": {
+    "npm:mkdirp": {
       "type": "npm",
-      "name": "npm:mkdirp@0.5.6",
+      "name": "npm:mkdirp",
       "data": {
         "version": "0.5.6",
         "packageName": "mkdirp",
         "hash": "sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw=="
-      }
-    },
-    "npm:mkdirp@1.0.4": {
-      "type": "npm",
-      "name": "npm:mkdirp@1.0.4",
-      "data": {
-        "version": "1.0.4",
-        "packageName": "mkdirp",
-        "hash": "sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw=="
       }
     },
     "npm:mrmime@1.0.1": {
@@ -13002,15 +13008,6 @@
         "version": "2.1.1",
         "packageName": "node-schedule",
         "hash": "sha512-OXdegQq03OmXEjt2hZP33W2YPs/E5BcFQks46+G2gAxs4gHOIVD1u7EqlYLYSKsaIpyKCK9Gbk0ta1/gjRSMRQ=="
-      }
-    },
-    "npm:noms": {
-      "type": "npm",
-      "name": "npm:noms",
-      "data": {
-        "version": "0.0.0",
-        "packageName": "noms",
-        "hash": "sha512-lNDU9VJaOPxUmXcLb+HQFeUgQQPtMI24Gt6hgfuMHRJgMRHMF/qZ4HJD3GDru4sSw9IQl2jPjAYnQrdIeLbwow=="
       }
     },
     "npm:normalize-path": {
@@ -14804,15 +14801,6 @@
         "hash": "sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA=="
       }
     },
-    "npm:readable-stream@1.0.34": {
-      "type": "npm",
-      "name": "npm:readable-stream@1.0.34",
-      "data": {
-        "version": "1.0.34",
-        "packageName": "readable-stream",
-        "hash": "sha512-ok1qVCJuRkNmvebYikljxJA/UEsKwLl2nI1OmaqAu4/UE+h0wKCHok4XkL/gvi39OacXvw59RJUOFUkDib2rHg=="
-      }
-    },
     "npm:readable-stream@2.3.8": {
       "type": "npm",
       "name": "npm:readable-stream@2.3.8",
@@ -16028,15 +16016,6 @@
         "hash": "sha512-UXSH262CSZY1tfu3G3Secr6uGLCFVPMhIqHjlgCUtCCcgihYc/xKs9djMTMUOb2j1mVSeU8EU6NWc/iQKU6Gfg=="
       }
     },
-    "npm:string_decoder@0.10.31": {
-      "type": "npm",
-      "name": "npm:string_decoder@0.10.31",
-      "data": {
-        "version": "0.10.31",
-        "packageName": "string_decoder",
-        "hash": "sha512-ev2QzSzWPYmy9GuqfIVildA4OdcGLeFZQrq5ys6RtiuF+RQQiZWr8TZNyAcuVXyQRYfEO+MsoB/1BuQVhOJuoQ=="
-      }
-    },
     "npm:string_decoder@1.1.1": {
       "type": "npm",
       "name": "npm:string_decoder@1.1.1",
@@ -16413,15 +16392,6 @@
         "version": "1.21.0",
         "packageName": "thingies",
         "hash": "sha512-hsqsJsFMsV+aD4s3CWKk85ep/3I9XzYV/IXaSouJMYIoDlgyi11cBhsqYe9/geRfB0YIikBQg6raRaM+nIMP9g=="
-      }
-    },
-    "npm:through2": {
-      "type": "npm",
-      "name": "npm:through2",
-      "data": {
-        "version": "2.0.5",
-        "packageName": "through2",
-        "hash": "sha512-/mrRod8xqpA+IHSLyGCQ2s8SPHiCDEeQJSep1jqLYeEUClOFG2Qsh+4FU6G9VeqpZnGW/Su8LQGc4YKni5rYSQ=="
       }
     },
     "npm:thunky": {
@@ -16989,15 +16959,6 @@
         "version": "1.0.0",
         "packageName": "unpipe",
         "hash": "sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ=="
-      }
-    },
-    "npm:untildify": {
-      "type": "npm",
-      "name": "npm:untildify",
-      "data": {
-        "version": "4.0.0",
-        "packageName": "untildify",
-        "hash": "sha512-KK8xQ1mkzZeg9inewmFVDNkg3l5LUhoq9kN6iWYB/CC9YMG8HA+c1Q8HwDe6dEX7kErrEVNVBO3fWsVq5iDgtw=="
       }
     },
     "npm:upath": {
@@ -17594,15 +17555,6 @@
         "hash": "sha512-ptjR8YSJIXoA3Mbv5po7RtSYHO6mZr8s7i5VGmEk7QY2pQWyT1o0N+W1gKbOyJPUCGXGnuw0wqe8f0L6Y0ny7g=="
       }
     },
-    "npm:xtend": {
-      "type": "npm",
-      "name": "npm:xtend",
-      "data": {
-        "version": "4.0.2",
-        "packageName": "xtend",
-        "hash": "sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ=="
-      }
-    },
     "npm:xxhash-wasm": {
       "type": "npm",
       "name": "npm:xxhash-wasm",
@@ -17822,6 +17774,11 @@
       },
       {
         "source": "components",
+        "target": "npm:@rsbuild/core@1.0.18",
+        "type": "static"
+      },
+      {
+        "source": "components",
         "target": "utils",
         "type": "static"
       },
@@ -17978,6 +17935,16 @@
       {
         "source": "host",
         "target": "hero",
+        "type": "implicit"
+      },
+      {
+        "source": "host",
+        "target": "components",
+        "type": "implicit"
+      },
+      {
+        "source": "host",
+        "target": "utils",
         "type": "implicit"
       },
       {
@@ -24390,7 +24357,7 @@
       },
       {
         "source": "npm:@module-federation/rsbuild-plugin",
-        "target": "npm:@rsbuild/core",
+        "target": "npm:@rsbuild/core@1.0.18",
         "type": "static"
       }
     ],
@@ -26085,29 +26052,56 @@
         "type": "static"
       }
     ],
-    "npm:@rsbuild/core": [
+    "npm:@rsbuild/core@1.0.17": [
       {
-        "source": "npm:@rsbuild/core",
+        "source": "npm:@rsbuild/core@1.0.17",
         "target": "npm:@rspack/core",
         "type": "static"
       },
       {
-        "source": "npm:@rsbuild/core",
+        "source": "npm:@rsbuild/core@1.0.17",
         "target": "npm:@rspack/lite-tapable",
         "type": "static"
       },
       {
-        "source": "npm:@rsbuild/core",
+        "source": "npm:@rsbuild/core@1.0.17",
         "target": "npm:@swc/helpers",
         "type": "static"
       },
       {
-        "source": "npm:@rsbuild/core",
+        "source": "npm:@rsbuild/core@1.0.17",
         "target": "npm:core-js",
         "type": "static"
       },
       {
-        "source": "npm:@rsbuild/core",
+        "source": "npm:@rsbuild/core@1.0.17",
+        "target": "npm:fsevents@2.3.3",
+        "type": "static"
+      }
+    ],
+    "npm:@rsbuild/core@1.0.18": [
+      {
+        "source": "npm:@rsbuild/core@1.0.18",
+        "target": "npm:@rspack/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@rsbuild/core@1.0.18",
+        "target": "npm:@rspack/lite-tapable",
+        "type": "static"
+      },
+      {
+        "source": "npm:@rsbuild/core@1.0.18",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@rsbuild/core@1.0.18",
+        "target": "npm:core-js",
+        "type": "static"
+      },
+      {
+        "source": "npm:@rsbuild/core@1.0.18",
         "target": "npm:fsevents@2.3.3",
         "type": "static"
       }
@@ -26115,7 +26109,7 @@
     "npm:@rsbuild/plugin-react": [
       {
         "source": "npm:@rsbuild/plugin-react",
-        "target": "npm:@rsbuild/core",
+        "target": "npm:@rsbuild/core@1.0.18",
         "type": "static"
       },
       {
@@ -26132,7 +26126,7 @@
     "npm:@rslib/core": [
       {
         "source": "npm:@rslib/core",
-        "target": "npm:@rsbuild/core",
+        "target": "npm:@rsbuild/core@1.0.17",
         "type": "static"
       },
       {
@@ -30304,43 +30298,6 @@
       {
         "source": "npm:copy-webpack-plugin",
         "target": "npm:webpack",
-        "type": "static"
-      }
-    ],
-    "npm:copyfiles": [
-      {
-        "source": "npm:copyfiles",
-        "target": "npm:glob@7.2.3",
-        "type": "static"
-      },
-      {
-        "source": "npm:copyfiles",
-        "target": "npm:minimatch@3.1.2",
-        "type": "static"
-      },
-      {
-        "source": "npm:copyfiles",
-        "target": "npm:mkdirp@1.0.4",
-        "type": "static"
-      },
-      {
-        "source": "npm:copyfiles",
-        "target": "npm:noms",
-        "type": "static"
-      },
-      {
-        "source": "npm:copyfiles",
-        "target": "npm:through2",
-        "type": "static"
-      },
-      {
-        "source": "npm:copyfiles",
-        "target": "npm:untildify",
-        "type": "static"
-      },
-      {
-        "source": "npm:copyfiles",
-        "target": "npm:yargs@16.2.0",
         "type": "static"
       }
     ],
@@ -37383,9 +37340,9 @@
         "type": "static"
       }
     ],
-    "npm:mkdirp@0.5.6": [
+    "npm:mkdirp": [
       {
-        "source": "npm:mkdirp@0.5.6",
+        "source": "npm:mkdirp",
         "target": "npm:minimist",
         "type": "static"
       }
@@ -37486,18 +37443,6 @@
       {
         "source": "npm:node-schedule",
         "target": "npm:sorted-array-functions",
-        "type": "static"
-      }
-    ],
-    "npm:noms": [
-      {
-        "source": "npm:noms",
-        "target": "npm:inherits@2.0.4",
-        "type": "static"
-      },
-      {
-        "source": "npm:noms",
-        "target": "npm:readable-stream@1.0.34",
         "type": "static"
       }
     ],
@@ -38278,7 +38223,7 @@
       },
       {
         "source": "npm:portfinder",
-        "target": "npm:mkdirp@0.5.6",
+        "target": "npm:mkdirp",
         "type": "static"
       }
     ],
@@ -39557,28 +39502,6 @@
         "type": "static"
       }
     ],
-    "npm:readable-stream@1.0.34": [
-      {
-        "source": "npm:readable-stream@1.0.34",
-        "target": "npm:core-util-is",
-        "type": "static"
-      },
-      {
-        "source": "npm:readable-stream@1.0.34",
-        "target": "npm:inherits@2.0.4",
-        "type": "static"
-      },
-      {
-        "source": "npm:readable-stream@1.0.34",
-        "target": "npm:isarray@0.0.1",
-        "type": "static"
-      },
-      {
-        "source": "npm:readable-stream@1.0.34",
-        "target": "npm:string_decoder@0.10.31",
-        "type": "static"
-      }
-    ],
     "npm:readable-stream@2.3.8": [
       {
         "source": "npm:readable-stream@2.3.8",
@@ -40089,7 +40012,7 @@
     "npm:rsbuild-plugin-dts": [
       {
         "source": "npm:rsbuild-plugin-dts",
-        "target": "npm:@rsbuild/core",
+        "target": "npm:@rsbuild/core@1.0.17",
         "type": "static"
       },
       {
@@ -41730,18 +41653,6 @@
       {
         "source": "npm:thingies",
         "target": "npm:tslib@2.7.0",
-        "type": "static"
-      }
-    ],
-    "npm:through2": [
-      {
-        "source": "npm:through2",
-        "target": "npm:readable-stream@2.3.8",
-        "type": "static"
-      },
-      {
-        "source": "npm:through2",
-        "target": "npm:xtend",
         "type": "static"
       }
     ],

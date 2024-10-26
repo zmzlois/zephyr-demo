@@ -13,139 +13,63 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "migrations.json",
-        "hash": "4583345520328765039"
+        "file": "vitest.workspace.ts",
+        "hash": "7870362608836821141"
       },
       {
-        "file": ".vscode/extensions.json",
-        "hash": "6807003856908271136"
+        "file": "migrations.json",
+        "hash": "4583345520328765039"
       },
       {
         "file": ".prettierrc",
         "hash": "16267754514737964994"
       },
       {
-        "file": "squadron.yaml",
-        "hash": "2853208085046838748"
+        "file": "nx.json",
+        "hash": "380292114643065604"
       },
       {
-        "file": "package.json",
-        "hash": "14296948698592957720"
-      },
-      {
-        "file": "README.md",
-        "hash": "22080156993399129"
-      },
-      {
-        "file": "vitest.workspace.ts",
-        "hash": "7870362608836821141"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "2373171212127886927"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
+        "file": ".vscode/extensions.json",
+        "hash": "6807003856908271136"
       },
       {
         "file": ".editorconfig",
         "hash": "5443105041930014821"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "5384738702344872312"
+        "file": "squadron.yaml",
+        "hash": "2853208085046838748"
       },
       {
-        "file": "nx.json",
-        "hash": "380292114643065604"
+        "file": ".gitignore",
+        "hash": "16537953300762052392"
+      },
+      {
+        "file": "README.md",
+        "hash": "22080156993399129"
+      },
+      {
+        "file": "package.json",
+        "hash": "12614248235211719548"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2373171212127886927"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "1386725308413708297"
       },
       {
         "file": "tsconfig.base.json",
         "hash": "6275288852464237919"
       },
       {
-        "file": ".gitignore",
-        "hash": "16537953300762052392"
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
       }
     ],
     "projectFileMap": {
-      "components": [
-        {
-          "file": "packages/components/README.md",
-          "hash": "16505226353474541838"
-        },
-        {
-          "file": "packages/components/biome.json",
-          "hash": "6339479278249203123"
-        },
-        {
-          "file": "packages/components/package.json",
-          "hash": "4307916034033262903",
-          "deps": [
-            "npm:react",
-            "npm:react-dom",
-            "npm:tslib@2.7.0",
-            "npm:@module-federation/rsbuild-plugin",
-            "npm:@rsbuild/plugin-react",
-            "utils"
-          ]
-        },
-        {
-          "file": "packages/components/project.json",
-          "hash": "3186661458427689194"
-        },
-        {
-          "file": "packages/components/rslib.config.ts",
-          "hash": "8022986286343580616",
-          "deps": [
-            "npm:@rslib/core",
-            "npm:@module-federation/rsbuild-plugin",
-            "npm:@nx/devkit",
-            "npm:@rsbuild/plugin-react"
-          ]
-        },
-        {
-          "file": "packages/components/src/components/ProductCard.tsx",
-          "hash": "7241525970430515704",
-          "deps": [
-            "npm:react",
-            "utils"
-          ]
-        },
-        {
-          "file": "packages/components/src/components/ProductCarousel.tsx",
-          "hash": "1955381939854486841"
-        },
-        {
-          "file": "packages/components/src/index.ts",
-          "hash": "1559716844194548500"
-        },
-        {
-          "file": "packages/components/src/types/Products/index.ts",
-          "hash": "9457163461275204071"
-        },
-        {
-          "file": "packages/components/tsconfig.json",
-          "hash": "12984048115274761909"
-        },
-        {
-          "file": "packages/components/tsconfig.lib.json",
-          "hash": "371672193120280180"
-        },
-        {
-          "file": "packages/components/tsconfig.spec.json",
-          "hash": "15943385144407153049"
-        },
-        {
-          "file": "packages/components/vite.config.ts",
-          "hash": "4615376426399997497",
-          "deps": [
-            "npm:vite",
-            "npm:@nx/vite"
-          ]
-        }
-      ],
       "hero-e2e": [
         {
           "file": "apps/hero-e2e/.eslintrc.json",
@@ -169,60 +93,6 @@
           "hash": "16019101014373124625",
           "deps": [
             "npm:@playwright/test"
-          ]
-        }
-      ],
-      "utils": [
-        {
-          "file": "packages/utils/README.md",
-          "hash": "14982320655972538163"
-        },
-        {
-          "file": "packages/utils/biome.json",
-          "hash": "6339479278249203123"
-        },
-        {
-          "file": "packages/utils/package.json",
-          "hash": "13103362052028658996",
-          "deps": [
-            "npm:tslib@2.7.0",
-            "npm:@module-federation/rsbuild-plugin"
-          ]
-        },
-        {
-          "file": "packages/utils/project.json",
-          "hash": "34209365673816487"
-        },
-        {
-          "file": "packages/utils/rslib.config.ts",
-          "hash": "2082548204861099295",
-          "deps": [
-            "npm:@rslib/core",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "packages/utils/src/index.ts",
-          "hash": "13154960756945100722"
-        },
-        {
-          "file": "packages/utils/tsconfig.json",
-          "hash": "7605285820089652126"
-        },
-        {
-          "file": "packages/utils/tsconfig.lib.json",
-          "hash": "796780217707470756"
-        },
-        {
-          "file": "packages/utils/tsconfig.spec.json",
-          "hash": "15943385144407153049"
-        },
-        {
-          "file": "packages/utils/vite.config.ts",
-          "hash": "16451389145465087591",
-          "deps": [
-            "npm:vite",
-            "npm:@nx/vite"
           ]
         }
       ],
@@ -251,11 +121,11 @@
         },
         {
           "file": "apps/host/project.json",
-          "hash": "13403262170985583699"
+          "hash": "6107988264937200762"
         },
         {
           "file": "apps/host/rspack.config.js",
-          "hash": "5434336043109303154",
+          "hash": "12053550929253745099",
           "deps": [
             "npm:@nx/rspack"
           ]
@@ -270,7 +140,7 @@
         },
         {
           "file": "apps/host/src/app/data/ProductData.ts",
-          "hash": "17262856743089064451",
+          "hash": "8277332203970851064",
           "deps": [
             "components"
           ]
@@ -313,7 +183,7 @@
         },
         {
           "file": "apps/host/src/app/features/Home/components/Home.tsx",
-          "hash": "2374737073170648827",
+          "hash": "4352804935547089060",
           "deps": [
             "npm:react"
           ]
@@ -357,11 +227,11 @@
         },
         {
           "file": "apps/host/src/app/features/Products/components/Products.tsx",
-          "hash": "16433703911279107296"
+          "hash": "1072909259208511823"
         },
         {
           "file": "apps/host/src/app/features/Products/components/ProductsOnSale.tsx",
-          "hash": "1372207719794474589",
+          "hash": "12157572728160763341",
           "deps": [
             "components"
           ]
@@ -526,6 +396,146 @@
           "hash": "16019101014373124625",
           "deps": [
             "npm:@playwright/test"
+          ]
+        }
+      ],
+      "utils": [
+        {
+          "file": "packages/utils/README.md",
+          "hash": "14982320655972538163"
+        },
+        {
+          "file": "packages/utils/biome.json",
+          "hash": "6339479278249203123"
+        },
+        {
+          "file": "packages/utils/package.json",
+          "hash": "13103362052028658996",
+          "deps": [
+            "npm:tslib@2.7.0",
+            "npm:@module-federation/rsbuild-plugin"
+          ]
+        },
+        {
+          "file": "packages/utils/project.json",
+          "hash": "34209365673816487"
+        },
+        {
+          "file": "packages/utils/rslib.config.ts",
+          "hash": "2082548204861099295",
+          "deps": [
+            "npm:@rslib/core",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/utils/src/index.d.ts",
+          "hash": "2432877525139571233"
+        },
+        {
+          "file": "packages/utils/src/index.ts",
+          "hash": "13154960756945100722"
+        },
+        {
+          "file": "packages/utils/tsconfig.json",
+          "hash": "7605285820089652126"
+        },
+        {
+          "file": "packages/utils/tsconfig.lib.json",
+          "hash": "12659229802395706765"
+        },
+        {
+          "file": "packages/utils/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "packages/utils/vite.config.ts",
+          "hash": "16451389145465087591",
+          "deps": [
+            "npm:vite",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "components": [
+        {
+          "file": "packages/components/README.md",
+          "hash": "16505226353474541838"
+        },
+        {
+          "file": "packages/components/biome.json",
+          "hash": "6339479278249203123"
+        },
+        {
+          "file": "packages/components/package.json",
+          "hash": "8999861919655400448",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:tslib@2.7.0",
+            "npm:@module-federation/rsbuild-plugin",
+            "npm:@rsbuild/plugin-react",
+            "npm:@rsbuild/core@1.0.18",
+            "utils"
+          ]
+        },
+        {
+          "file": "packages/components/project.json",
+          "hash": "16228054046771887264"
+        },
+        {
+          "file": "packages/components/rslib.config.ts",
+          "hash": "10189480005889214516",
+          "deps": [
+            "npm:@rslib/core",
+            "npm:@rsbuild/core@1.0.18",
+            "npm:@nx/devkit",
+            "npm:@module-federation/rsbuild-plugin",
+            "npm:@rsbuild/plugin-react"
+          ]
+        },
+        {
+          "file": "packages/components/src/components/ProductCard.tsx",
+          "hash": "10746829832696984542",
+          "deps": [
+            "npm:react",
+            "utils"
+          ]
+        },
+        {
+          "file": "packages/components/src/components/ProductCarousel.tsx",
+          "hash": "12764730621300286022"
+        },
+        {
+          "file": "packages/components/src/index.ts",
+          "hash": "1559716844194548500"
+        },
+        {
+          "file": "packages/components/src/types/Products/index.ts",
+          "hash": "9457163461275204071"
+        },
+        {
+          "file": "packages/components/tsconfig.json",
+          "hash": "12984048115274761909"
+        },
+        {
+          "file": "packages/components/tsconfig.lib.json",
+          "hash": "6352520083174777697"
+        },
+        {
+          "file": "packages/components/tsconfig.lib.tsbuildinfo",
+          "hash": "10403281450553635859"
+        },
+        {
+          "file": "packages/components/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "packages/components/vite.config.ts",
+          "hash": "4615376426399997497",
+          "deps": [
+            "npm:vite",
+            "npm:@nx/vite"
           ]
         }
       ],

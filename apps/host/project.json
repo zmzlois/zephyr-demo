@@ -4,12 +4,13 @@
   "sourceRoot": "apps/host/src",
   "projectType": "application",
   "tags": [],
-  "implicitDependencies": ["hero"],
+  "implicitDependencies": ["hero", "components", "utils"],
   "targets": {
     "build": {
       "executor": "@nx/rspack:rspack",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
+      "dependsOn": ["^build"],
       "options": {
         "target": "web",
         "outputPath": "dist/apps/host",
@@ -27,6 +28,13 @@
           "optimization": true,
           "sourceMap": false
         }
+      }
+    },
+    "serve-all": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["nx run components:watch", "nx serve host"],
+        "parallel": true
       }
     },
     "serve": {

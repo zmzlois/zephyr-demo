@@ -17,6 +17,8 @@ module.exports = composePlugins(
     config.devServer = {
       ...config.devServer,
       historyApiFallback: true,
+      hot: true,
+      liveReload: true,
     };
 
     config.module.rules.push({
@@ -41,6 +43,12 @@ module.exports = composePlugins(
         },
       ],
     });
+
+    // config.watchOptions = {
+    //   ignored: /node_modules\/(?!@acme|components)/,
+    //   followSymlinks: true,
+    //   poll: 1000,
+    // };
 
     return config;
   }
