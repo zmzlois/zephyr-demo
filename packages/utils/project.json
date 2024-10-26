@@ -1,0 +1,31 @@
+{
+  "name": "utils",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/utils/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["rslib build -c packages/utils/rslib.config.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "../../coverage/packages/utils"
+      }
+    },
+    "biome-lint": {
+      "executor": "@gitopslovers/nx-biome:biome-lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/utils/**/*.ts"],
+        "write": false,
+        "unsafe": false
+      }
+    }
+  }
+}

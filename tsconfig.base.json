@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mfe-monorepo/components": ["packages/components/src/index.ts"],
-      "@mfe-monorepo/shared": ["packages/shared/src/index.ts"]
+      "@acme/components": ["packages/components/src/index.ts"],
+      "@acme/utils": ["packages/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp", "dist"]

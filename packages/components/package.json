@@ -1,5 +1,5 @@
 {
-  "name": "@mfe-monorepo/components",
+  "name": "@acme/components",
   "version": "0.0.1",
   "exports": {
     ".": {
@@ -18,7 +18,13 @@
   ],
   "dependencies": {
     "tslib": "^2.3.0",
-    "@module-federation/rsbuild-plugin": "0.6.13"
+    "@module-federation/rsbuild-plugin": "0.6.13",
+    "@rsbuild/plugin-react": "1.0.5",
+    "@acme/utils": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "type": "commonjs",
   "main": "./src/index.js",

@@ -1,1 +1,2 @@
-export * from './lib/components';
+export * from './components/ProductCard';
+export * from './types/Products';

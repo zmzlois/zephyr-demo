@@ -1,7 +1,7 @@
 // @ts-check
 
 /**
- * @type {import('@module-federation/sdk').moduleFederationPlugin.ModuleFederationPluginOptions}
+ * @type {import('@nx/rspack/module-federation').ModuleFederationConfig}
  **/
 module.exports = {
   name: 'hero',

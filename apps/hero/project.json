@@ -32,7 +32,7 @@
       "executor": "@nx/rspack:dev-server",
       "options": {
         "buildTarget": "hero:build:development",
-        "port": 3001
+        "port": 4201
       },
       "configurations": {
         "development": {},
@@ -44,7 +44,9 @@
     "test": {
       "executor": "@nx/vite:test",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
-      "options": {}
+      "options": {
+        "config": "apps/host/vitest.config.ts"
+      }
     },
     "biome-lint": {
       "executor": "@gitopslovers/nx-biome:biome-lint",

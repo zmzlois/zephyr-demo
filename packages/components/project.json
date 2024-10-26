@@ -8,12 +8,7 @@
     "build": {
       "executor": "nx:run-commands",
       "options": {
-        "command": [
-          "rslib build -c packages/components/rslib.config.ts",
-          "copyfiles package.json packages/components",
-          "copyfiles README.md packages/components"
-        ],
-        "parallel": false
+        "commands": ["rslib build -c packages/components/rslib.config.ts"]
       }
     },
     "test": {

@@ -2,6 +2,7 @@ import { defineConfig } from '@rslib/core';
 import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
 import { workspaceRoot } from '@nx/devkit';
 import { join } from 'node:path';
+import { pluginReact } from '@rsbuild/plugin-react';
 
 // Helper to make paths workspace-root relative
 const toWorkspacePath = (path: string) => join(workspaceRoot, path);
@@ -10,6 +11,7 @@ const toWorkspacePath = (path: string) => join(workspaceRoot, path);
 const COMPONENT_PATH = 'packages/components';
 
 export default defineConfig({
+  plugins: [pluginReact()],
   source: {
     entry: {
       index: join(COMPONENT_PATH, 'src/index.ts'),
@@ -24,7 +26,7 @@ export default defineConfig({
       format: 'esm',
       output: {
         distPath: {
-          root: toWorkspacePath(`dist/${COMPONENT_PATH}/dist/esm`),
+          root: toWorkspacePath(`${COMPONENT_PATH}/dist/esm`),
         },
       },
     },
@@ -35,29 +37,9 @@ export default defineConfig({
       format: 'cjs',
       output: {
         distPath: {
-          root: toWorkspacePath(`dist/${COMPONENT_PATH}/dist/cjs`),
+          root: toWorkspacePath(`${COMPONENT_PATH}/dist/cjs`),
         },
       },
-    },
-    {
-      dts: {
-        bundle: false,
-      },
-      format: 'mf',
-      output: {
-        distPath: {
-          root: toWorkspacePath(`dist/${COMPONENT_PATH}/dist/mf`),
-        },
-        assetPrefix: 'http://localhost:3001/mf',
-      },
-      plugins: [
-        pluginModuleFederation({
-          name: 'lib',
-          exposes: {
-            '.': join(COMPONENT_PATH, 'src/index.ts'),
-          },
-        }),
-      ],
     },
   ],
 });

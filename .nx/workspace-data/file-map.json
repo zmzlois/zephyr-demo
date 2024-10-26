@@ -2,27 +2,59 @@
   "version": "6.0",
   "nxVersion": "20.0.5",
   "pathMappings": {
-    "@mfe-monorepo/components": [
+    "@acme/components": [
       "packages/components/src/index.ts"
     ],
-    "@mfe-monorepo/shared": [
-      "packages/shared/src/index.ts"
+    "@acme/utils": [
+      "packages/utils/src/index.ts"
     ]
   },
   "nxJsonPlugins": [],
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "test/packages/components/src/index.d.ts",
-        "hash": "11485189907647936074"
+        "file": "pnpm-lock.yaml",
+        "hash": "5384738702344872312"
       },
       {
-        "file": "test/packages/components/src/lib/components.d.ts",
-        "hash": "11918796435767761111"
+        "file": "README.md",
+        "hash": "22080156993399129"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "16537953300762052392"
       },
       {
         "file": ".prettierignore",
         "hash": "14688272390704683536"
+      },
+      {
+        "file": "nx.json",
+        "hash": "380292114643065604"
+      },
+      {
+        "file": "package.json",
+        "hash": "14296948698592957720"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "squadron.yaml",
+        "hash": "2853208085046838748"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "6807003856908271136"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "7870362608836821141"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
       },
       {
         "file": "pnpm-workspace.yaml",
@@ -34,50 +66,82 @@
       },
       {
         "file": "tsconfig.base.json",
-        "hash": "2274069112188938049"
-      },
-      {
-        "file": "squadron.yaml",
-        "hash": "2853208085046838748"
-      },
-      {
-        "file": "vitest.workspace.ts",
-        "hash": "7870362608836821141"
-      },
-      {
-        "file": "README.md",
-        "hash": "22080156993399129"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "6807003856908271136"
-      },
-      {
-        "file": "nx.json",
-        "hash": "380292114643065604"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "14937597283693087466"
-      },
-      {
-        "file": "package.json",
-        "hash": "8471150580439354596"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "16537953300762052392"
+        "hash": "6275288852464237919"
       }
     ],
     "projectFileMap": {
+      "components": [
+        {
+          "file": "packages/components/README.md",
+          "hash": "16505226353474541838"
+        },
+        {
+          "file": "packages/components/biome.json",
+          "hash": "6339479278249203123"
+        },
+        {
+          "file": "packages/components/package.json",
+          "hash": "4307916034033262903",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:tslib@2.7.0",
+            "npm:@module-federation/rsbuild-plugin",
+            "npm:@rsbuild/plugin-react",
+            "utils"
+          ]
+        },
+        {
+          "file": "packages/components/project.json",
+          "hash": "3186661458427689194"
+        },
+        {
+          "file": "packages/components/rslib.config.ts",
+          "hash": "8022986286343580616",
+          "deps": [
+            "npm:@rslib/core",
+            "npm:@module-federation/rsbuild-plugin",
+            "npm:@nx/devkit",
+            "npm:@rsbuild/plugin-react"
+          ]
+        },
+        {
+          "file": "packages/components/src/components/ProductCard.tsx",
+          "hash": "4464993763370381146",
+          "deps": [
+            "npm:react",
+            "utils"
+          ]
+        },
+        {
+          "file": "packages/components/src/index.ts",
+          "hash": "5017194432939420590"
+        },
+        {
+          "file": "packages/components/src/types/Products/index.ts",
+          "hash": "9457163461275204071"
+        },
+        {
+          "file": "packages/components/tsconfig.json",
+          "hash": "12984048115274761909"
+        },
+        {
+          "file": "packages/components/tsconfig.lib.json",
+          "hash": "371672193120280180"
+        },
+        {
+          "file": "packages/components/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "packages/components/vite.config.ts",
+          "hash": "4615376426399997497",
+          "deps": [
+            "npm:vite",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
       "hero-e2e": [
         {
           "file": "apps/hero-e2e/.eslintrc.json",
@@ -104,133 +168,96 @@
           ]
         }
       ],
-      "components": [
+      "utils": [
         {
-          "file": "packages/components/README.md",
-          "hash": "16505226353474541838"
+          "file": "packages/utils/README.md",
+          "hash": "14982320655972538163"
         },
         {
-          "file": "packages/components/biome.json",
+          "file": "packages/utils/biome.json",
           "hash": "6339479278249203123"
         },
         {
-          "file": "packages/components/package.json",
-          "hash": "10819943921134938280",
+          "file": "packages/utils/package.json",
+          "hash": "13103362052028658996",
           "deps": [
             "npm:tslib@2.7.0",
             "npm:@module-federation/rsbuild-plugin"
           ]
         },
         {
-          "file": "packages/components/project.json",
-          "hash": "11869113555101863308"
+          "file": "packages/utils/project.json",
+          "hash": "34209365673816487"
         },
         {
-          "file": "packages/components/rslib.config.ts",
-          "hash": "12987595156998244474",
+          "file": "packages/utils/rslib.config.ts",
+          "hash": "2082548204861099295",
           "deps": [
             "npm:@rslib/core",
-            "npm:@module-federation/rsbuild-plugin",
             "npm:@nx/devkit"
           ]
         },
         {
-          "file": "packages/components/src/index.ts",
-          "hash": "11485189907647936074"
+          "file": "packages/utils/src/index.ts",
+          "hash": "13154960756945100722"
         },
         {
-          "file": "packages/components/src/lib/components.spec.ts",
-          "hash": "13536071869730882095"
+          "file": "packages/utils/tsconfig.json",
+          "hash": "7605285820089652126"
         },
         {
-          "file": "packages/components/src/lib/components.ts",
-          "hash": "5120804579699362417"
+          "file": "packages/utils/tsconfig.lib.json",
+          "hash": "796780217707470756"
         },
         {
-          "file": "packages/components/tsconfig.json",
-          "hash": "758527547175481385"
-        },
-        {
-          "file": "packages/components/tsconfig.lib.json",
-          "hash": "11305441556238329213"
-        },
-        {
-          "file": "packages/components/tsconfig.spec.json",
+          "file": "packages/utils/tsconfig.spec.json",
           "hash": "15943385144407153049"
         },
         {
-          "file": "packages/components/vite.config.ts",
-          "hash": "4615376426399997497",
+          "file": "packages/utils/vite.config.ts",
+          "hash": "16451389145465087591",
           "deps": [
             "npm:vite",
             "npm:@nx/vite"
           ]
         }
       ],
-      "mfe-monorepo-e2e": [
+      "host": [
         {
-          "file": "apps/mfe-monorepo-e2e/.eslintrc.json",
-          "hash": "632147010597293032"
-        },
-        {
-          "file": "apps/mfe-monorepo-e2e/playwright.config.ts",
-          "hash": "5528347686883934175",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/mfe-monorepo-e2e/project.json",
-          "hash": "15887443697710310564"
-        },
-        {
-          "file": "apps/mfe-monorepo-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        }
-      ],
-      "mfe-monorepo": [
-        {
-          "file": "apps/mfe-monorepo/.gitignore",
+          "file": "apps/host/.gitignore",
           "hash": "18346123406719347893"
         },
         {
-          "file": "apps/mfe-monorepo/biome.json",
-          "hash": "6339479278249203123"
+          "file": "apps/host/biome.json",
+          "hash": "748267403665501136"
         },
         {
-          "file": "apps/mfe-monorepo/module-federation.config.js",
-          "hash": "11973606049056299158"
+          "file": "apps/host/module-federation.config.js",
+          "hash": "14436084583967784267"
         },
         {
-          "file": "apps/mfe-monorepo/package-lock.json",
-          "hash": "11150979916702583399"
-        },
-        {
-          "file": "apps/mfe-monorepo/package.json",
-          "hash": "8543094310048334129",
+          "file": "apps/host/package.json",
+          "hash": "6342957494646404537",
           "deps": [
             "npm:@playwright/test@1.48.1",
-            "npm:@types/node@22.8.0"
+            "npm:@types/node@22.8.0",
+            "components",
+            "utils"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/project.json",
-          "hash": "16513351564514096160"
+          "file": "apps/host/project.json",
+          "hash": "13403262170985583699"
         },
         {
-          "file": "apps/mfe-monorepo/rspack.config.js",
-          "hash": "4322512531410653826",
+          "file": "apps/host/rspack.config.js",
+          "hash": "5434336043109303154",
           "deps": [
             "npm:@nx/rspack"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/App.tsx",
+          "file": "apps/host/src/app/App.tsx",
           "hash": "18392856502379435698",
           "deps": [
             "npm:react-router-dom",
@@ -238,56 +265,61 @@
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/data/ProductData.ts",
-          "hash": "7348486274258849604"
-        },
-        {
-          "file": "apps/mfe-monorepo/src/app/features/Cart/components/Cart.tsx",
-          "hash": "16469446000029511633",
+          "file": "apps/host/src/app/data/ProductData.ts",
+          "hash": "5769390370667714850",
           "deps": [
-            "npm:@heroicons/react"
+            "components"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Cart/components/EmptyCart.tsx",
-          "hash": "5058936789324400390",
+          "file": "apps/host/src/app/features/Cart/components/Cart.tsx",
+          "hash": "1904234453572581492",
           "deps": [
-            "npm:react",
+            "components",
+            "npm:@heroicons/react",
+            "utils"
+          ]
+        },
+        {
+          "file": "apps/host/src/app/features/Cart/components/EmptyCart.tsx",
+          "hash": "12391702015644050748",
+          "deps": [
             "npm:react-router-dom",
             "npm:@heroicons/react"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Cart/hooks/useCart.ts",
-          "hash": "4025640515879637752",
+          "file": "apps/host/src/app/features/Cart/hooks/useCart.ts",
+          "hash": "1190611771311066459",
           "deps": [
-            "npm:jotai"
+            "npm:jotai",
+            "components"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Cart/index.ts",
-          "hash": "9984697006661775911"
+          "file": "apps/host/src/app/features/Cart/index.ts",
+          "hash": "10473474738565807830"
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Cart/store/index.ts",
+          "file": "apps/host/src/app/features/Cart/store/index.ts",
           "hash": "17856909599271332662",
           "deps": [
             "npm:jotai"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Home/components/Home.tsx",
+          "file": "apps/host/src/app/features/Home/components/Home.tsx",
           "hash": "2374737073170648827",
           "deps": [
             "npm:react"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Home/index.ts",
-          "hash": "14902316739821592700"
+          "file": "apps/host/src/app/features/Home/index.ts",
+          "hash": "8008224853354158039"
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Navbar/components/Navbar.tsx",
+          "file": "apps/host/src/app/features/Navbar/components/Navbar.tsx",
           "hash": "17216262818505720980",
           "deps": [
             "npm:@heroicons/react",
@@ -295,193 +327,205 @@
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Products/components/Carousel.tsx",
-          "hash": "16978233476964906609"
+          "file": "apps/host/src/app/features/Products/components/Carousel.tsx",
+          "hash": "15661782380237732122",
+          "deps": [
+            "components"
+          ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Products/components/Favorites.tsx",
-          "hash": "6013495079026931597",
+          "file": "apps/host/src/app/features/Products/components/Favorites.tsx",
+          "hash": "15419709547024425181",
           "deps": [
-            "npm:react",
+            "components",
             "npm:react-icons"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Products/components/ProductCard.tsx",
-          "hash": "1425772617825503745",
-          "deps": [
-            "npm:react",
-            "npm:react-icons",
-            "npm:classnames"
-          ]
-        },
-        {
-          "file": "apps/mfe-monorepo/src/app/features/Products/components/ProductSearch.tsx",
-          "hash": "2200400899351367662",
+          "file": "apps/host/src/app/features/Products/components/ProductSearch.tsx",
+          "hash": "13308532184807107039",
           "deps": [
             "npm:@heroicons/react",
-            "npm:jotai"
+            "npm:jotai",
+            "components"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Products/components/ProductSearchResults.tsx",
-          "hash": "10559209037840537609",
+          "file": "apps/host/src/app/features/Products/components/ProductSearchResults.tsx",
+          "hash": "12033335154020451251",
           "deps": [
-            "npm:jotai"
+            "npm:jotai",
+            "components"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Products/components/Products.tsx",
-          "hash": "6618060801124779595",
-          "deps": [
-            "npm:react"
-          ]
+          "file": "apps/host/src/app/features/Products/components/Products.tsx",
+          "hash": "16433703911279107296"
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Products/components/ProductsOnSale.tsx",
-          "hash": "1022541978995256246"
+          "file": "apps/host/src/app/features/Products/components/ProductsOnSale.tsx",
+          "hash": "3374750639315299663"
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Products/components/cartButtonAnimation.css",
+          "file": "apps/host/src/app/features/Products/components/cartButtonAnimation.css",
           "hash": "9198860572835778442"
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Products/hooks/useFavorites.ts",
-          "hash": "2297450828032817543",
+          "file": "apps/host/src/app/features/Products/hooks/useFavorites.ts",
+          "hash": "1945646704945763888",
           "deps": [
             "npm:jotai",
-            "npm:react"
+            "npm:react",
+            "components"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Products/hooks/useScreenSize.ts",
+          "file": "apps/host/src/app/features/Products/hooks/useScreenSize.ts",
           "hash": "11371726900636013060",
           "deps": [
             "npm:react"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Products/index.ts",
-          "hash": "39077148943762833"
+          "file": "apps/host/src/app/features/Products/index.ts",
+          "hash": "180292482344342311"
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Products/store/index.ts",
+          "file": "apps/host/src/app/features/Products/store/index.ts",
           "hash": "17680132274821156553",
           "deps": [
             "npm:jotai"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/features/Theme/ThemeProvider.tsx",
+          "file": "apps/host/src/app/features/Theme/ThemeProvider.tsx",
           "hash": "1222204969912134207",
           "deps": [
             "npm:react"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/app/global.d.ts",
+          "file": "apps/host/src/app/global.d.ts",
           "hash": "4770955456801647150"
         },
         {
-          "file": "apps/mfe-monorepo/src/app/hooks/index.ts",
+          "file": "apps/host/src/app/hooks/index.ts",
           "hash": "17189065566141445400"
         },
         {
-          "file": "apps/mfe-monorepo/src/app/store/index.ts",
+          "file": "apps/host/src/app/store/index.ts",
           "hash": "8492029302782434013"
         },
         {
-          "file": "apps/mfe-monorepo/src/app/types/Cart/index.ts",
-          "hash": "6553952117152152723"
+          "file": "apps/host/src/app/types/Cart/index.ts",
+          "hash": "12389750529031014585"
         },
         {
-          "file": "apps/mfe-monorepo/src/app/types/Products/index.ts",
-          "hash": "9457163461275204071"
-        },
-        {
-          "file": "apps/mfe-monorepo/src/app/utils/formatCurrency.ts",
-          "hash": "13154960756945100722"
-        },
-        {
-          "file": "apps/mfe-monorepo/src/assets/BlackShirt.png",
+          "file": "apps/host/src/assets/BlackShirt.png",
           "hash": "8097222492840851417"
         },
         {
-          "file": "apps/mfe-monorepo/src/assets/BlueShirt.png",
+          "file": "apps/host/src/assets/BlueShirt.png",
           "hash": "14601657994193018059"
         },
         {
-          "file": "apps/mfe-monorepo/src/assets/GreyShirt.png",
+          "file": "apps/host/src/assets/GreyShirt.png",
           "hash": "17058137514965694411"
         },
         {
-          "file": "apps/mfe-monorepo/src/assets/NatureHero.png",
+          "file": "apps/host/src/assets/NatureHero.png",
           "hash": "8031391867457341528"
         },
         {
-          "file": "apps/mfe-monorepo/src/assets/RedShirt.png",
+          "file": "apps/host/src/assets/RedShirt.png",
           "hash": "2391638289365056390"
         },
         {
-          "file": "apps/mfe-monorepo/src/assets/WhiteShirt.png",
+          "file": "apps/host/src/assets/WhiteShirt.png",
           "hash": "7459590398464543381"
         },
         {
-          "file": "apps/mfe-monorepo/src/bootstrap.tsx",
+          "file": "apps/host/src/bootstrap.tsx",
           "hash": "12411236786697871046",
           "deps": [
             "npm:react-dom"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/src/environments/environment.prod.ts",
+          "file": "apps/host/src/environments/environment.prod.ts",
           "hash": "10220522844224226756"
         },
         {
-          "file": "apps/mfe-monorepo/src/environments/environment.ts",
+          "file": "apps/host/src/environments/environment.ts",
           "hash": "11309522437153898482"
         },
         {
-          "file": "apps/mfe-monorepo/src/favicon.ico",
+          "file": "apps/host/src/favicon.ico",
           "hash": "9303420814833116677"
         },
         {
-          "file": "apps/mfe-monorepo/src/index.css",
+          "file": "apps/host/src/index.css",
           "hash": "2896387690555567643"
         },
         {
-          "file": "apps/mfe-monorepo/src/index.html",
-          "hash": "9380536332939695419"
+          "file": "apps/host/src/index.html",
+          "hash": "5942231439109597659"
         },
         {
-          "file": "apps/mfe-monorepo/src/main.ts",
+          "file": "apps/host/src/main.ts",
           "hash": "10018980967429810802"
         },
         {
-          "file": "apps/mfe-monorepo/tailwind.config.js",
+          "file": "apps/host/tailwind.config.js",
           "hash": "16679960595633244751",
           "deps": [
             "npm:@nx/react"
           ]
         },
         {
-          "file": "apps/mfe-monorepo/tsconfig.app.json",
-          "hash": "161585930348938912"
+          "file": "apps/host/tsconfig.app.json",
+          "hash": "11236471388377133286"
         },
         {
-          "file": "apps/mfe-monorepo/tsconfig.json",
-          "hash": "5626823128175535526"
+          "file": "apps/host/tsconfig.json",
+          "hash": "10295098488738769842"
         },
         {
-          "file": "apps/mfe-monorepo/tsconfig.spec.json",
-          "hash": "16254575897931105237"
+          "file": "apps/host/tsconfig.spec.json",
+          "hash": "5477310622040883149"
         },
         {
-          "file": "apps/mfe-monorepo/vitest.config.ts",
-          "hash": "8688520352715877013",
+          "file": "apps/host/vitest.config.ts",
+          "hash": "4805939564334062894",
           "deps": [
             "npm:vite",
             "npm:@nx/vite"
+          ]
+        }
+      ],
+      "host-e2e": [
+        {
+          "file": "apps/host-e2e/.eslintrc.json",
+          "hash": "632147010597293032"
+        },
+        {
+          "file": "apps/host-e2e/playwright.config.ts",
+          "hash": "7710149103131713860",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/host-e2e/project.json",
+          "hash": "468957850815794493"
+        },
+        {
+          "file": "apps/host-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
           ]
         }
       ],
@@ -492,7 +536,7 @@
         },
         {
           "file": "apps/hero/module-federation.config.js",
-          "hash": "711227938817246163"
+          "hash": "16674811300375097176"
         },
         {
           "file": "apps/hero/package.json",
@@ -504,7 +548,7 @@
         },
         {
           "file": "apps/hero/project.json",
-          "hash": "13345908361000023248"
+          "hash": "20744872081010526"
         },
         {
           "file": "apps/hero/rspack.config.js",
@@ -574,7 +618,7 @@
         },
         {
           "file": "apps/hero/tsconfig.app.json",
-          "hash": "13259793159252427950"
+          "hash": "11236471388377133286"
         },
         {
           "file": "apps/hero/tsconfig.json",
@@ -582,10 +626,10 @@
         },
         {
           "file": "apps/hero/tsconfig.spec.json",
-          "hash": "15943385144407153049"
+          "hash": "16254575897931105237"
         },
         {
-          "file": "apps/hero/vite.config.ts",
+          "file": "apps/hero/vitest.config.ts",
           "hash": "18353092137641001832",
           "deps": [
             "npm:vite",
