@@ -1,9 +1,6 @@
-import { defineConfig, build } from '@rslib/core';
-import { createRsbuild } from '@rsbuild/core';
+import { defineConfig } from '@rslib/core';
 import { workspaceRoot } from '@nx/devkit';
 import { join } from 'node:path';
-import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
-import { rspack } from '@rsbuild/core';
 import { pluginReact } from '@rsbuild/plugin-react';
 
 // Helper to make paths workspace-root relative
@@ -21,6 +18,21 @@ export default async ({ envMode }) => {
       },
       tsconfigPath: join(COMPONENT_PATH, 'tsconfig.lib.json'),
     },
+    tools: {
+      lightningcssLoader: false,
+      //@ts-expect-error
+      postcss: {
+        postcssOptions: {
+          plugins: [
+            {
+              tailwindcss: {
+                config: join(COMPONENT_PATH, './tailwind.config.cjs'),
+              },
+            },
+          ],
+        },
+      },
+    },
     lib: [
       {
         dts: {
@@ -30,6 +42,7 @@ export default async ({ envMode }) => {
         output: {
           distPath: {
             root: toWorkspacePath(`${COMPONENT_PATH}/dist/esm`),
+            css: toWorkspacePath(`${COMPONENT_PATH}/dist`),
           },
         },
       },
@@ -41,6 +54,7 @@ export default async ({ envMode }) => {
         output: {
           distPath: {
             root: toWorkspacePath(`${COMPONENT_PATH}/dist/cjs`),
+            css: toWorkspacePath(`${COMPONENT_PATH}/dist`),
           },
         },
       },

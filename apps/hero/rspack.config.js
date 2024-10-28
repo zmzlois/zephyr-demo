@@ -3,7 +3,7 @@ const {
   ModuleFederationPlugin,
 } = require('@module-federation/enhanced/rspack');
 const mfConfig = require('./module-federation.config');
-const path = require('path');
+const path = require('node:path');
 const { withZephyr } = require('zephyr-webpack-plugin');
 
 module.exports = composePlugins(
@@ -24,6 +24,7 @@ module.exports = composePlugins(
     config.module.rules.push({
       test: /\.css$/,
       type: 'css',
+      exclude: /node_modules(?!\/@acme)|packages\/components\/dist/,
       use: [
         {
           loader: 'postcss-loader',

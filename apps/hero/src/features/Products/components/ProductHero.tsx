@@ -1,10 +1,6 @@
-import React from 'react';
+import type { FC } from 'react';
 
-declare global {
-  const __webpack_public_path__: string;
-}
-
-const ProductHero: React.FC<{ label?: string }> = ({ label }) => {
+const ProductHero: FC<{ label?: string }> = ({ label }) => {
   return (
     <section className="h-[768px] relative" id="product-hero">
       <div className="absolute h-[768px] w-full">

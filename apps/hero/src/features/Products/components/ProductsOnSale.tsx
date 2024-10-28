@@ -1,5 +1,5 @@
-import { ProductCarousel } from '@acme/components';
-import { ProductSaleData } from '../../../data/ProductData';
+import { ProductCarousel, ProductSaleData } from '@acme/components';
+import '@acme/components/styles';
 
 const ProductsOnSale = () => {
   return (

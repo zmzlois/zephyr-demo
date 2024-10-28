@@ -1,4 +1,4 @@
-import { ProductColor, ProductSize, type Product } from '@acme/components';
+import { type Product, ProductColor, ProductSize } from '../types/Products';
 
 const sizes = Object.values(ProductSize);
 const colors = Object.values(ProductColor);
@@ -29,5 +29,4 @@ const generateProducts = (count: number): Product[] => {
 const ProductData = generateProducts(100);
 const ProductSaleData = ProductData.slice(0, 20);
 
-export default ProductData;
-export { ProductSaleData };
+export { ProductSaleData, ProductData };

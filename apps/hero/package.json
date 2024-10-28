@@ -7,6 +7,10 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "dependencies": {
+    "@acme/utils": "workspace:*",
+    "@acme/components": "workspace:*"
+  },
   "devDependencies": {
     "@playwright/test": "^1.47.1",
     "@types/node": "^22.5.5"

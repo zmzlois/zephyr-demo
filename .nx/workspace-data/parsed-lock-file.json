@@ -2061,6 +2061,15 @@
         "hash": "sha512-8Y5wMhVIPaWe6jw2H+KlEm4wP/f7EW3810ZLmDlrEEy5KvBsb9ECEfu/kMWD484ijfQ8+nIi0giMgu9g1UAuuA=="
       }
     },
+    "npm:@bufbuild/protobuf": {
+      "type": "npm",
+      "name": "npm:@bufbuild/protobuf",
+      "data": {
+        "version": "2.2.0",
+        "packageName": "@bufbuild/protobuf",
+        "hash": "sha512-+imAQkHf7U/Rwvu0wk1XWgsP3WnpCWmK7B48f0XqSNzgk64+grljTKC7pnO/xBiEMUziF7vKRfbBnOQhg126qQ=="
+      }
+    },
     "npm:@cloudflare/kv-asset-handler": {
       "type": "npm",
       "name": "npm:@cloudflare/kv-asset-handler",
@@ -4120,6 +4129,15 @@
         "version": "1.0.5",
         "packageName": "@rsbuild/plugin-react",
         "hash": "sha512-9n3oaWH36y07C5vmQOHhPscKkM14cJZEapozopvSzNXyEHLRN4PFhPhJB6tFA5C/yXnxo8BQCKYw2ejNL0gdvA=="
+      }
+    },
+    "npm:@rsbuild/plugin-sass": {
+      "type": "npm",
+      "name": "npm:@rsbuild/plugin-sass",
+      "data": {
+        "version": "1.0.4",
+        "packageName": "@rsbuild/plugin-sass",
+        "hash": "sha512-0eTVOgglTBf440ykuZWJQmh44S3hj/MT95K+P5XwEU8gU72MrEGTrQlZciOqFW8tVkEVmtUlHPx7YEipXhplSQ=="
       }
     },
     "npm:@rslib/core": {
@@ -6714,6 +6732,15 @@
         "hash": "sha512-SB4/MIGlsiVkMcHmT+pSmIPoNDoHg+7cMzmt3Uxt628MTz2487DKSqK/fuhFBrkuqrYv5UCEnACpF4dTFNKc/g=="
       }
     },
+    "npm:buffer-builder": {
+      "type": "npm",
+      "name": "npm:buffer-builder",
+      "data": {
+        "version": "0.2.0",
+        "packageName": "buffer-builder",
+        "hash": "sha512-7VPMEPuYznPSoR21NE1zvd2Xna6c/CloiZCfcMXR1Jny6PjX0N4Nsa38zcBFo/FMK+BlA+FLKbJCQ0i2yxp+Xg=="
+      }
+    },
     "npm:buffer-from": {
       "type": "npm",
       "name": "npm:buffer-from",
@@ -7180,6 +7207,15 @@
         "version": "2.0.20",
         "packageName": "colorette",
         "hash": "sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w=="
+      }
+    },
+    "npm:colorjs.io": {
+      "type": "npm",
+      "name": "npm:colorjs.io",
+      "data": {
+        "version": "0.5.2",
+        "packageName": "colorjs.io",
+        "hash": "sha512-twmVoizEW7ylZSN32OgKdXRmo1qg+wT5/6C3xu5b9QsWzSFAhHLn2xd8ro0diCsKfCj1RdaTP/nrcW+vAoQPIw=="
       }
     },
     "npm:columnify": {
@@ -13356,6 +13392,15 @@
         "hash": "sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q=="
       }
     },
+    "npm:postcss-alias": {
+      "type": "npm",
+      "name": "npm:postcss-alias",
+      "data": {
+        "version": "2.0.0",
+        "packageName": "postcss-alias",
+        "hash": "sha512-SzsjZdGaqVRql33315QLrhnNpNvvH2skp0hXpjzz+nYmaSwXSUjk4JADJRi7zUkwYyCXj41fy1go5MR3S9TDyg=="
+      }
+    },
     "npm:postcss-calc@8.2.4": {
       "type": "npm",
       "name": "npm:postcss-calc@8.2.4",
@@ -13977,13 +14022,31 @@
         "hash": "sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ=="
       }
     },
-    "npm:postcss": {
+    "npm:postcss@6.0.23": {
       "type": "npm",
-      "name": "npm:postcss",
+      "name": "npm:postcss@6.0.23",
+      "data": {
+        "version": "6.0.23",
+        "packageName": "postcss",
+        "hash": "sha512-soOk1h6J3VMTZtVeVpv15/Hpdl2cBLX3CAw4TAbkpTJiNPk9YP/zWcD1ND+xEtvyuuvKzbxliTOIyvkSeSJ6ag=="
+      }
+    },
+    "npm:postcss@8.4.38": {
+      "type": "npm",
+      "name": "npm:postcss@8.4.38",
       "data": {
         "version": "8.4.38",
         "packageName": "postcss",
         "hash": "sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A=="
+      }
+    },
+    "npm:postcss@8.4.47": {
+      "type": "npm",
+      "name": "npm:postcss@8.4.47",
+      "data": {
+        "version": "8.4.47",
+        "packageName": "postcss",
+        "hash": "sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ=="
       }
     },
     "npm:prelude-ls": {
@@ -14371,6 +14434,15 @@
         "version": "0.8.0",
         "packageName": "rechoir",
         "hash": "sha512-/vxpCXddiX8NGfGO/mTafwjq4aFa/71pvamip0++IQk3zG8cbCj0fifNPrjjF1XMXUne91jL9OoxmdykoEtifQ=="
+      }
+    },
+    "npm:reduce-configs": {
+      "type": "npm",
+      "name": "npm:reduce-configs",
+      "data": {
+        "version": "1.0.0",
+        "packageName": "reduce-configs",
+        "hash": "sha512-/JCYSgL/QeXXsq0Lv/7kOZfqvof7vyzHWfyNQPt3c6vc73mU4WRyT8RJ6ZH5Ci08vUOqXwk7jkZy6BycHTDD9w=="
       }
     },
     "npm:regenerate-unicode-properties": {
@@ -14794,6 +14866,195 @@
         "version": "2.1.2",
         "packageName": "safer-buffer",
         "hash": "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg=="
+      }
+    },
+    "npm:sass-embedded-android-arm64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-android-arm64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-android-arm64",
+        "hash": "sha512-htAuBmRvvN2d4smrqxZ6WBw4+OOURaoHzq5oZKqS/E35zYl5FHmrJzp4S5e26a0tEBcjca014tfb/uu9cQgnqA=="
+      }
+    },
+    "npm:sass-embedded-android-arm": {
+      "type": "npm",
+      "name": "npm:sass-embedded-android-arm",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-android-arm",
+        "hash": "sha512-iAZ7AiKTLGxQGTkZ37c2/7YC4lkbP1o3eP/K74YaF8O+qhKTLyLOwV7OcmzIywac7dqLcNuGqhFCmFqTYpewZw=="
+      }
+    },
+    "npm:sass-embedded-android-ia32": {
+      "type": "npm",
+      "name": "npm:sass-embedded-android-ia32",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-android-ia32",
+        "hash": "sha512-IIee89Jco8/ad2s/oRJTFqpLhBMzg0UXteJyZ5waZPZmkeSR/t9l67Ef1lLQVh9t9/fJ1ViTTiGYm/g/zu6UGw=="
+      }
+    },
+    "npm:sass-embedded-android-riscv64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-android-riscv64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-android-riscv64",
+        "hash": "sha512-iJM2kqmWrOeE1aUyTp3uMAG86hyAqbpbOEV7tv828fUsMRDM4uHsHtmyp2n8P2Y0Y2FnLzJpvIm3SwDXGDzT1Q=="
+      }
+    },
+    "npm:sass-embedded-android-x64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-android-x64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-android-x64",
+        "hash": "sha512-vd8VrLvUoHeTcsDoIJesXLbQYZH26a8lAzXy6u4+vEuAwikF4WiXBDFrpqiv38QeD3faLeoPtksRsFbAdQqJAA=="
+      }
+    },
+    "npm:sass-embedded-darwin-arm64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-darwin-arm64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-darwin-arm64",
+        "hash": "sha512-SJz7EM1i4NXa7CT/njIWMNYJ6CvbHljDIzUAZEe3V3u1KWl/eNO3pbWAnnDN62tBppwgWx/UdDUbAKowsT6Z8w=="
+      }
+    },
+    "npm:sass-embedded-darwin-x64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-darwin-x64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-darwin-x64",
+        "hash": "sha512-J/QlBVO66DLtgALgCmM8rZ5zG0dBCIYW1eXIAnnDwC7vGkbAXMtO60M0O/2WNrAfmFfJz1hvKDLjlsxB2XGBLg=="
+      }
+    },
+    "npm:sass-embedded-linux-arm64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-arm64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-linux-arm64",
+        "hash": "sha512-hI6zQyrR6qJbvyEHfj8UGXNB8VyUa72jel46406AuxUnViA0RyZDSqXUF8vwVw/Hjv1LkA5ihK9dBmWNbLz1zQ=="
+      }
+    },
+    "npm:sass-embedded-linux-arm": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-arm",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-linux-arm",
+        "hash": "sha512-vuaWhc4ebnaY1AgIWNvFv1snxmkWfvlCU7vnQf4qkn3R2Yyd2J+sjkO8o0NgMX8n5XRUSkAaYUJFCH+Nim6KgQ=="
+      }
+    },
+    "npm:sass-embedded-linux-ia32": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-ia32",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-linux-ia32",
+        "hash": "sha512-wcPExI8UbYrrJvGvo4v2Q+RktbCp44i3qZQ18hglPcVZOC1IzT9NPqZn0XmrqD4hmNbgsYR+picODkvqGw7iDA=="
+      }
+    },
+    "npm:sass-embedded-linux-musl-arm64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-musl-arm64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-linux-musl-arm64",
+        "hash": "sha512-y8slzQ8Jjkl+53mUDkp3zxcDrTXVVxzpa+6nKh5Ue8l1YU2KdVZG1v2PoDXxE6o99B5I2TVBG8i02IsdYoL8jQ=="
+      }
+    },
+    "npm:sass-embedded-linux-musl-arm": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-musl-arm",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-linux-musl-arm",
+        "hash": "sha512-HWo0G/9tuhj/uSEwte9KiDK2Xezrfh7nhdEH69ZIfOAqP5byTXL7o08TYagbvMAoljR43Vfna6MelV7NUX4WCw=="
+      }
+    },
+    "npm:sass-embedded-linux-musl-ia32": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-musl-ia32",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-linux-musl-ia32",
+        "hash": "sha512-A2WSwnomho491iCeHh3c0YRympfAoJOKr+IyxalTcRH/pjENOWZWZUt00WE2q0tTpEd2V+goWvgS5pmUGewgmg=="
+      }
+    },
+    "npm:sass-embedded-linux-musl-riscv64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-musl-riscv64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-linux-musl-riscv64",
+        "hash": "sha512-tYQsAHZLr2mnlJQBJ8Z/n/ySIFJ9JWpsUsoLe9fYgGDaBUfItdzUnj15CChRWld8vFe/I84hb7fbCtYXrI60Jg=="
+      }
+    },
+    "npm:sass-embedded-linux-musl-x64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-musl-x64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-linux-musl-x64",
+        "hash": "sha512-NZnr+SYbWlmXx0IaSQ8oF0jYkOULp9qKWMmmZQ1mxuGQ3z7tJqFhpH3M+hYkrFNeOq+GaH+nhHGOD4ZNBxeRkg=="
+      }
+    },
+    "npm:sass-embedded-linux-riscv64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-riscv64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-linux-riscv64",
+        "hash": "sha512-h/BmU7QONa7ScvQztFp4Th4aSo3X+Olu3I+RYsaH9s7P683WT3f2w5zr+wwP1V4roM5eyKDCRJBuefT3Fkkkgw=="
+      }
+    },
+    "npm:sass-embedded-linux-x64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-x64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-linux-x64",
+        "hash": "sha512-aZbZFs/X9bEmzDiBEiV4IAsKEA0zrCM+s/u2OzvrX4GRvZFJ+/XRTTvf+RTm7mgvTFgfPwCkNGVECQZ1eHh+6A=="
+      }
+    },
+    "npm:sass-embedded-win32-arm64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-win32-arm64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-win32-arm64",
+        "hash": "sha512-8JiatFi2VVFqCdJzKNDteaPC4KPmh8/giaVh7TyMcDhKjnvRLeu3v5V1egTMiwwpnQHuwzU3uqBlm/llVNR2Pw=="
+      }
+    },
+    "npm:sass-embedded-win32-ia32": {
+      "type": "npm",
+      "name": "npm:sass-embedded-win32-ia32",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-win32-ia32",
+        "hash": "sha512-SodmTD6mjxEgoq44jWMibmBQvWkCfENK/70zp4qsztcBSOggg3nYUzwG0YpraClAMXpB1xOvzrArWu9/9fguAg=="
+      }
+    },
+    "npm:sass-embedded-win32-x64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-win32-x64",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded-win32-x64",
+        "hash": "sha512-7+oRRwCCcnOmw152qDiC7x7SphYBo1eLB4KdyThO+7+rYRO8AftXO+kqBPTVSkM8kGp4wxCMF9auPpYBZbjsow=="
+      }
+    },
+    "npm:sass-embedded": {
+      "type": "npm",
+      "name": "npm:sass-embedded",
+      "data": {
+        "version": "1.80.4",
+        "packageName": "sass-embedded",
+        "hash": "sha512-lPzKX5g79ZxohlPxh0pXTPFseWj9RfgYI0cPm14CH5ok77Ujuheq/DCp7RStvNDWS8RCQ8Ii6gJC/5WTkGyrhA=="
       }
     },
     "npm:sass-loader": {
@@ -15228,15 +15489,6 @@
         "hash": "sha512-2sqgzeFlid6N4Z2fUQ1cvFmTOLRi/sEDzSQ0OKYchqgoPmQBVyM3959qYx3fpS6Esef80KjmpgPeEr028dP3OA=="
       }
     },
-    "npm:source-map-js@1.0.2": {
-      "type": "npm",
-      "name": "npm:source-map-js@1.0.2",
-      "data": {
-        "version": "1.0.2",
-        "packageName": "source-map-js",
-        "hash": "sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw=="
-      }
-    },
     "npm:source-map-js@1.2.0": {
       "type": "npm",
       "name": "npm:source-map-js@1.2.0",
@@ -15244,6 +15496,15 @@
         "version": "1.2.0",
         "packageName": "source-map-js",
         "hash": "sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg=="
+      }
+    },
+    "npm:source-map-js@1.2.1": {
+      "type": "npm",
+      "name": "npm:source-map-js@1.2.1",
+      "data": {
+        "version": "1.2.1",
+        "packageName": "source-map-js",
+        "hash": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
       }
     },
     "npm:source-map-loader": {
@@ -15811,6 +16072,15 @@
         "version": "3.4.12",
         "packageName": "tailwindcss",
         "hash": "sha512-Htf/gHj2+soPb9UayUNci/Ja3d8pTmu9ONTfh4QY8r3MATTZOzmv6UYWF7ZwikEIC8okpfqmGqrmDehua8mF8w=="
+      }
+    },
+    "npm:tailwindcss@3.4.14": {
+      "type": "npm",
+      "name": "npm:tailwindcss@3.4.14",
+      "data": {
+        "version": "3.4.14",
+        "packageName": "tailwindcss",
+        "hash": "sha512-IcSvOcTRcUtQQ7ILQL5quRDg7Xs93PdJEk1ZLbhhvJc7uj/OAhYOnruEiwnGgBvUtaUAJ8/mhSw1o8L2jCiENA=="
       }
     },
     "npm:tapable": {
@@ -16614,6 +16884,15 @@
         "hash": "sha512-YuKoXDAhBYxY7SfOKxHBDoSyENFeW5VvIIQp2TGQuit8gpK6MnWaQelBKxso72DoxTZfZdcP3W90LqpSkgPzLQ=="
       }
     },
+    "npm:varint": {
+      "type": "npm",
+      "name": "npm:varint",
+      "data": {
+        "version": "6.0.0",
+        "packageName": "varint",
+        "hash": "sha512-cXEIW6cfr15lFv563k4GuVuW/fiwjknytD37jIOLSdSWuOI6WnO/oKwmP2FQTU2l01LP8/M5TSAJpzUaGe3uWg=="
+      }
+    },
     "npm:vary": {
       "type": "npm",
       "name": "npm:vary",
@@ -17300,7 +17579,7 @@
     },
     {
       "source": "npm:@babel/code-frame@7.24.2",
-      "target": "npm:picocolors@1.1.0",
+      "target": "npm:picocolors@1.1.1",
       "type": "static"
     },
     {
@@ -17310,7 +17589,7 @@
     },
     {
       "source": "npm:@babel/code-frame@7.25.9",
-      "target": "npm:picocolors@1.1.0",
+      "target": "npm:picocolors@1.1.1",
       "type": "static"
     },
     {
@@ -24530,7 +24809,7 @@
     },
     {
       "source": "npm:@nx/rollup",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -24850,7 +25129,7 @@
     },
     {
       "source": "npm:@nx/webpack",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -25266,6 +25545,36 @@
     {
       "source": "npm:@rsbuild/plugin-react",
       "target": "npm:react-refresh@0.14.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:@rsbuild/plugin-sass",
+      "target": "npm:@rsbuild/core@1.0.18",
+      "type": "static"
+    },
+    {
+      "source": "npm:@rsbuild/plugin-sass",
+      "target": "npm:deepmerge",
+      "type": "static"
+    },
+    {
+      "source": "npm:@rsbuild/plugin-sass",
+      "target": "npm:loader-utils@2.0.4",
+      "type": "static"
+    },
+    {
+      "source": "npm:@rsbuild/plugin-sass",
+      "target": "npm:postcss@8.4.47",
+      "type": "static"
+    },
+    {
+      "source": "npm:@rsbuild/plugin-sass",
+      "target": "npm:reduce-configs",
+      "type": "static"
+    },
+    {
+      "source": "npm:@rsbuild/plugin-sass",
+      "target": "npm:sass-embedded",
       "type": "static"
     },
     {
@@ -27025,7 +27334,7 @@
     },
     {
       "source": "npm:@vue/compiler-core",
-      "target": "npm:source-map-js@1.2.0",
+      "target": "npm:source-map-js@1.2.1",
       "type": "static"
     },
     {
@@ -27865,7 +28174,7 @@
     },
     {
       "source": "npm:autoprefixer",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -28745,7 +29054,7 @@
     },
     {
       "source": "npm:caniuse-api",
-      "target": "npm:browserslist@4.23.3",
+      "target": "npm:browserslist@4.24.2",
       "type": "static"
     },
     {
@@ -29305,7 +29614,12 @@
     },
     {
       "source": "npm:css-declaration-sorter",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
+      "type": "static"
+    },
+    {
+      "source": "npm:css-declaration-sorter",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -29315,7 +29629,7 @@
     },
     {
       "source": "npm:css-loader@6.8.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -29360,7 +29674,7 @@
     },
     {
       "source": "npm:css-loader",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -29420,7 +29734,7 @@
     },
     {
       "source": "npm:css-minimizer-webpack-plugin",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -29510,7 +29824,7 @@
     },
     {
       "source": "npm:css-tree@2.2.1",
-      "target": "npm:source-map-js@1.2.0",
+      "target": "npm:source-map-js@1.2.1",
       "type": "static"
     },
     {
@@ -29520,7 +29834,7 @@
     },
     {
       "source": "npm:css-tree@2.3.1",
-      "target": "npm:source-map-js@1.0.2",
+      "target": "npm:source-map-js@1.2.1",
       "type": "static"
     },
     {
@@ -29535,7 +29849,7 @@
     },
     {
       "source": "npm:cssnano-preset-default@5.2.14",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -29685,7 +29999,7 @@
     },
     {
       "source": "npm:cssnano-preset-default@6.0.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -29825,12 +30139,12 @@
     },
     {
       "source": "npm:cssnano-utils@3.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
       "source": "npm:cssnano-utils@4.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -29845,7 +30159,7 @@
     },
     {
       "source": "npm:cssnano@5.1.15",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -29865,7 +30179,7 @@
     },
     {
       "source": "npm:cssnano@6.0.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -33195,7 +33509,12 @@
     },
     {
       "source": "npm:icss-utils",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
+      "type": "static"
+    },
+    {
+      "source": "npm:icss-utils",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36439,8 +36758,13 @@
       "type": "static"
     },
     {
+      "source": "npm:postcss-alias",
+      "target": "npm:postcss@6.0.23",
+      "type": "static"
+    },
+    {
       "source": "npm:postcss-calc@8.2.4",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -36455,7 +36779,7 @@
     },
     {
       "source": "npm:postcss-calc@9.0.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36485,7 +36809,7 @@
     },
     {
       "source": "npm:postcss-colormin@5.3.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -36495,7 +36819,7 @@
     },
     {
       "source": "npm:postcss-colormin@6.0.0",
-      "target": "npm:browserslist@4.23.3",
+      "target": "npm:browserslist@4.24.2",
       "type": "static"
     },
     {
@@ -36510,7 +36834,7 @@
     },
     {
       "source": "npm:postcss-colormin@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36525,7 +36849,7 @@
     },
     {
       "source": "npm:postcss-convert-values@5.1.3",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -36535,12 +36859,12 @@
     },
     {
       "source": "npm:postcss-convert-values@6.0.0",
-      "target": "npm:browserslist@4.23.3",
+      "target": "npm:browserslist@4.24.2",
       "type": "static"
     },
     {
       "source": "npm:postcss-convert-values@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36550,47 +36874,47 @@
     },
     {
       "source": "npm:postcss-discard-comments@5.1.2",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
       "source": "npm:postcss-discard-comments@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
       "source": "npm:postcss-discard-duplicates@5.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
       "source": "npm:postcss-discard-duplicates@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
       "source": "npm:postcss-discard-empty@5.1.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
       "source": "npm:postcss-discard-empty@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
       "source": "npm:postcss-discard-overridden@5.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
       "source": "npm:postcss-discard-overridden@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
       "source": "npm:postcss-import@14.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -36610,7 +36934,27 @@
     },
     {
       "source": "npm:postcss-import@15.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-import@15.1.0",
+      "target": "npm:postcss-value-parser",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-import@15.1.0",
+      "target": "npm:read-cache",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-import@15.1.0",
+      "target": "npm:resolve@1.22.8",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-import@15.1.0",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36635,7 +36979,17 @@
     },
     {
       "source": "npm:postcss-js",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-js",
+      "target": "npm:camelcase-css",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-js",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36650,7 +37004,7 @@
     },
     {
       "source": "npm:postcss-load-config@3.1.4",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -36670,7 +37024,27 @@
     },
     {
       "source": "npm:postcss-load-config@4.0.2",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-load-config@4.0.2",
+      "target": "npm:ts-node",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-load-config@4.0.2",
+      "target": "npm:lilconfig@3.1.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-load-config@4.0.2",
+      "target": "npm:yaml@2.5.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-load-config@4.0.2",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36690,7 +37064,7 @@
     },
     {
       "source": "npm:postcss-loader@6.2.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -36715,12 +37089,12 @@
     },
     {
       "source": "npm:postcss-loader",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
       "source": "npm:postcss-loader",
-      "target": "npm:semver@7.5.4",
+      "target": "npm:semver@7.6.3",
       "type": "static"
     },
     {
@@ -36734,8 +37108,38 @@
       "type": "static"
     },
     {
+      "source": "npm:postcss-loader",
+      "target": "npm:cosmiconfig@9.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-loader",
+      "target": "npm:jiti",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-loader",
+      "target": "npm:postcss@8.4.47",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-loader",
+      "target": "npm:semver@7.6.3",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-loader",
+      "target": "npm:@rspack/core",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-loader",
+      "target": "npm:webpack@5.95.0",
+      "type": "static"
+    },
+    {
       "source": "npm:postcss-merge-longhand@5.1.7",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -36750,7 +37154,7 @@
     },
     {
       "source": "npm:postcss-merge-longhand@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36780,7 +37184,7 @@
     },
     {
       "source": "npm:postcss-merge-rules@5.1.4",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -36790,7 +37194,7 @@
     },
     {
       "source": "npm:postcss-merge-rules@6.0.1",
-      "target": "npm:browserslist@4.23.3",
+      "target": "npm:browserslist@4.24.2",
       "type": "static"
     },
     {
@@ -36805,7 +37209,7 @@
     },
     {
       "source": "npm:postcss-merge-rules@6.0.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36815,7 +37219,7 @@
     },
     {
       "source": "npm:postcss-minify-font-values@5.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -36825,7 +37229,7 @@
     },
     {
       "source": "npm:postcss-minify-font-values@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36845,7 +37249,7 @@
     },
     {
       "source": "npm:postcss-minify-gradients@5.1.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -36865,7 +37269,7 @@
     },
     {
       "source": "npm:postcss-minify-gradients@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36885,7 +37289,7 @@
     },
     {
       "source": "npm:postcss-minify-params@5.1.4",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -36895,7 +37299,7 @@
     },
     {
       "source": "npm:postcss-minify-params@6.0.0",
-      "target": "npm:browserslist@4.23.3",
+      "target": "npm:browserslist@4.24.2",
       "type": "static"
     },
     {
@@ -36905,7 +37309,7 @@
     },
     {
       "source": "npm:postcss-minify-params@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36915,7 +37319,7 @@
     },
     {
       "source": "npm:postcss-minify-selectors@5.2.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -36925,7 +37329,7 @@
     },
     {
       "source": "npm:postcss-minify-selectors@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36935,7 +37339,12 @@
     },
     {
       "source": "npm:postcss-modules-extract-imports",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-modules-extract-imports",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36945,7 +37354,27 @@
     },
     {
       "source": "npm:postcss-modules-local-by-default",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-modules-local-by-default",
+      "target": "npm:postcss-selector-parser",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-modules-local-by-default",
+      "target": "npm:postcss-value-parser",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-modules-local-by-default",
+      "target": "npm:icss-utils",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-modules-local-by-default",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36960,7 +37389,17 @@
     },
     {
       "source": "npm:postcss-modules-scope",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-modules-scope",
+      "target": "npm:postcss-selector-parser",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-modules-scope",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36975,7 +37414,17 @@
     },
     {
       "source": "npm:postcss-modules-values",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-modules-values",
+      "target": "npm:icss-utils",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-modules-values",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -36995,7 +37444,7 @@
     },
     {
       "source": "npm:postcss-modules",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37025,7 +37474,17 @@
     },
     {
       "source": "npm:postcss-nested",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-nested",
+      "target": "npm:postcss-selector-parser",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss-nested",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37035,17 +37494,17 @@
     },
     {
       "source": "npm:postcss-normalize-charset@5.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
       "source": "npm:postcss-normalize-charset@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
       "source": "npm:postcss-normalize-display-values@5.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37055,7 +37514,7 @@
     },
     {
       "source": "npm:postcss-normalize-display-values@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37065,7 +37524,7 @@
     },
     {
       "source": "npm:postcss-normalize-positions@5.1.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37075,7 +37534,7 @@
     },
     {
       "source": "npm:postcss-normalize-positions@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37085,7 +37544,7 @@
     },
     {
       "source": "npm:postcss-normalize-repeat-style@5.1.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37095,7 +37554,7 @@
     },
     {
       "source": "npm:postcss-normalize-repeat-style@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37105,7 +37564,7 @@
     },
     {
       "source": "npm:postcss-normalize-string@5.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37115,7 +37574,7 @@
     },
     {
       "source": "npm:postcss-normalize-string@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37125,7 +37584,7 @@
     },
     {
       "source": "npm:postcss-normalize-timing-functions@5.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37135,7 +37594,7 @@
     },
     {
       "source": "npm:postcss-normalize-timing-functions@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37150,7 +37609,7 @@
     },
     {
       "source": "npm:postcss-normalize-unicode@5.1.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37160,12 +37619,12 @@
     },
     {
       "source": "npm:postcss-normalize-unicode@6.0.0",
-      "target": "npm:browserslist@4.23.3",
+      "target": "npm:browserslist@4.24.2",
       "type": "static"
     },
     {
       "source": "npm:postcss-normalize-unicode@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37180,7 +37639,7 @@
     },
     {
       "source": "npm:postcss-normalize-url@5.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37190,7 +37649,7 @@
     },
     {
       "source": "npm:postcss-normalize-url@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37200,7 +37659,7 @@
     },
     {
       "source": "npm:postcss-normalize-whitespace@5.1.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37210,7 +37669,7 @@
     },
     {
       "source": "npm:postcss-normalize-whitespace@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37225,7 +37684,7 @@
     },
     {
       "source": "npm:postcss-ordered-values@5.1.3",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37240,7 +37699,7 @@
     },
     {
       "source": "npm:postcss-ordered-values@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37260,12 +37719,12 @@
     },
     {
       "source": "npm:postcss-reduce-initial@5.1.2",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
       "source": "npm:postcss-reduce-initial@6.0.0",
-      "target": "npm:browserslist@4.23.3",
+      "target": "npm:browserslist@4.24.2",
       "type": "static"
     },
     {
@@ -37275,12 +37734,12 @@
     },
     {
       "source": "npm:postcss-reduce-initial@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
       "source": "npm:postcss-reduce-transforms@5.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37290,7 +37749,7 @@
     },
     {
       "source": "npm:postcss-reduce-transforms@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37310,7 +37769,7 @@
     },
     {
       "source": "npm:postcss-svgo@5.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37325,7 +37784,7 @@
     },
     {
       "source": "npm:postcss-svgo@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37340,7 +37799,7 @@
     },
     {
       "source": "npm:postcss-unique-selectors@5.1.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -37350,7 +37809,7 @@
     },
     {
       "source": "npm:postcss-unique-selectors@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -37359,18 +37818,48 @@
       "type": "static"
     },
     {
-      "source": "npm:postcss",
+      "source": "npm:postcss@6.0.23",
+      "target": "npm:chalk@2.4.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss@6.0.23",
+      "target": "npm:source-map@0.6.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss@6.0.23",
+      "target": "npm:supports-color@5.5.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss@8.4.38",
       "target": "npm:nanoid",
       "type": "static"
     },
     {
-      "source": "npm:postcss",
+      "source": "npm:postcss@8.4.38",
       "target": "npm:picocolors@1.1.0",
       "type": "static"
     },
     {
-      "source": "npm:postcss",
+      "source": "npm:postcss@8.4.38",
       "target": "npm:source-map-js@1.2.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss@8.4.47",
+      "target": "npm:nanoid",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss@8.4.47",
+      "target": "npm:picocolors@1.1.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss@8.4.47",
+      "target": "npm:source-map-js@1.2.1",
       "type": "static"
     },
     {
@@ -37609,6 +38098,11 @@
       "type": "static"
     },
     {
+      "source": "npm:reduce-configs",
+      "target": "npm:browserslist@4.24.2",
+      "type": "static"
+    },
+    {
       "source": "npm:regenerate-unicode-properties",
       "target": "npm:regenerate",
       "type": "static"
@@ -37835,7 +38329,7 @@
     },
     {
       "source": "npm:rollup-plugin-postcss",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -38104,6 +38598,141 @@
       "type": "static"
     },
     {
+      "source": "npm:sass-embedded",
+      "target": "npm:@bufbuild/protobuf",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:buffer-builder",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:colorjs.io",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:immutable",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:rxjs",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:supports-color@8.1.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:varint",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-android-arm",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-android-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-android-ia32",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-android-riscv64",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-android-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-darwin-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-darwin-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-linux-arm",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-linux-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-linux-ia32",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-linux-musl-arm",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-linux-musl-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-linux-musl-ia32",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-linux-musl-riscv64",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-linux-musl-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-linux-riscv64",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-linux-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-win32-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-win32-ia32",
+      "type": "static"
+    },
+    {
+      "source": "npm:sass-embedded",
+      "target": "npm:sass-embedded-win32-x64",
+      "type": "static"
+    },
+    {
       "source": "npm:sass-loader",
       "target": "npm:klona",
       "type": "static"
@@ -38124,6 +38753,11 @@
       "type": "static"
     },
     {
+      "source": "npm:sass-loader",
+      "target": "npm:sass-embedded",
+      "type": "static"
+    },
+    {
       "source": "npm:sass",
       "target": "npm:chokidar",
       "type": "static"
@@ -38135,7 +38769,7 @@
     },
     {
       "source": "npm:sass",
-      "target": "npm:source-map-js@1.2.0",
+      "target": "npm:source-map-js@1.2.1",
       "type": "static"
     },
     {
@@ -38605,7 +39239,7 @@
     },
     {
       "source": "npm:source-map-loader",
-      "target": "npm:source-map-js@1.2.0",
+      "target": "npm:source-map-js@1.2.1",
       "type": "static"
     },
     {
@@ -38975,12 +39609,12 @@
     },
     {
       "source": "npm:stylehacks@5.1.1",
-      "target": "npm:browserslist@4.23.3",
+      "target": "npm:browserslist@4.24.2",
       "type": "static"
     },
     {
       "source": "npm:stylehacks@5.1.1",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -38990,12 +39624,12 @@
     },
     {
       "source": "npm:stylehacks@6.0.0",
-      "target": "npm:browserslist@4.23.3",
+      "target": "npm:browserslist@4.24.2",
       "type": "static"
     },
     {
       "source": "npm:stylehacks@6.0.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.47",
       "type": "static"
     },
     {
@@ -39160,7 +39794,7 @@
     },
     {
       "source": "npm:svgo@3.0.2",
-      "target": "npm:picocolors@1.1.0",
+      "target": "npm:picocolors@1.1.1",
       "type": "static"
     },
     {
@@ -39235,7 +39869,7 @@
     },
     {
       "source": "npm:tailwindcss",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {
@@ -39270,6 +39904,116 @@
     },
     {
       "source": "npm:tailwindcss",
+      "target": "npm:sucrase",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:@alloc/quick-lru",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:arg@5.0.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:chokidar",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:didyoumean",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:dlv",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:fast-glob@3.3.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:glob-parent@6.0.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:is-glob",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:jiti",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:lilconfig@2.1.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:micromatch@4.0.8",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:normalize-path",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:object-hash",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:picocolors@1.1.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:postcss@8.4.47",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:postcss-import@15.1.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:postcss-js",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:postcss-load-config@4.0.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:postcss-nested",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:postcss-selector-parser",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
+      "target": "npm:resolve@1.22.8",
+      "type": "static"
+    },
+    {
+      "source": "npm:tailwindcss@3.4.14",
       "target": "npm:sucrase",
       "type": "static"
     },
@@ -39849,6 +40593,86 @@
       "type": "static"
     },
     {
+      "source": "npm:ts-node",
+      "target": "npm:@cspotcode/source-map-support",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:@tsconfig/node10",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:@tsconfig/node12",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:@tsconfig/node14",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:@tsconfig/node16",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:@types/node@22.8.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:acorn@8.10.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:acorn-walk",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:arg@4.1.3",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:create-require",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:diff",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:make-error",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:typescript",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:v8-compile-cache-lib",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:yn",
+      "type": "static"
+    },
+    {
+      "source": "npm:ts-node",
+      "target": "npm:@swc/core",
+      "type": "static"
+    },
+    {
       "source": "npm:tsconfig-paths-webpack-plugin",
       "target": "npm:chalk@4.1.2",
       "type": "static"
@@ -40190,7 +41014,7 @@
     },
     {
       "source": "npm:update-browserslist-db@1.1.0",
-      "target": "npm:picocolors@1.1.0",
+      "target": "npm:picocolors@1.1.1",
       "type": "static"
     },
     {
@@ -40295,7 +41119,7 @@
     },
     {
       "source": "npm:vite",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.4.38",
       "type": "static"
     },
     {

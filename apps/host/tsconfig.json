@@ -6,7 +6,7 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "paths": {
-      "*": ["apps/hero/@mf-types/*"]
+      "*": ["apps/host/@mf-types/*"]
     }
   },
   "files": [],

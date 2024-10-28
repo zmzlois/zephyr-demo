@@ -1,7 +1,6 @@
 import { useAtom } from 'jotai';
 import { searchTextAtom, searchSizeAtom, searchColorAtom } from '../store';
-import ProductData from '../../../data/ProductData';
-import { ProductCard } from '@acme/components';
+import { ProductData, ProductCard } from '@acme/components';
 import { useCart } from '../../../hooks';
 
 const ProductSearchResults = () => {
@@ -24,7 +23,7 @@ const ProductSearchResults = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
           {filteredProducts.map((product) => (
             <div key={product.id} className="flex">
-              <ProductCard product={product} width="100%">
+              <ProductCard product={product}>
                 <button
                   type="button"
                   className="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition-colors"
