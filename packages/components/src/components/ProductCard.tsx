@@ -10,7 +10,7 @@ export const ProductCard: FC<ProductCardProps> = ({ product, children }) => {
   return (
     <div
       className={
-        'cl-flex cl-flex-col cl-justify-between cl-p-6 cl-h-auto cl-min-h-[350px] cl-rounded-xl cl-text-gray-800 cl-shadow-lg hover:cl-ring-2 hover:cl-ring-gray-500 hover:cl-bg-gray-200 dark:hover:cl-ring-gray-200 dark:hover:cl-bg-gray-50 cl-transition-all cl-duration-300 cl-ease-in-out cl-bg-white'
+        'cl-flex cl-flex-col cl-justify-between cl-p-6 cl-h-auto cl-min-h-[350px] cl-w-full cl-rounded-xl cl-text-gray-800 cl-shadow-lg hover:cl-ring-2 hover:cl-ring-gray-500 hover:cl-bg-gray-200 dark:hover:cl-ring-gray-200 dark:hover:cl-bg-gray-50 cl-transition-all cl-duration-300 cl-ease-in-out cl-bg-white'
       }
     >
       <div className="cl-flex cl-justify-between cl-items-start">
@@ -21,8 +21,7 @@ export const ProductCard: FC<ProductCardProps> = ({ product, children }) => {
       <img
         src={product.imgUrl}
         alt={product.title}
-        className="cl-w-[180px] cl-h-[300px] cl-object-contain cl-p-4"
-        style={{ width: '180px' }}
+        className="cl-h-[300px] cl-w-[180px] cl-object-contain cl-p-4"
       />
       <div className="cl-flex cl-flex-col cl-gap-3 cl-mt-auto">
         <p className="cl-text-2xl cl-font-bold cl-text-gray-700 cl-text-center">

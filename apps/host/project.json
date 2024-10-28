@@ -16,7 +16,7 @@
         "outputPath": "dist/apps/host",
         "main": "apps/host/src/main.ts",
         "tsConfig": "apps/host/tsconfig.app.json",
-        "rspackConfig": "apps/host/rspack.config.js",
+        "rspackConfig": "apps/host/rspack.config.ts",
         "assets": ["apps/host/src/favicon.ico", "apps/host/src/assets"]
       },
       "configurations": {

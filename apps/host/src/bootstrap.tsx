@@ -1,4 +1,5 @@
 import { createRoot } from 'react-dom/client';
+import '@acme/components/styles';
 import App from './app/App';
 import './index.css';
 

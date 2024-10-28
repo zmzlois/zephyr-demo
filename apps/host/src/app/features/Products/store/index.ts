@@ -1,5 +1,5 @@
 import { atom } from 'jotai';
-import { ProductSize, ProductColor } from '../../../types/Products';
+import type { ProductSize, ProductColor } from '@acme/components';
 
 export const searchTextAtom = atom('');
 export const searchSizeAtom = atom<ProductSize | ''>('');

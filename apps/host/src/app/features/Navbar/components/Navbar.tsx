@@ -44,12 +44,6 @@ const Navbar = () => {
         >
           Cart
         </Link>
-        <Link
-          to="/favorites"
-          className="hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
-        >
-          Favorites
-        </Link>
       </div>
       <div className="ml-4">{InactiveThemeIcon()}</div>
     </nav>

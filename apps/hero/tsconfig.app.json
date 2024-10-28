@@ -19,7 +19,6 @@
     "src/**/*.spec.jsx",
     "src/**/*.test.jsx",
     "vitest.config.ts",
-    "vitest.config.ts",
     "dist",
     "node_modules"
   ],

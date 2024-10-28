@@ -7,6 +7,7 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "type": "module",
   "dependencies": {
     "@acme/components": "workspace:*",
     "@acme/utils": "workspace:*"

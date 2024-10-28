@@ -3,6 +3,15 @@ import { type Product, ProductColor, ProductSize } from '../types/Products';
 const sizes = Object.values(ProductSize);
 const colors = Object.values(ProductColor);
 
+const generateRealisticPrice = (): number => {
+  const priceRange = { min: 10.99, max: 199.99 };
+  const price =
+    Math.random() * (priceRange.max - priceRange.min) + priceRange.min;
+
+  // Round to 2 decimal places
+  return Number(price.toFixed(2));
+};
+
 const generateProducts = (count: number): Product[] => {
   const products: Product[] = [];
 
@@ -15,7 +24,7 @@ const generateProducts = (count: number): Product[] => {
       title: `${color} ${size} Shirt`,
       size,
       color,
-      price: Math.floor(Math.random() * 1000) + 1,
+      price: generateRealisticPrice(),
       imgUrl: `./assets/${color}Shirt.png`,
       quantity: 1,
     };

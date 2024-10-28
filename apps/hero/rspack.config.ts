@@ -1,7 +1,7 @@
-const { composePlugins, withNx, withReact } = require('@nx/rspack');
-const { withModuleFederation } = require('@nx/rspack/module-federation');
-const path = require('node:path');
-const mfConfig = require('./module-federation.config');
+import { composePlugins, withNx, withReact } from '@nx/rspack';
+import { withModuleFederation } from '@nx/rspack/module-federation';
+import { join } from 'node:path';
+import { mfConfig } from './module-federation.config';
 
 module.exports = composePlugins(
   withNx(),
@@ -14,17 +14,10 @@ module.exports = composePlugins(
       ),
     ];
 
-    config.devServer = {
-      ...config.devServer,
-      historyApiFallback: true,
-      hot: true,
-      liveReload: true,
-    };
-
     config.module.rules.push({
       test: /\.css$/,
-      exclude: /node_modules\/(?!@acme)/,
       type: 'css',
+      exclude: /node_modules(?!\/@acme)|packages\/components/,
       use: [
         {
           loader: 'postcss-loader',
@@ -32,9 +25,9 @@ module.exports = composePlugins(
             postcssOptions: {
               plugins: {
                 tailwindcss: {
-                  config: path.join(
+                  config: join(
                     context.context.root,
-                    'apps/host/tailwind.config.js'
+                    'apps/hero/tailwind.config.js'
                   ),
                 },
                 autoprefixer: {},

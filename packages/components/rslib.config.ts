@@ -42,7 +42,7 @@ export default async ({ envMode }) => {
         output: {
           distPath: {
             root: toWorkspacePath(`${COMPONENT_PATH}/dist/esm`),
-            css: toWorkspacePath(`${COMPONENT_PATH}/dist`),
+            css: '.',
           },
         },
       },
@@ -54,7 +54,7 @@ export default async ({ envMode }) => {
         output: {
           distPath: {
             root: toWorkspacePath(`${COMPONENT_PATH}/dist/cjs`),
-            css: toWorkspacePath(`${COMPONENT_PATH}/dist`),
+            css: '.',
           },
         },
       },

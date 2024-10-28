@@ -1,5 +1,4 @@
-import { ProductCard } from '@acme/components';
-import useCart from '../hooks/useCart';
+import { ProductCard, useCart } from '@acme/components';
 import EmptyCart from './EmptyCart';
 import { ShoppingCartIcon, XCircleIcon } from '@heroicons/react/24/outline';
 import { formatAsCurrency } from '@acme/utils';
@@ -25,7 +24,7 @@ const Cart = () => {
         <div className="flex flex-wrap justify-center gap-4">
           {cart.products.map((product) => (
             <div key={product.id} className="flex">
-              <ProductCard product={product} width="300px">
+              <ProductCard product={product}>
                 <button
                   type="button"
                   onClick={() => removeFromCart(product.id)}
