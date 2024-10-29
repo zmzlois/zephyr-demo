@@ -17998,6 +17998,11 @@
       },
       {
         "source": "hero",
+        "target": "npm:zephyr-webpack-plugin",
+        "type": "static"
+      },
+      {
+        "source": "hero",
         "target": "npm:react-dom",
         "type": "static"
       },
@@ -18061,6 +18066,11 @@
       {
         "source": "host",
         "target": "utils",
+        "type": "static"
+      },
+      {
+        "source": "host",
+        "target": "npm:zephyr-webpack-plugin",
         "type": "static"
       },
       {

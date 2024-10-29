@@ -2,11 +2,13 @@ import { composePlugins, withNx, withReact } from '@nx/rspack';
 import { withModuleFederation } from '@nx/rspack/module-federation';
 import { join } from 'node:path';
 import { mfConfig } from './module-federation.config';
+import { withZephyr } from "zephyr-webpack-plugin"
 
 const config = composePlugins(
   withNx(),
   withReact(),
   withModuleFederation(mfConfig),
+  withZephyr(),
   (config, context) => {
     config.module.rules = [
       ...config.module.rules.filter(
