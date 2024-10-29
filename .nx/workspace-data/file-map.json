@@ -13,48 +13,32 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "pnpm-lock.yaml",
+        "hash": "12959715384932594445"
+      },
+      {
         "file": ".vscode/extensions.json",
         "hash": "6807003856908271136"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "6422665021970253171"
-      },
-      {
-        "file": "squadron.yaml",
-        "hash": "2853208085046838748"
-      },
-      {
-        "file": "README.md",
-        "hash": "22080156993399129"
       },
       {
         "file": ".gitignore",
         "hash": "14705395205556544810"
       },
       {
-        "file": "migrations.json",
-        "hash": "4583345520328765039"
+        "file": "tsconfig.base.json",
+        "hash": "6422665021970253171"
       },
       {
-        "file": "package.json",
-        "hash": "10714316374437238615"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
+        "file": "README.md",
+        "hash": "22080156993399129"
       },
       {
         "file": "pnpm-workspace.yaml",
         "hash": "2373171212127886927"
       },
       {
-        "file": "vitest.workspace.ts",
-        "hash": "7870362608836821141"
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
       },
       {
         "file": ".prettierignore",
@@ -65,8 +49,24 @@
         "hash": "380292114643065604"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "12959715384932594445"
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "package.json",
+        "hash": "10714316374437238615"
+      },
+      {
+        "file": "squadron.yaml",
+        "hash": "2853208085046838748"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "4583345520328765039"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "7870362608836821141"
       }
     ],
     "projectFileMap": {
@@ -303,7 +303,7 @@
         },
         {
           "file": "apps/hero/src/features/Products/components/ProductDetails.tsx",
-          "hash": "5498724197688999735",
+          "hash": "1421190620795947582",
           "deps": [
             "npm:react",
             "npm:react-router-dom",
@@ -423,7 +423,7 @@
         },
         {
           "file": "apps/host/src/app/App.tsx",
-          "hash": "15629228846934302967",
+          "hash": "6358097848858091635",
           "deps": [
             "npm:react-router-dom",
             "npm:react"
