@@ -29,7 +29,7 @@ const config = composePlugins(
 
     config.module.rules.push({
       test: /\.css$/,
-      exclude: /node_modules\/|packages\/components/,
+      exclude: /node_modules\/(?!@acme\/components)|packages\/components/,
       type: 'css',
       use: [
         {

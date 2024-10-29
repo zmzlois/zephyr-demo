@@ -18004,12 +18004,12 @@
       },
       {
         "source": "hero",
-        "target": "npm:react",
+        "target": "npm:react-router-dom",
         "type": "static"
       },
       {
         "source": "hero",
-        "target": "npm:react-router-dom",
+        "target": "npm:react",
         "type": "static"
       },
       {

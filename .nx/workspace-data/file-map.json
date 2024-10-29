@@ -13,60 +13,60 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "squadron.yaml",
-        "hash": "2853208085046838748"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "6422665021970253171"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "2373171212127886927"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": "nx.json",
-        "hash": "380292114643065604"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "2054212286200771465"
+        "file": "vitest.workspace.ts",
+        "hash": "7870362608836821141"
       },
       {
         "file": ".prettierignore",
         "hash": "14688272390704683536"
       },
       {
-        "file": "migrations.json",
-        "hash": "4583345520328765039"
-      },
-      {
-        "file": "vitest.workspace.ts",
-        "hash": "7870362608836821141"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "14705395205556544810"
+        "file": "squadron.yaml",
+        "hash": "2853208085046838748"
       },
       {
         "file": "README.md",
         "hash": "22080156993399129"
       },
       {
+        "file": "nx.json",
+        "hash": "380292114643065604"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
         "file": "package.json",
         "hash": "330192861818056710"
       },
       {
+        "file": "migrations.json",
+        "hash": "4583345520328765039"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2373171212127886927"
+      },
+      {
         "file": ".vscode/extensions.json",
         "hash": "6807003856908271136"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "6422665021970253171"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14705395205556544810"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "2054212286200771465"
       }
     ],
     "projectFileMap": {
@@ -107,7 +107,7 @@
         },
         {
           "file": "packages/components/package.json",
-          "hash": "16905383141443289200",
+          "hash": "10277453699435129682",
           "deps": [
             "npm:react",
             "npm:react-dom",
@@ -336,9 +336,10 @@
         },
         {
           "file": "apps/hero/src/bootstrap.tsx",
-          "hash": "18136789059279628336",
+          "hash": "6267396148277914400",
           "deps": [
-            "npm:react-dom"
+            "npm:react-dom",
+            "npm:react-router-dom"
           ]
         },
         {
@@ -467,7 +468,7 @@
         },
         {
           "file": "apps/host/rspack.config.ts",
-          "hash": "18071165592796396729",
+          "hash": "8212539605605006554",
           "deps": [
             "npm:@nx/rspack",
             "npm:zephyr-webpack-plugin"
@@ -646,7 +647,7 @@
         },
         {
           "file": "apps/host/src/index.css",
-          "hash": "2896387690555567643"
+          "hash": "13133845328108032581"
         },
         {
           "file": "apps/host/src/index.html",

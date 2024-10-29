@@ -11,10 +11,7 @@
         "default": "./dist/esm/index.js"
       }
     },
-    "./styles": {
-      "import": "./dist/esm/index.css",
-      "require": "./dist/esm/index.css"
-    }
+    "./styles": "./dist/esm/index.css"
   },
   "files": [
     "dist"
