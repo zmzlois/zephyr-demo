@@ -1,4 +1,5 @@
 import type { FC, PropsWithChildren } from 'react';
+import { useNavigate } from 'react-router-dom';
 import type { Product } from '../types/Products';
 import { formatAsCurrency } from '@acme/utils';
 
@@ -7,11 +8,19 @@ export type ProductCardProps = {
 } & PropsWithChildren;
 
 export const ProductCard: FC<ProductCardProps> = ({ product, children }) => {
+  const navigate = useNavigate();
+
+  const handleClick = (id: string) => {
+    navigate(`/products/${id}`);
+  };
+
   return (
+    // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
     <div
       className={
         'cl-flex cl-flex-col cl-justify-between cl-p-6 cl-h-auto cl-min-h-[350px] cl-w-full cl-rounded-xl cl-text-gray-800 cl-shadow-lg hover:cl-ring-2 hover:cl-ring-gray-500 hover:cl-bg-gray-200 dark:hover:cl-ring-gray-200 dark:hover:cl-bg-gray-50 cl-transition-all cl-duration-300 cl-ease-in-out cl-bg-white'
       }
+      onClick={() => handleClick(product.id)}
     >
       <div className="cl-flex cl-justify-between cl-items-start">
         <h3 className="cl-text-xl cl-font-semibold cl-truncate cl-text-gray-800">

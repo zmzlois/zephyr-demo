@@ -26,6 +26,10 @@ const generateProducts = (count: number): Product[] => {
       color,
       price: generateRealisticPrice(),
       imgUrl: `./assets/${color}Shirt.png`,
+      galleryImages: [
+        `/assets/Gallery_${color}_TShirt.jpeg`,
+        `/assets/${color}Shirt.png`,
+      ],
       quantity: 1,
     };
 

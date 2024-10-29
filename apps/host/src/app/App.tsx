@@ -5,6 +5,7 @@ import Navbar from './features/Navbar/components/Navbar';
 import { ThemeProvider } from './features/Theme/ThemeProvider';
 
 const Products = lazy(() => import('./features/Products/components/Products'));
+const ProductDetails = lazy(() => import('hero/ProductDetails'));
 const Cart = lazy(() => import('./features/Cart/components/Cart'));
 
 const router = createBrowserRouter([
@@ -28,6 +29,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<div>Loading</div>}>
             <Products />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/products/:id',
+        element: (
+          <Suspense fallback={<div>Loading</div>}>
+            <ProductDetails />
           </Suspense>
         ),
       },

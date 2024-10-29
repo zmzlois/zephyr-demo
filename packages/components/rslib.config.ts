@@ -46,18 +46,18 @@ export default async ({ envMode }) => {
           },
         },
       },
-      {
-        dts: {
-          bundle: false,
-        },
-        format: 'cjs',
-        output: {
-          distPath: {
-            root: toWorkspacePath(`${COMPONENT_PATH}/dist/cjs`),
-            css: '.',
-          },
-        },
-      },
+      // {
+      //   dts: {
+      //     bundle: false,
+      //   },
+      //   format: 'cjs',
+      //   output: {
+      //     distPath: {
+      //       root: toWorkspacePath(`${COMPONENT_PATH}/dist/cjs`),
+      //       css: '.',
+      //     },
+      //   },
+      // },
       // {
       //   format: 'mf',
       //   output: {

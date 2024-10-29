@@ -19,5 +19,6 @@ export type Product = {
   color: ProductColor;
   price: number;
   imgUrl: string;
+  galleryImages: string[];
   quantity: number; // Added quantity property
 };

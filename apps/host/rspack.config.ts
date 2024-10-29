@@ -2,6 +2,7 @@ import { composePlugins, withNx, withReact } from '@nx/rspack';
 import { withModuleFederation } from '@nx/rspack/module-federation';
 import { join } from 'node:path';
 import { mfConfig } from './module-federation.config';
+import { withZephyr } from 'zephyr-webpack-plugin';
 
 const config = composePlugins(
   withNx(),
@@ -23,7 +24,7 @@ const config = composePlugins(
 
     config.module.rules.push({
       test: /\.css$/,
-      exclude: /node_modules(?!\/@acme)|packages\/components/,
+      exclude: /node_modules\/|packages\/components/,
       type: 'css',
       use: [
         {
@@ -47,6 +48,7 @@ const config = composePlugins(
 
     return config;
   }
+  //withZephyr()
 );
 
 export default config;

@@ -1,15 +1,16 @@
 import { useAtom } from 'jotai';
 import { searchTextAtom, searchSizeAtom, searchColorAtom } from '../store';
-import { ProductData, ProductCard } from '@acme/components';
+import { ProductCard, useProducts } from '@acme/components';
 import { useCart } from '@acme/components';
 
 const ProductSearchResults = () => {
   const [searchText] = useAtom(searchTextAtom);
   const [searchSize] = useAtom(searchSizeAtom);
   const [searchColor] = useAtom(searchColorAtom);
+  const { products } = useProducts();
   const { addToCart } = useCart();
 
-  const filteredProducts = ProductData.filter(
+  const filteredProducts = products.filter(
     (product) =>
       product.title.toLowerCase().includes(searchText.toLowerCase()) &&
       (searchSize ? product.size === searchSize : true) &&

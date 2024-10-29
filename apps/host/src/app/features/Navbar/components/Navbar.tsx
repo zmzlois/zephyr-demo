@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center h-20 px-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 shadow-md">
+    <nav className="flex justify-between items-center h-20 px-4 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 shadow-md">
       <div className="text-2xl font-bold border-r border-gray-300 dark:border-gray-600 pr-4">
         <Link
           to="/"

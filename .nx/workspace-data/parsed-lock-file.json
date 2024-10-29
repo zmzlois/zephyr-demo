@@ -3865,9 +3865,9 @@
       "type": "npm",
       "name": "npm:@remix-run/router",
       "data": {
-        "version": "1.8.0",
+        "version": "1.20.0",
         "packageName": "@remix-run/router",
-        "hash": "sha512-mrfKqIHnSZRyIzBcanNJmVQELTnX+qagEDlcKO90RgRBVOZGSGvZKeDihTRfWcqoDn5N/NkUcwWTccnpN18Tfg=="
+        "hash": "sha512-mUnk8rPJBI9loFDZ+YzPGdeniYK+FTmRD1TMCz7ev2SNIozyKKpnGgsxO34u6Z4z/t0ITuu7voi/AshfsGsgFg=="
       }
     },
     "npm:@rollup/plugin-babel": {
@@ -14215,18 +14215,18 @@
       "type": "npm",
       "name": "npm:react-router-dom",
       "data": {
-        "version": "6.15.0",
+        "version": "6.27.0",
         "packageName": "react-router-dom",
-        "hash": "sha512-aR42t0fs7brintwBGAv2+mGlCtgtFQeOzK0BM1/OiqEzRejOZtpMZepvgkscpMUnKb8YO84G7s3LsHnnDNonbQ=="
+        "hash": "sha512-+bvtFWMC0DgAFrfKXKG9Fc+BcXWRUO1aJIihbB79xaeq0v5UzfvnM5houGUm1Y461WVRcgAQ+Clh5rdb1eCx4g=="
       }
     },
     "npm:react-router": {
       "type": "npm",
       "name": "npm:react-router",
       "data": {
-        "version": "6.15.0",
+        "version": "6.27.0",
         "packageName": "react-router",
-        "hash": "sha512-NIytlzvzLwJkCQj2HLefmeakxxWHWAP+02EGqWEZy+DgfHHKQMUoBBjUQLOtFInBMhWtb3hiUy6MfFgwLjXhqg=="
+        "hash": "sha512-YA+HGZXz4jaAkVoYBE98VQl+nVzI+cVI2Oj/06F5ZM+0u3TgedN9Y9kmMRo2mnkSK2nCpNQn0DVob4HCsY/WLw=="
       }
     },
     "npm:react": {

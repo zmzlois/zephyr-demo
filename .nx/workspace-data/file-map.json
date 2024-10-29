@@ -13,44 +13,36 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
         "file": ".vscode/extensions.json",
         "hash": "6807003856908271136"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "14705395205556544810"
-      },
-      {
-        "file": "package.json",
-        "hash": "692790492046238631"
-      },
-      {
-        "file": "squadron.yaml",
-        "hash": "2853208085046838748"
-      },
-      {
-        "file": "nx.json",
-        "hash": "380292114643065604"
       },
       {
         "file": ".editorconfig",
         "hash": "5443105041930014821"
       },
       {
-        "file": "migrations.json",
-        "hash": "4583345520328765039"
-      },
-      {
         "file": "tsconfig.base.json",
         "hash": "6422665021970253171"
       },
       {
+        "file": "squadron.yaml",
+        "hash": "2853208085046838748"
+      },
+      {
         "file": "README.md",
         "hash": "22080156993399129"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14705395205556544810"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "4583345520328765039"
+      },
+      {
+        "file": "package.json",
+        "hash": "10714316374437238615"
       },
       {
         "file": ".prettierrc",
@@ -65,37 +57,19 @@
         "hash": "7870362608836821141"
       },
       {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": "nx.json",
+        "hash": "380292114643065604"
+      },
+      {
         "file": "pnpm-lock.yaml",
-        "hash": "3401679355678593075"
+        "hash": "12959715384932594445"
       }
     ],
     "projectFileMap": {
-      "host-e2e": [
-        {
-          "file": "apps/host-e2e/.eslintrc.json",
-          "hash": "632147010597293032"
-        },
-        {
-          "file": "apps/host-e2e/playwright.config.ts",
-          "hash": "7710149103131713860",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/host-e2e/project.json",
-          "hash": "468957850815794493"
-        },
-        {
-          "file": "apps/host-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        }
-      ],
       "components": [
         {
           "file": "packages/components/README.md",
@@ -107,7 +81,7 @@
         },
         {
           "file": "packages/components/package.json",
-          "hash": "4804334672909841407",
+          "hash": "16020027344619564711",
           "deps": [
             "npm:react",
             "npm:react-dom",
@@ -117,6 +91,7 @@
             "npm:@rsbuild/plugin-react",
             "npm:@rsbuild/core@1.0.18",
             "utils",
+            "npm:react-router-dom",
             "npm:jotai"
           ]
         },
@@ -130,7 +105,7 @@
         },
         {
           "file": "packages/components/rslib.config.ts",
-          "hash": "2333655268571137286",
+          "hash": "4025232439058422759",
           "deps": [
             "npm:@rslib/core",
             "npm:@nx/devkit",
@@ -139,9 +114,10 @@
         },
         {
           "file": "packages/components/src/components/ProductCard.tsx",
-          "hash": "9366315388585151068",
+          "hash": "6547937652398174521",
           "deps": [
             "npm:react",
+            "npm:react-router-dom",
             "utils"
           ]
         },
@@ -151,11 +127,18 @@
         },
         {
           "file": "packages/components/src/data/ProductData.ts",
-          "hash": "7608216935580915374"
+          "hash": "6819791265204655028"
         },
         {
           "file": "packages/components/src/hooks/useCart.ts",
           "hash": "7980230051733369063",
+          "deps": [
+            "npm:jotai"
+          ]
+        },
+        {
+          "file": "packages/components/src/hooks/useProducts.ts",
+          "hash": "10023078000648471836",
           "deps": [
             "npm:jotai"
           ]
@@ -166,18 +149,18 @@
         },
         {
           "file": "packages/components/src/index.ts",
-          "hash": "3603339557111595072"
+          "hash": "13496863808693113236"
         },
         {
           "file": "packages/components/src/store.ts",
-          "hash": "11567336411362015279",
+          "hash": "9363426701050159898",
           "deps": [
             "npm:jotai"
           ]
         },
         {
           "file": "packages/components/src/types/Products/index.ts",
-          "hash": "9457163461275204071"
+          "hash": "9681629543773195059"
         },
         {
           "file": "packages/components/tailwind.config.cjs",
@@ -268,7 +251,7 @@
         },
         {
           "file": "apps/hero/module-federation.config.ts",
-          "hash": "3401371918288664738",
+          "hash": "7895624889983143130",
           "deps": [
             "npm:@nx/rspack"
           ]
@@ -289,9 +272,10 @@
         },
         {
           "file": "apps/hero/rspack.config.ts",
-          "hash": "1804392211237732133",
+          "hash": "1247829736294920896",
           "deps": [
-            "npm:@nx/rspack"
+            "npm:@nx/rspack",
+            "npm:zephyr-webpack-plugin"
           ]
         },
         {
@@ -318,6 +302,22 @@
           "hash": "9303420814833116677"
         },
         {
+          "file": "apps/hero/src/features/Products/components/ProductDetails.tsx",
+          "hash": "5498724197688999735",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "components"
+          ]
+        },
+        {
+          "file": "apps/hero/src/features/Products/components/ProductGallery.tsx",
+          "hash": "12197798516134824782",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
           "file": "apps/hero/src/features/Products/components/ProductHero.tsx",
           "hash": "2089463830384782965",
           "deps": [
@@ -326,7 +326,7 @@
         },
         {
           "file": "apps/hero/src/features/Products/components/ProductsOnSale.tsx",
-          "hash": "17869885664782875951",
+          "hash": "7541874807792102077",
           "deps": [
             "components"
           ]
@@ -334,6 +334,10 @@
         {
           "file": "apps/hero/src/features/Products/index.ts",
           "hash": "6840003211293879209"
+        },
+        {
+          "file": "apps/hero/src/features/Products/styles/ProductDetails.css",
+          "hash": "5286413806126656445"
         },
         {
           "file": "apps/hero/src/global.d.ts",
@@ -379,32 +383,6 @@
           ]
         }
       ],
-      "hero-e2e": [
-        {
-          "file": "apps/hero-e2e/.eslintrc.json",
-          "hash": "3221422119017680556"
-        },
-        {
-          "file": "apps/hero-e2e/playwright.config.ts",
-          "hash": "10605555973305149757",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/hero-e2e/project.json",
-          "hash": "17333216508240601698"
-        },
-        {
-          "file": "apps/hero-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        }
-      ],
       "host": [
         {
           "file": "apps/host/.gitignore",
@@ -416,7 +394,7 @@
         },
         {
           "file": "apps/host/module-federation.config.ts",
-          "hash": "14227154322997563524",
+          "hash": "16335682605735072799",
           "deps": [
             "npm:@nx/rspack"
           ]
@@ -437,14 +415,15 @@
         },
         {
           "file": "apps/host/rspack.config.ts",
-          "hash": "10314802954356124112",
+          "hash": "15793578188190520779",
           "deps": [
-            "npm:@nx/rspack"
+            "npm:@nx/rspack",
+            "npm:zephyr-webpack-plugin"
           ]
         },
         {
           "file": "apps/host/src/app/App.tsx",
-          "hash": "3471647648910006158",
+          "hash": "15629228846934302967",
           "deps": [
             "npm:react-router-dom",
             "npm:react"
@@ -473,7 +452,7 @@
         },
         {
           "file": "apps/host/src/app/features/Home/components/Home.tsx",
-          "hash": "7128996979095764421",
+          "hash": "5887819329038460876",
           "deps": [
             "npm:react"
           ]
@@ -484,7 +463,7 @@
         },
         {
           "file": "apps/host/src/app/features/Navbar/components/Navbar.tsx",
-          "hash": "10667814421872431412",
+          "hash": "15265091954294032081",
           "deps": [
             "npm:@heroicons/react",
             "npm:react-router-dom"
@@ -492,7 +471,7 @@
         },
         {
           "file": "apps/host/src/app/features/Products/components/ProductSearch.tsx",
-          "hash": "13308532184807107039",
+          "hash": "15894814501287833133",
           "deps": [
             "npm:@heroicons/react",
             "npm:jotai",
@@ -501,7 +480,7 @@
         },
         {
           "file": "apps/host/src/app/features/Products/components/ProductSearchResults.tsx",
-          "hash": "2296694514206628714",
+          "hash": "8986283850234910336",
           "deps": [
             "npm:jotai",
             "components"
@@ -556,6 +535,26 @@
         {
           "file": "apps/host/src/assets/BlueShirt.png",
           "hash": "14601657994193018059"
+        },
+        {
+          "file": "apps/host/src/assets/Gallery_Black_TShirt.jpeg",
+          "hash": "12564361669201214465"
+        },
+        {
+          "file": "apps/host/src/assets/Gallery_Blue_TShirt.jpeg",
+          "hash": "4964651237835172165"
+        },
+        {
+          "file": "apps/host/src/assets/Gallery_Grey_TShirt.jpeg",
+          "hash": "17041037141296998343"
+        },
+        {
+          "file": "apps/host/src/assets/Gallery_Red_TShirt.jpeg",
+          "hash": "8271921642508825177"
+        },
+        {
+          "file": "apps/host/src/assets/Gallery_White_TShirt.jpeg",
+          "hash": "5295359181382332448"
         },
         {
           "file": "apps/host/src/assets/GreyShirt.png",
@@ -630,6 +629,58 @@
           "deps": [
             "npm:vite",
             "npm:@nx/vite"
+          ]
+        }
+      ],
+      "host-e2e": [
+        {
+          "file": "apps/host-e2e/.eslintrc.json",
+          "hash": "632147010597293032"
+        },
+        {
+          "file": "apps/host-e2e/playwright.config.ts",
+          "hash": "7710149103131713860",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/host-e2e/project.json",
+          "hash": "468957850815794493"
+        },
+        {
+          "file": "apps/host-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        }
+      ],
+      "hero-e2e": [
+        {
+          "file": "apps/hero-e2e/.eslintrc.json",
+          "hash": "3221422119017680556"
+        },
+        {
+          "file": "apps/hero-e2e/playwright.config.ts",
+          "hash": "10605555973305149757",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/hero-e2e/project.json",
+          "hash": "17333216508240601698"
+        },
+        {
+          "file": "apps/hero-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
           ]
         }
       ]
