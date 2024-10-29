@@ -41,7 +41,6 @@
       "executor": "@nx/rspack:module-federation-dev-server",
       "options": {
         "buildTarget": "host:build:development",
-        "devRemotes": ["hero"],
         "port": 4200
       },
       "configurations": {

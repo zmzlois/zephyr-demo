@@ -13,6 +13,10 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
         "file": ".gitignore",
         "hash": "14705395205556544810"
       },
@@ -25,77 +29,47 @@
         "hash": "16267754514737964994"
       },
       {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": "nx.json",
-        "hash": "380292114643065604"
+        "file": ".vscode/extensions.json",
+        "hash": "6807003856908271136"
       },
       {
         "file": "README.md",
         "hash": "22080156993399129"
       },
       {
-        "file": "vitest.workspace.ts",
-        "hash": "7870362608836821141"
+        "file": "migrations.json",
+        "hash": "4583345520328765039"
+      },
+      {
+        "file": "nx.json",
+        "hash": "380292114643065604"
       },
       {
         "file": "package.json",
         "hash": "2123324563329222163"
       },
       {
+        "file": "pnpm-lock.yaml",
+        "hash": "2054212286200771465"
+      },
+      {
         "file": "pnpm-workspace.yaml",
         "hash": "2373171212127886927"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "6422665021970253171"
-      },
-      {
-        "file": "migrations.json",
-        "hash": "4583345520328765039"
       },
       {
         "file": "squadron.yaml",
         "hash": "2853208085046838748"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "2054212286200771465"
+        "file": "tsconfig.base.json",
+        "hash": "6422665021970253171"
       },
       {
-        "file": ".vscode/extensions.json",
-        "hash": "6807003856908271136"
+        "file": "vitest.workspace.ts",
+        "hash": "7870362608836821141"
       }
     ],
     "projectFileMap": {
-      "hero-e2e": [
-        {
-          "file": "apps/hero-e2e/.eslintrc.json",
-          "hash": "3221422119017680556"
-        },
-        {
-          "file": "apps/hero-e2e/playwright.config.ts",
-          "hash": "10605555973305149757",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/hero-e2e/project.json",
-          "hash": "17333216508240601698"
-        },
-        {
-          "file": "apps/hero-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        }
-      ],
       "components": [
         {
           "file": "packages/components/README.md",
@@ -216,6 +190,32 @@
           ]
         }
       ],
+      "hero-e2e": [
+        {
+          "file": "apps/hero-e2e/.eslintrc.json",
+          "hash": "3221422119017680556"
+        },
+        {
+          "file": "apps/hero-e2e/playwright.config.ts",
+          "hash": "10605555973305149757",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/hero-e2e/project.json",
+          "hash": "17333216508240601698"
+        },
+        {
+          "file": "apps/hero-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        }
+      ],
       "host-e2e": [
         {
           "file": "apps/host-e2e/.eslintrc.json",
@@ -239,60 +239,6 @@
           "hash": "16019101014373124625",
           "deps": [
             "npm:@playwright/test"
-          ]
-        }
-      ],
-      "utils": [
-        {
-          "file": "packages/utils/README.md",
-          "hash": "14982320655972538163"
-        },
-        {
-          "file": "packages/utils/biome.json",
-          "hash": "6339479278249203123"
-        },
-        {
-          "file": "packages/utils/package.json",
-          "hash": "9350985046224568318",
-          "deps": [
-            "npm:tslib@2.7.0",
-            "npm:@module-federation/rsbuild-plugin"
-          ]
-        },
-        {
-          "file": "packages/utils/project.json",
-          "hash": "34209365673816487"
-        },
-        {
-          "file": "packages/utils/rslib.config.ts",
-          "hash": "10488811748541217604",
-          "deps": [
-            "npm:@rslib/core",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "packages/utils/src/index.ts",
-          "hash": "13154960756945100722"
-        },
-        {
-          "file": "packages/utils/tsconfig.json",
-          "hash": "3695509567024829119"
-        },
-        {
-          "file": "packages/utils/tsconfig.lib.json",
-          "hash": "16522959661630905681"
-        },
-        {
-          "file": "packages/utils/tsconfig.spec.json",
-          "hash": "15943385144407153049"
-        },
-        {
-          "file": "packages/utils/vite.config.ts",
-          "hash": "16451389145465087591",
-          "deps": [
-            "npm:vite",
-            "npm:@nx/vite"
           ]
         }
       ],
@@ -436,6 +382,60 @@
           ]
         }
       ],
+      "utils": [
+        {
+          "file": "packages/utils/README.md",
+          "hash": "14982320655972538163"
+        },
+        {
+          "file": "packages/utils/biome.json",
+          "hash": "6339479278249203123"
+        },
+        {
+          "file": "packages/utils/package.json",
+          "hash": "9350985046224568318",
+          "deps": [
+            "npm:tslib@2.7.0",
+            "npm:@module-federation/rsbuild-plugin"
+          ]
+        },
+        {
+          "file": "packages/utils/project.json",
+          "hash": "34209365673816487"
+        },
+        {
+          "file": "packages/utils/rslib.config.ts",
+          "hash": "10488811748541217604",
+          "deps": [
+            "npm:@rslib/core",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/utils/src/index.ts",
+          "hash": "13154960756945100722"
+        },
+        {
+          "file": "packages/utils/tsconfig.json",
+          "hash": "3695509567024829119"
+        },
+        {
+          "file": "packages/utils/tsconfig.lib.json",
+          "hash": "16522959661630905681"
+        },
+        {
+          "file": "packages/utils/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "packages/utils/vite.config.ts",
+          "hash": "16451389145465087591",
+          "deps": [
+            "npm:vite",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
       "host": [
         {
           "file": "apps/host/.gitignore",
@@ -464,7 +464,7 @@
         },
         {
           "file": "apps/host/project.json",
-          "hash": "5521840498927863260"
+          "hash": "14345020369181794406"
         },
         {
           "file": "apps/host/rspack.config.ts",
