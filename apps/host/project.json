@@ -4,20 +4,31 @@
   "sourceRoot": "apps/host/src",
   "projectType": "application",
   "tags": [],
-  "implicitDependencies": ["hero", "components", "utils"],
+  "implicitDependencies": [
+    "hero",
+    "components",
+    "utils"
+  ],
   "targets": {
     "build": {
       "executor": "@nx/rspack:rspack",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
-      "dependsOn": ["^build"],
+      "dependsOn": [
+        "^build"
+      ],
       "options": {
         "target": "web",
         "outputPath": "dist/apps/host",
         "main": "apps/host/src/main.ts",
         "tsConfig": "apps/host/tsconfig.app.json",
         "rspackConfig": "apps/host/rspack.config.ts",
-        "assets": ["apps/host/src/favicon.ico", "apps/host/src/assets"]
+        "assets": [
+          "apps/host/src/favicon.ico",
+          "apps/host/src/assets"
+        ]
       },
       "configurations": {
         "development": {
@@ -33,7 +44,10 @@
     "serve-all": {
       "executor": "nx:run-commands",
       "options": {
-        "commands": ["nx run components:watch", "nx serve host"],
+        "commands": [
+          "nx run components:watch",
+          "nx serve host"
+        ],
         "parallel": true
       }
     },
@@ -58,9 +72,13 @@
     },
     "biome-lint": {
       "executor": "@gitopslovers/nx-biome:biome-lint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/host/**/*.ts"],
+        "lintFilePatterns": [
+          "apps/host/**/*.ts"
+        ],
         "write": false,
         "unsafe": false
       }

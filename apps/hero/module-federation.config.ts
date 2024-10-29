@@ -16,6 +16,9 @@ const mfConfig: ModuleFederationConfig = {
   },
   shared: (library, sharedConfig) => {
     if (sharedLibraries.includes(library)) {
+      if (library === 'react-router-dom') {
+        return { singleton: true, requiredVersion: '6.27.0' }
+      }
       if (library === '@acme/components') {
         return { singleton: true, requiredVersion: false };
       }

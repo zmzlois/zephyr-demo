@@ -2,7 +2,9 @@
   "name": "hero",
   "version": "1.0.0",
   "main": "module-federation.config.js",
-  "scripts": {},
+  "scripts": {
+    "build": "rspack build"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -46,11 +46,11 @@
       },
       {
         "file": "package.json",
-        "hash": "2123324563329222163"
+        "hash": "7087448628929559750"
       },
       {
         "file": "pnpm-lock.yaml",
-        "hash": "2054212286200771465"
+        "hash": "13156883779649990250"
       },
       {
         "file": "pnpm-workspace.yaml",
@@ -70,123 +70,29 @@
       }
     ],
     "projectFileMap": {
-      "components": [
+      "host-e2e": [
         {
-          "file": "packages/components/README.md",
-          "hash": "16505226353474541838"
+          "file": "apps/host-e2e/.eslintrc.json",
+          "hash": "632147010597293032"
         },
         {
-          "file": "packages/components/biome.json",
-          "hash": "6339479278249203123"
-        },
-        {
-          "file": "packages/components/package.json",
-          "hash": "10277453699435129682",
+          "file": "apps/host-e2e/playwright.config.ts",
+          "hash": "7710149103131713860",
           "deps": [
-            "npm:react",
-            "npm:react-dom",
-            "npm:tslib@2.7.0",
-            "npm:postcss-alias",
-            "npm:@module-federation/rsbuild-plugin",
-            "npm:@rsbuild/plugin-react",
-            "npm:@rsbuild/core",
-            "utils",
-            "npm:react-router-dom",
-            "npm:jotai"
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
           ]
         },
         {
-          "file": "packages/components/postcss.config.js",
-          "hash": "12658169318102781374"
+          "file": "apps/host-e2e/project.json",
+          "hash": "468957850815794493"
         },
         {
-          "file": "packages/components/project.json",
-          "hash": "8655507461886146533"
-        },
-        {
-          "file": "packages/components/rslib.config.ts",
-          "hash": "4025232439058422759",
+          "file": "apps/host-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
           "deps": [
-            "npm:@rslib/core",
-            "npm:@nx/devkit",
-            "npm:@rsbuild/plugin-react"
-          ]
-        },
-        {
-          "file": "packages/components/src/components/ProductCard.tsx",
-          "hash": "6008688743836908437",
-          "deps": [
-            "npm:react",
-            "npm:react-router-dom",
-            "utils"
-          ]
-        },
-        {
-          "file": "packages/components/src/components/ProductCarousel.tsx",
-          "hash": "4957123609369098590"
-        },
-        {
-          "file": "packages/components/src/data/ProductData.ts",
-          "hash": "6819791265204655028"
-        },
-        {
-          "file": "packages/components/src/hooks/useCart.ts",
-          "hash": "7980230051733369063",
-          "deps": [
-            "npm:jotai"
-          ]
-        },
-        {
-          "file": "packages/components/src/hooks/useProducts.ts",
-          "hash": "10023078000648471836",
-          "deps": [
-            "npm:jotai"
-          ]
-        },
-        {
-          "file": "packages/components/src/index.css",
-          "hash": "7879390980984410625"
-        },
-        {
-          "file": "packages/components/src/index.ts",
-          "hash": "13496863808693113236"
-        },
-        {
-          "file": "packages/components/src/store.ts",
-          "hash": "9363426701050159898",
-          "deps": [
-            "npm:jotai"
-          ]
-        },
-        {
-          "file": "packages/components/src/types/Products/index.ts",
-          "hash": "9681629543773195059"
-        },
-        {
-          "file": "packages/components/tailwind.config.cjs",
-          "hash": "16708133547139191818",
-          "deps": [
-            "npm:@nx/react"
-          ]
-        },
-        {
-          "file": "packages/components/tsconfig.json",
-          "hash": "12641704573128863464"
-        },
-        {
-          "file": "packages/components/tsconfig.lib.json",
-          "hash": "6352520083174777697"
-        },
-        {
-          "file": "packages/components/tsconfig.spec.json",
-          "hash": "15943385144407153049"
-        },
-        {
-          "file": "packages/components/vite.config.ts",
-          "hash": "4615376426399997497",
-          "deps": [
-            "npm:vite",
-            "npm:@nx/vite"
+            "npm:@playwright/test"
           ]
         }
       ],
@@ -216,32 +122,6 @@
           ]
         }
       ],
-      "host-e2e": [
-        {
-          "file": "apps/host-e2e/.eslintrc.json",
-          "hash": "632147010597293032"
-        },
-        {
-          "file": "apps/host-e2e/playwright.config.ts",
-          "hash": "7710149103131713860",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/host-e2e/project.json",
-          "hash": "468957850815794493"
-        },
-        {
-          "file": "apps/host-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        }
-      ],
       "hero": [
         {
           "file": "apps/hero/biome.json",
@@ -249,14 +129,14 @@
         },
         {
           "file": "apps/hero/module-federation.config.ts",
-          "hash": "6389267717181252445",
+          "hash": "2758741149441875433",
           "deps": [
             "npm:@nx/rspack"
           ]
         },
         {
           "file": "apps/hero/package.json",
-          "hash": "14240927187866245015",
+          "hash": "3060255312649574796",
           "deps": [
             "npm:@playwright/test@1.48.1",
             "npm:@types/node@22.8.0",
@@ -266,11 +146,11 @@
         },
         {
           "file": "apps/hero/project.json",
-          "hash": "3509231097563127804"
+          "hash": "236959007392838977"
         },
         {
           "file": "apps/hero/rspack.config.ts",
-          "hash": "2605635591877386886",
+          "hash": "6876472825225462382",
           "deps": [
             "npm:@nx/rspack",
             "npm:zephyr-webpack-plugin"
@@ -447,7 +327,7 @@
         },
         {
           "file": "apps/host/module-federation.config.ts",
-          "hash": "2530400822602872542",
+          "hash": "8300944264451344291",
           "deps": [
             "npm:@nx/rspack"
           ]
@@ -464,11 +344,11 @@
         },
         {
           "file": "apps/host/project.json",
-          "hash": "14345020369181794406"
+          "hash": "13418257045091190847"
         },
         {
           "file": "apps/host/rspack.config.ts",
-          "hash": "5982635357565264699",
+          "hash": "7365936864893979840",
           "deps": [
             "npm:@nx/rspack",
             "npm:zephyr-webpack-plugin"
@@ -679,6 +559,126 @@
         {
           "file": "apps/host/vitest.config.ts",
           "hash": "4805939564334062894",
+          "deps": [
+            "npm:vite",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "components": [
+        {
+          "file": "packages/components/README.md",
+          "hash": "16505226353474541838"
+        },
+        {
+          "file": "packages/components/biome.json",
+          "hash": "6339479278249203123"
+        },
+        {
+          "file": "packages/components/package.json",
+          "hash": "10277453699435129682",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:tslib@2.7.0",
+            "npm:postcss-alias",
+            "npm:@module-federation/rsbuild-plugin",
+            "npm:@rsbuild/plugin-react",
+            "npm:@rsbuild/core",
+            "utils",
+            "npm:react-router-dom",
+            "npm:jotai"
+          ]
+        },
+        {
+          "file": "packages/components/postcss.config.js",
+          "hash": "12658169318102781374"
+        },
+        {
+          "file": "packages/components/project.json",
+          "hash": "8655507461886146533"
+        },
+        {
+          "file": "packages/components/rslib.config.ts",
+          "hash": "4025232439058422759",
+          "deps": [
+            "npm:@rslib/core",
+            "npm:@nx/devkit",
+            "npm:@rsbuild/plugin-react"
+          ]
+        },
+        {
+          "file": "packages/components/src/components/ProductCard.tsx",
+          "hash": "6008688743836908437",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "utils"
+          ]
+        },
+        {
+          "file": "packages/components/src/components/ProductCarousel.tsx",
+          "hash": "4957123609369098590"
+        },
+        {
+          "file": "packages/components/src/data/ProductData.ts",
+          "hash": "6819791265204655028"
+        },
+        {
+          "file": "packages/components/src/hooks/useCart.ts",
+          "hash": "7980230051733369063",
+          "deps": [
+            "npm:jotai"
+          ]
+        },
+        {
+          "file": "packages/components/src/hooks/useProducts.ts",
+          "hash": "10023078000648471836",
+          "deps": [
+            "npm:jotai"
+          ]
+        },
+        {
+          "file": "packages/components/src/index.css",
+          "hash": "7879390980984410625"
+        },
+        {
+          "file": "packages/components/src/index.ts",
+          "hash": "13496863808693113236"
+        },
+        {
+          "file": "packages/components/src/store.ts",
+          "hash": "9363426701050159898",
+          "deps": [
+            "npm:jotai"
+          ]
+        },
+        {
+          "file": "packages/components/src/types/Products/index.ts",
+          "hash": "9681629543773195059"
+        },
+        {
+          "file": "packages/components/tailwind.config.cjs",
+          "hash": "16708133547139191818",
+          "deps": [
+            "npm:@nx/react"
+          ]
+        },
+        {
+          "file": "packages/components/tsconfig.json",
+          "hash": "12641704573128863464"
+        },
+        {
+          "file": "packages/components/tsconfig.lib.json",
+          "hash": "6352520083174777697"
+        },
+        {
+          "file": "packages/components/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "packages/components/vite.config.ts",
+          "hash": "4615376426399997497",
           "deps": [
             "npm:vite",
             "npm:@nx/vite"

@@ -4,10 +4,12 @@ import { join } from 'node:path';
 import mfConfig from './module-federation.config';
 import { withZephyr } from 'zephyr-webpack-plugin';
 
+const ZC = process.env.ZC
 const config = composePlugins(
   withNx(),
   withReact(),
   withModuleFederation(mfConfig),
+  withZephyr(),
   (config, context) => {
     config.module.rules = [
       ...config.module.rules.filter(
