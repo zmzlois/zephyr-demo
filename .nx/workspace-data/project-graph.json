@@ -4544,18 +4544,9 @@
         "hash": "sha512-aGg7iToJjdklmxlUlJh/PaPNa4PmqHfyRMLunbL3eaMO0gp656+q1zOKkpJ/CVe9CryJv6tAN1HDoR8cNGzkag=="
       }
     },
-    "npm:@rsbuild/core@1.0.17": {
+    "npm:@rsbuild/core": {
       "type": "npm",
-      "name": "npm:@rsbuild/core@1.0.17",
-      "data": {
-        "version": "1.0.17",
-        "packageName": "@rsbuild/core",
-        "hash": "sha512-XbRrFsX5YiYrArD2f27a+WGhRWvoYgogaTMX/kiL7xcZOFuV+PbPBdU0e2o00NROGLRyVn7cTfkIkyMSr1B9Vg=="
-      }
-    },
-    "npm:@rsbuild/core@1.0.18": {
-      "type": "npm",
-      "name": "npm:@rsbuild/core@1.0.18",
+      "name": "npm:@rsbuild/core",
       "data": {
         "version": "1.0.18",
         "packageName": "@rsbuild/core",
@@ -4575,9 +4566,9 @@
       "type": "npm",
       "name": "npm:@rslib/core",
       "data": {
-        "version": "0.0.14",
+        "version": "0.0.15",
         "packageName": "@rslib/core",
-        "hash": "sha512-DW4TJf2p45SEH36iVr31xa/ITMEfvu8nbaujYShUSOruCOCzJ3GnfmkCsibT8RZC7oCN25e0dQinWuwQ4yjgGg=="
+        "hash": "sha512-E44MHKIsEHB62CLH5UuhnUXlpdwW5aDYvEAvezJPhjqViI5odL5itTzAiKtVdHzBS4K3UZoP+o+pZRJ9vID0rQ=="
       }
     },
     "npm:@rspack/binding-darwin-arm64": {
@@ -15087,9 +15078,9 @@
       "type": "npm",
       "name": "npm:rsbuild-plugin-dts",
       "data": {
-        "version": "0.0.14",
+        "version": "0.0.15",
         "packageName": "rsbuild-plugin-dts",
-        "hash": "sha512-/1NU8T8y1JSoYbY+S1Hse39eXLU+dVhKFvcS7vPk752jTPSJhLSlkKPVsn9edMhZDu97DBtDKhn9/t152yGHlg=="
+        "hash": "sha512-KtM3BpyT7eXyLwVWHIRR4mGDUOoG3D/X4etRfZU6Wt+Qpd3ptwMHkcy2srY9MLQj2/cE7sOEPLuhDi3VQLtorw=="
       }
     },
     "npm:run-applescript": {
@@ -17845,7 +17836,7 @@
       },
       {
         "source": "components",
-        "target": "npm:@rsbuild/core@1.0.18",
+        "target": "npm:@rsbuild/core",
         "type": "static"
       },
       {
@@ -24444,7 +24435,7 @@
       },
       {
         "source": "npm:@module-federation/rsbuild-plugin",
-        "target": "npm:@rsbuild/core@1.0.18",
+        "target": "npm:@rsbuild/core",
         "type": "static"
       }
     ],
@@ -26124,56 +26115,29 @@
         "type": "static"
       }
     ],
-    "npm:@rsbuild/core@1.0.17": [
+    "npm:@rsbuild/core": [
       {
-        "source": "npm:@rsbuild/core@1.0.17",
+        "source": "npm:@rsbuild/core",
         "target": "npm:@rspack/core",
         "type": "static"
       },
       {
-        "source": "npm:@rsbuild/core@1.0.17",
+        "source": "npm:@rsbuild/core",
         "target": "npm:@rspack/lite-tapable",
         "type": "static"
       },
       {
-        "source": "npm:@rsbuild/core@1.0.17",
+        "source": "npm:@rsbuild/core",
         "target": "npm:@swc/helpers",
         "type": "static"
       },
       {
-        "source": "npm:@rsbuild/core@1.0.17",
+        "source": "npm:@rsbuild/core",
         "target": "npm:core-js",
         "type": "static"
       },
       {
-        "source": "npm:@rsbuild/core@1.0.17",
-        "target": "npm:fsevents@2.3.3",
-        "type": "static"
-      }
-    ],
-    "npm:@rsbuild/core@1.0.18": [
-      {
-        "source": "npm:@rsbuild/core@1.0.18",
-        "target": "npm:@rspack/core",
-        "type": "static"
-      },
-      {
-        "source": "npm:@rsbuild/core@1.0.18",
-        "target": "npm:@rspack/lite-tapable",
-        "type": "static"
-      },
-      {
-        "source": "npm:@rsbuild/core@1.0.18",
-        "target": "npm:@swc/helpers",
-        "type": "static"
-      },
-      {
-        "source": "npm:@rsbuild/core@1.0.18",
-        "target": "npm:core-js",
-        "type": "static"
-      },
-      {
-        "source": "npm:@rsbuild/core@1.0.18",
+        "source": "npm:@rsbuild/core",
         "target": "npm:fsevents@2.3.3",
         "type": "static"
       }
@@ -26181,7 +26145,7 @@
     "npm:@rsbuild/plugin-react": [
       {
         "source": "npm:@rsbuild/plugin-react",
-        "target": "npm:@rsbuild/core@1.0.18",
+        "target": "npm:@rsbuild/core",
         "type": "static"
       },
       {
@@ -26198,7 +26162,7 @@
     "npm:@rslib/core": [
       {
         "source": "npm:@rslib/core",
-        "target": "npm:@rsbuild/core@1.0.17",
+        "target": "npm:@rsbuild/core",
         "type": "static"
       },
       {
@@ -39950,7 +39914,7 @@
     "npm:rsbuild-plugin-dts": [
       {
         "source": "npm:rsbuild-plugin-dts",
-        "target": "npm:@rsbuild/core@1.0.17",
+        "target": "npm:@rsbuild/core",
         "type": "static"
       },
       {

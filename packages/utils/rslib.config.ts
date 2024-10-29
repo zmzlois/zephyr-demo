@@ -15,6 +15,9 @@ export default defineConfig({
     },
     tsconfigPath: join(COMPONENT_PATH, 'tsconfig.lib.json'),
   },
+  output: {
+    cleanDistPath: true,
+  },
   lib: [
     {
       dts: {
@@ -27,16 +30,16 @@ export default defineConfig({
         },
       },
     },
-    {
-      dts: {
-        bundle: false,
-      },
-      format: 'cjs',
-      output: {
-        distPath: {
-          root: toWorkspacePath(`${COMPONENT_PATH}/dist/cjs`),
-        },
-      },
-    },
+    // {
+    //   dts: {
+    //     bundle: false,
+    //   },
+    //   format: 'cjs',
+    //   output: {
+    //     distPath: {
+    //       root: toWorkspacePath(`${COMPONENT_PATH}/dist/cjs`),
+    //     },
+    //   },
+    // },
   ],
 });

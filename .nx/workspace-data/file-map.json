@@ -13,52 +13,36 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "12959715384932594445"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "6807003856908271136"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "14705395205556544810"
+        "file": "squadron.yaml",
+        "hash": "2853208085046838748"
       },
       {
         "file": "tsconfig.base.json",
         "hash": "6422665021970253171"
       },
       {
-        "file": "README.md",
-        "hash": "22080156993399129"
-      },
-      {
         "file": "pnpm-workspace.yaml",
         "hash": "2373171212127886927"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": "nx.json",
-        "hash": "380292114643065604"
       },
       {
         "file": ".prettierrc",
         "hash": "16267754514737964994"
       },
       {
-        "file": "package.json",
-        "hash": "10714316374437238615"
+        "file": "nx.json",
+        "hash": "380292114643065604"
       },
       {
-        "file": "squadron.yaml",
-        "hash": "2853208085046838748"
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "2054212286200771465"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
       },
       {
         "file": "migrations.json",
@@ -67,9 +51,51 @@
       {
         "file": "vitest.workspace.ts",
         "hash": "7870362608836821141"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14705395205556544810"
+      },
+      {
+        "file": "README.md",
+        "hash": "22080156993399129"
+      },
+      {
+        "file": "package.json",
+        "hash": "330192861818056710"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "6807003856908271136"
       }
     ],
     "projectFileMap": {
+      "hero-e2e": [
+        {
+          "file": "apps/hero-e2e/.eslintrc.json",
+          "hash": "3221422119017680556"
+        },
+        {
+          "file": "apps/hero-e2e/playwright.config.ts",
+          "hash": "10605555973305149757",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/hero-e2e/project.json",
+          "hash": "17333216508240601698"
+        },
+        {
+          "file": "apps/hero-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        }
+      ],
       "components": [
         {
           "file": "packages/components/README.md",
@@ -81,7 +107,7 @@
         },
         {
           "file": "packages/components/package.json",
-          "hash": "16020027344619564711",
+          "hash": "16905383141443289200",
           "deps": [
             "npm:react",
             "npm:react-dom",
@@ -89,7 +115,7 @@
             "npm:postcss-alias",
             "npm:@module-federation/rsbuild-plugin",
             "npm:@rsbuild/plugin-react",
-            "npm:@rsbuild/core@1.0.18",
+            "npm:@rsbuild/core",
             "utils",
             "npm:react-router-dom",
             "npm:jotai"
@@ -114,7 +140,7 @@
         },
         {
           "file": "packages/components/src/components/ProductCard.tsx",
-          "hash": "6547937652398174521",
+          "hash": "6008688743836908437",
           "deps": [
             "npm:react",
             "npm:react-router-dom",
@@ -190,6 +216,32 @@
           ]
         }
       ],
+      "host-e2e": [
+        {
+          "file": "apps/host-e2e/.eslintrc.json",
+          "hash": "632147010597293032"
+        },
+        {
+          "file": "apps/host-e2e/playwright.config.ts",
+          "hash": "7710149103131713860",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/host-e2e/project.json",
+          "hash": "468957850815794493"
+        },
+        {
+          "file": "apps/host-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        }
+      ],
       "utils": [
         {
           "file": "packages/utils/README.md",
@@ -201,7 +253,7 @@
         },
         {
           "file": "packages/utils/package.json",
-          "hash": "5893799199384625245",
+          "hash": "9350985046224568318",
           "deps": [
             "npm:tslib@2.7.0",
             "npm:@module-federation/rsbuild-plugin"
@@ -213,7 +265,7 @@
         },
         {
           "file": "packages/utils/rslib.config.ts",
-          "hash": "2082548204861099295",
+          "hash": "10488811748541217604",
           "deps": [
             "npm:@rslib/core",
             "npm:@nx/devkit"
@@ -312,7 +364,7 @@
         },
         {
           "file": "apps/hero/src/features/Products/components/ProductGallery.tsx",
-          "hash": "12197798516134824782",
+          "hash": "14648141138422477806",
           "deps": [
             "npm:react"
           ]
@@ -415,7 +467,7 @@
         },
         {
           "file": "apps/host/rspack.config.ts",
-          "hash": "15793578188190520779",
+          "hash": "18071165592796396729",
           "deps": [
             "npm:@nx/rspack",
             "npm:zephyr-webpack-plugin"
@@ -452,7 +504,7 @@
         },
         {
           "file": "apps/host/src/app/features/Home/components/Home.tsx",
-          "hash": "5887819329038460876",
+          "hash": "12310360150311373829",
           "deps": [
             "npm:react"
           ]
@@ -629,58 +681,6 @@
           "deps": [
             "npm:vite",
             "npm:@nx/vite"
-          ]
-        }
-      ],
-      "host-e2e": [
-        {
-          "file": "apps/host-e2e/.eslintrc.json",
-          "hash": "632147010597293032"
-        },
-        {
-          "file": "apps/host-e2e/playwright.config.ts",
-          "hash": "7710149103131713860",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/host-e2e/project.json",
-          "hash": "468957850815794493"
-        },
-        {
-          "file": "apps/host-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        }
-      ],
-      "hero-e2e": [
-        {
-          "file": "apps/hero-e2e/.eslintrc.json",
-          "hash": "3221422119017680556"
-        },
-        {
-          "file": "apps/hero-e2e/playwright.config.ts",
-          "hash": "10605555973305149757",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/hero-e2e/project.json",
-          "hash": "17333216508240601698"
-        },
-        {
-          "file": "apps/hero-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
           ]
         }
       ]

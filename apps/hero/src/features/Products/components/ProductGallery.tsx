@@ -35,7 +35,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
             key={image}
             type="button"
             onClick={() => handleImageClick(image)}
-            className={`relative aspect-square overflow-hidden rounded-md bg-gray-100
+            className={`flex items-center justify-center relative aspect-square overflow-hidden rounded-md bg-gray-100
               ${
                 selectedImage === image
                   ? 'ring-2 ring-black'
@@ -45,7 +45,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
             <img
               src={image}
               alt={title}
-              className="absolute w-full h-full object-cover object-center"
+              className="w-full h-full object-cover"
               loading="lazy"
             />
           </button>

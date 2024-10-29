@@ -22,7 +22,7 @@ const Home = () => {
       </h2>
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mt-8">
-          <Suspense>
+          <Suspense fallback={<div className="text-center">Loading...</div>}>
             <ProductsOnSale />
           </Suspense>
         </div>

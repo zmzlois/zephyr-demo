@@ -15,6 +15,11 @@ const config = composePlugins(
       ),
     ];
 
+    config.output = {
+      ...config.output,
+      publicPath: '/',
+    };
+
     config.devServer = {
       ...config.devServer,
       historyApiFallback: true,
@@ -45,6 +50,8 @@ const config = composePlugins(
         },
       ],
     });
+
+    console.log(config.module.rules);
 
     return config;
   }

@@ -9,15 +9,11 @@
       "import": {
         "types": "./dist/esm/index.d.ts",
         "default": "./dist/esm/index.js"
-      },
-      "require": {
-        "types": "./dist/cjs/index.d.ts",
-        "default": "./dist/cjs/index.cjs"
       }
     },
     "./styles": {
       "import": "./dist/esm/index.css",
-      "require": "./dist/cjs/index.css"
+      "require": "./dist/esm/index.css"
     }
   },
   "files": [

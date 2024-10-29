@@ -18,8 +18,8 @@ importers:
         specifier: 0.6.13
         version: 0.6.13
       '@rslib/core':
-        specifier: 0.0.14
-        version: 0.0.14(typescript@5.6.3)
+        specifier: 0.0.15
+        version: 0.0.15(typescript@5.6.3)
       '@swc/helpers':
         specifier: 0.5.13
         version: 0.5.13
@@ -2778,11 +2778,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rsbuild/core@1.0.17':
-    resolution: {integrity: sha512-XbRrFsX5YiYrArD2f27a+WGhRWvoYgogaTMX/kiL7xcZOFuV+PbPBdU0e2o00NROGLRyVn7cTfkIkyMSr1B9Vg==}
-    engines: {node: '>=16.7.0'}
-    hasBin: true
-
   '@rsbuild/core@1.0.18':
     resolution: {integrity: sha512-NRdcGCAuBpzAIIdv+gVZxpgd9Cu9JSbaOC13nTbWRKXrHPpr+1iwYFBbM01KtX0Fe2TBLgmSaJfdDJAfEeZ3Dg==}
     engines: {node: '>=16.7.0'}
@@ -2793,8 +2788,8 @@ packages:
     peerDependencies:
       '@rsbuild/core': 1.x || ^1.0.1-rc.0
 
-  '@rslib/core@0.0.14':
-    resolution: {integrity: sha512-DW4TJf2p45SEH36iVr31xa/ITMEfvu8nbaujYShUSOruCOCzJ3GnfmkCsibT8RZC7oCN25e0dQinWuwQ4yjgGg==}
+  '@rslib/core@0.0.15':
+    resolution: {integrity: sha512-E44MHKIsEHB62CLH5UuhnUXlpdwW5aDYvEAvezJPhjqViI5odL5itTzAiKtVdHzBS4K3UZoP+o+pZRJ9vID0rQ==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     peerDependencies:
@@ -7680,8 +7675,8 @@ packages:
   rrweb-cssom@0.6.0:
     resolution: {integrity: sha512-APM0Gt1KoXBz0iIkkdB/kfvGOwC4UuJFeG/c+yV7wSc7q96cG/kJ0HiYCnzivD9SB53cLV1MlHFNfOuPaadYSw==}
 
-  rsbuild-plugin-dts@0.0.14:
-    resolution: {integrity: sha512-/1NU8T8y1JSoYbY+S1Hse39eXLU+dVhKFvcS7vPk752jTPSJhLSlkKPVsn9edMhZDu97DBtDKhn9/t152yGHlg==}
+  rsbuild-plugin-dts@0.0.15:
+    resolution: {integrity: sha512-KtM3BpyT7eXyLwVWHIRR4mGDUOoG3D/X4etRfZU6Wt+Qpd3ptwMHkcy2srY9MLQj2/cE7sOEPLuhDi3VQLtorw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@microsoft/api-extractor': ^7
@@ -12412,15 +12407,6 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.14.0':
     optional: true
 
-  '@rsbuild/core@1.0.17':
-    dependencies:
-      '@rspack/core': 1.0.14(@swc/helpers@0.5.13)
-      '@rspack/lite-tapable': 1.0.1
-      '@swc/helpers': 0.5.13
-      core-js: 3.38.1
-    optionalDependencies:
-      fsevents: 2.3.3
-
   '@rsbuild/core@1.0.18':
     dependencies:
       '@rspack/core': 1.0.14(@swc/helpers@0.5.13)
@@ -12436,10 +12422,10 @@ snapshots:
       '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.14.2)
       react-refresh: 0.14.2
 
-  '@rslib/core@0.0.14(typescript@5.6.3)':
+  '@rslib/core@0.0.15(typescript@5.6.3)':
     dependencies:
-      '@rsbuild/core': 1.0.17
-      rsbuild-plugin-dts: 0.0.14(@rsbuild/core@1.0.17)(typescript@5.6.3)
+      '@rsbuild/core': 1.0.18
+      rsbuild-plugin-dts: 0.0.15(@rsbuild/core@1.0.18)(typescript@5.6.3)
       tinyglobby: 0.2.10
     optionalDependencies:
       typescript: 5.6.3
@@ -18318,9 +18304,9 @@ snapshots:
 
   rrweb-cssom@0.6.0: {}
 
-  rsbuild-plugin-dts@0.0.14(@rsbuild/core@1.0.17)(typescript@5.6.3):
+  rsbuild-plugin-dts@0.0.15(@rsbuild/core@1.0.18)(typescript@5.6.3):
     dependencies:
-      '@rsbuild/core': 1.0.17
+      '@rsbuild/core': 1.0.18
       magic-string: 0.30.12
       picocolors: 1.1.1
       tinyglobby: 0.2.10
