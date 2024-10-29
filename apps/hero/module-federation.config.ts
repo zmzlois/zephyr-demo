@@ -7,7 +7,7 @@ const sharedLibraries = [
   '@acme/components',
 ];
 
-export const mfConfig: ModuleFederationConfig = {
+const mfConfig: ModuleFederationConfig = {
   name: 'hero',
   exposes: {
     './ProductHero': './src/features/Products/components/ProductHero.tsx',
@@ -25,3 +25,5 @@ export const mfConfig: ModuleFederationConfig = {
   },
   disableNxRuntimeLibraryControlPlugin: true,
 };
+
+export default mfConfig;

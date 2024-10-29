@@ -13,60 +13,60 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "vitest.workspace.ts",
-        "hash": "7870362608836821141"
+        "file": ".gitignore",
+        "hash": "14705395205556544810"
       },
       {
         "file": ".prettierignore",
         "hash": "14688272390704683536"
       },
       {
-        "file": "squadron.yaml",
-        "hash": "2853208085046838748"
-      },
-      {
-        "file": "README.md",
-        "hash": "22080156993399129"
-      },
-      {
-        "file": "nx.json",
-        "hash": "380292114643065604"
-      },
-      {
         "file": ".prettierrc",
         "hash": "16267754514737964994"
-      },
-      {
-        "file": "package.json",
-        "hash": "330192861818056710"
-      },
-      {
-        "file": "migrations.json",
-        "hash": "4583345520328765039"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "2373171212127886927"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "6807003856908271136"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "6422665021970253171"
       },
       {
         "file": ".editorconfig",
         "hash": "5443105041930014821"
       },
       {
-        "file": ".gitignore",
-        "hash": "14705395205556544810"
+        "file": "nx.json",
+        "hash": "380292114643065604"
+      },
+      {
+        "file": "README.md",
+        "hash": "22080156993399129"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "7870362608836821141"
+      },
+      {
+        "file": "package.json",
+        "hash": "2123324563329222163"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2373171212127886927"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "6422665021970253171"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "4583345520328765039"
+      },
+      {
+        "file": "squadron.yaml",
+        "hash": "2853208085046838748"
       },
       {
         "file": "pnpm-lock.yaml",
         "hash": "2054212286200771465"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "6807003856908271136"
       }
     ],
     "projectFileMap": {
@@ -303,7 +303,7 @@
         },
         {
           "file": "apps/hero/module-federation.config.ts",
-          "hash": "7895624889983143130",
+          "hash": "6389267717181252445",
           "deps": [
             "npm:@nx/rspack"
           ]
@@ -324,7 +324,7 @@
         },
         {
           "file": "apps/hero/rspack.config.ts",
-          "hash": "1247829736294920896",
+          "hash": "2605635591877386886",
           "deps": [
             "npm:@nx/rspack",
             "npm:zephyr-webpack-plugin"
@@ -447,7 +447,7 @@
         },
         {
           "file": "apps/host/module-federation.config.ts",
-          "hash": "16335682605735072799",
+          "hash": "2530400822602872542",
           "deps": [
             "npm:@nx/rspack"
           ]
@@ -468,7 +468,7 @@
         },
         {
           "file": "apps/host/rspack.config.ts",
-          "hash": "8212539605605006554",
+          "hash": "5982635357565264699",
           "deps": [
             "npm:@nx/rspack",
             "npm:zephyr-webpack-plugin"

@@ -7,7 +7,7 @@ const sharedLibraries = [
   '@acme/components',
 ];
 
-export const mfConfig: ModuleFederationConfig = {
+const mfConfig: ModuleFederationConfig = {
   name: 'host',
   remotes: ['hero'],
   shared: (library, sharedConfig) => {
@@ -21,3 +21,5 @@ export const mfConfig: ModuleFederationConfig = {
   },
   disableNxRuntimeLibraryControlPlugin: true,
 };
+
+export default mfConfig;

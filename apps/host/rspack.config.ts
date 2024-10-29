@@ -1,7 +1,7 @@
 import { composePlugins, withNx, withReact } from '@nx/rspack';
 import { withModuleFederation } from '@nx/rspack/module-federation';
 import { join } from 'node:path';
-import { mfConfig } from './module-federation.config';
+import mfConfig from './module-federation.config';
 import { withZephyr } from 'zephyr-webpack-plugin';
 
 const config = composePlugins(
